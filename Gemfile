@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'rack'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use mysql as the database for Active Record
@@ -21,14 +21,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Sidekiq as job handler.
 # gem 'sidekiq'
 # Lacking Redis, use a simpler job handler instead.
-gem 'sucker_punch'
+gem 'sucker_punch', '~> 2.0'
 gem 'turbolinks'
 
 ############## Models
 # Use rolify to handle user roles
 # gem 'rolify'
 # Use carrierwave for file management.
-  gem 'carrierwave'
+  gem 'carrierwave', '~> 1.0'
 
 
 ############# Client-Server-Communication
@@ -46,8 +46,9 @@ gem 'turbolinks'
   gem 'bcrypt', '~> 3.1.7'
 # Use Devise for basic user authentication
   gem 'devise'
+  gem 'devise-async'
 # Use doorkeeper for OAuth2 matters
-  gem 'doorkeeper'
+  gem 'doorkeeper', '~>4.2.5'
 # Use Wine_bouncer as oauth security for grape
   gem 'wine_bouncer'
 # Use hashie for sanitation.
