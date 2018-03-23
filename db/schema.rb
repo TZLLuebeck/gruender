@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180221120333) do
+ActiveRecord::Schema.define(version: 20180323145933) do
 
   create_table "bans", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "target_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20180221120333) do
     t.string "parent_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "author"
   end
 
   create_table "communities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -97,6 +98,7 @@ ActiveRecord::Schema.define(version: 20180221120333) do
     t.integer "community_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "author"
   end
 
   create_table "projects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -111,6 +113,9 @@ ActiveRecord::Schema.define(version: 20180221120333) do
     t.integer "likes"
     t.string "attachment"
     t.string "status"
+    t.text "cooptext"
+    t.string "image"
+    t.string "typus"
   end
 
   create_table "reports", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

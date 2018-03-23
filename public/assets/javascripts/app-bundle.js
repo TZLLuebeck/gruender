@@ -515,7 +515,7 @@ angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload"
     defer = $q.defer();
     packet = baseREST.one('projects').one('comment');
     packet.id = project.id;
-    packet.data = content;
+    packet.content = content;
     packet.post().then(function(reponse) {
       console.log('comment posted');
       return defer.resolve(response.data);
@@ -1060,12 +1060,44 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
       }
     };
   })(this);
+  this.createProject = function() {
+    var c, j, len, ref;
+    this.form.project.tags = [];
+    ref = this.tag_list;
+    for (j = 0, len = ref.length; j < len; j++) {
+      c = ref[j];
+      if (c.selected) {
+        this.form.project.tags.push(c.id);
+      }
+    }
+    this.form.project.status = "Published";
+    if (!this.form.project.solution) {
+      this.form.project.typus = "Problemstellung";
+    } else {
+      this.form.project.typus = "Showcase";
+    }
+    if (this.form.project.cooptext) {
+      this.form.project.coop = true;
+    } else {
+      this.form.project.coop = false;
+    }
+    return Project.createProject(this.form.project);
+  };
   this.form = {};
+  this.form.project = {};
   return this;
 }]);
 
 angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Project", function(instance, Project) {
   this.project = instance;
+  this.comment = "";
+  this.addComment = function() {
+    return Project.postComment(this.project, this.comment).then((function(_this) {
+      return function(response) {
+        return _this.project.comments.push(response);
+      };
+    })(this));
+  };
   return this;
 }]);
 

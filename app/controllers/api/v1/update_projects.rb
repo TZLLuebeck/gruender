@@ -13,20 +13,15 @@ module API
             user_id: current_resource_owner_id,
           )
         # Extract keywords from the dataset.
-        keywords = params[:data][:keywords]
-        params[:data].delete :keywords
+        tags = params[:data][:tags]
+        params[:data].delete :tags
         # Make new Project
         ref = Project.new(params[:data])
-        if params[:data][:guide]
-          ref.typus = "Tutorial"
-        else
-          ref.typus = "Showcase"
-        end
 
-        if keywords
+        if tags
           #If there are keywords, add them to the taglist.
-          keywords.each do |keyword|
-              ref.tag_list.add(keyword)
+          tags.each do |community_id|
+              ref.communities << Community.find(community_id)
           end
         end
         # Initiate the number of established contacts.
@@ -50,8 +45,15 @@ module API
         end
       end
 
+      def post_comment(params)
+        pr = Project.find(params[:id])
+        u = current_resource_owner
+        pr.comments << Comment.new({user_id: u.id, author:u.username, content: params[:content]})
+        pr.save!
+      end
+
       def publish_draft(params)
-        pr = Projects.find(params[:id])
+        pr = Project.find(params[:id])
         valid = true
         # VALIDATION REQUIRED
         if valid
@@ -122,9 +124,9 @@ module API
       def return_project(params)
         pr = Project.find(params[:id])
         if pr
-          pr.serializable_hash.merge(comments: pr.comments, tags: pr.communities)
+          res = pr.serializable_hash.merge(comments: pr.comments, tags: pr.communities)
           status 200
-          {status: 200, data: pr}
+          {status: 200, data: res}
         else
           response = {
             description: 'Es konnte kein passendes Projekt gefunden werden.',
