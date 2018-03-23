@@ -13,7 +13,15 @@ module API
         oauth2
         params do
           requires :name, type: String
-          optional :goal, type: String
+          requires :typus, type: String
+          requires :goal, type: String
+          requires :coop, type: Boolean
+          requires :tags, type: Array
+          optional :problem, type: String
+          optional :solution, type: String
+          optional :cooptext, type: String
+          optional :attachment, type: Rack::Multipart::UploadedFile
+          optional :image, type: Rack::Multipart::UploadedFile
         end
         post '' do
           create_new_draft(params)
