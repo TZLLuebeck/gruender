@@ -5,7 +5,9 @@ module API
 
       def create_post(params)
         p = Post.new(params)
-        p[:user_id] = current_resource_owner_id
+        u = current_resource_owner
+        p[:user_id] = u.id
+        p[:author] = u.username
         if p.save!
           status 200
           {status: 200, data: p}

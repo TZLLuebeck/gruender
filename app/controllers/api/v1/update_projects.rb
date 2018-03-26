@@ -2,6 +2,7 @@ module API
   module V1
     module UpdateProjects
       extend ActiveSupport::Concern
+      require 'sanitize'
 
       #############
       #CREATE
@@ -16,6 +17,7 @@ module API
         tags = params[:data][:tags]
         params[:data].delete :tags
         # Make new Project
+        params[:data][:solution] = Sanitize.fragment(params[:data][:solution], elements: ['p', 'blockquote', 'b', 'i', 'u', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'img', 'ul', 'ol', 'li', 'img'], attributes: {'span' => ['style'], 'img' => ['style', 'src']}, css: {properties: ['color', 'font-family', 'background-color', 'width', 'height']})
         ref = Project.new(params[:data])
 
         if tags

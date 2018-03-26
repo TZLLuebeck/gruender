@@ -108,7 +108,7 @@ ActiveRecord::Schema.define(version: 20180323145933) do
     t.datetime "updated_at", null: false
     t.text "goal"
     t.text "problem"
-    t.text "solution"
+    t.text "solution", limit: 4294967295
     t.boolean "coop"
     t.integer "likes"
     t.string "attachment"

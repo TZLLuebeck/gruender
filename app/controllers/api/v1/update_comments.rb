@@ -5,6 +5,9 @@ module API
 
       def create_comment(params)
         c = Comments.new(params)
+        u = current_resource_owner
+        c[:user_id] = u.id
+        c[:author] = u.username
         if c.save!
           status 200
           {status: 200, data: c}

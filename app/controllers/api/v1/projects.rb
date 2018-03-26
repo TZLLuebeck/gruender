@@ -18,8 +18,8 @@ module API
             requires :goal, type: String
             requires :coop, type: Boolean
             requires :tags, type: Array
-            optional :problem, type: String
-            optional :solution, type: String
+            requires :problem, type: String
+            optional :solution
             optional :cooptext, type: String
             optional :attachment, type: Rack::Multipart::UploadedFile
             optional :image, type: Rack::Multipart::UploadedFile

@@ -55,6 +55,8 @@ gem 'turbolinks'
   gem 'hashie-forbidden_attributes'
 # Use cancancan to handle permissions.
   gem 'cancancan'
+# Use sanitize gem for String sanitization
+  gem 'sanitize'
 
 
 # Use Capistrano for deployment

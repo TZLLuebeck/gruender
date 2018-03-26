@@ -1,6 +1,6 @@
 var app, dependencies;
 
-dependencies = ['ui.router', 'restangular', 'ngStorage', 'permission', 'permission.ui', 'ngFileUpload', 'toaster'];
+dependencies = ['ui.router', 'restangular', 'ngStorage', 'permission', 'permission.ui', 'ngFileUpload', 'toaster', 'ngSanitize'];
 
 app = angular.module('gruenderviertel', dependencies);
 
@@ -315,6 +315,56 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
   });
 }]);
 
+angular.module('gruenderviertel').directive('onScrollToBottom', (function(_this) {
+  return ["$document", "$window", function($document, $window) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        $document.bind("scroll", (function(_this) {
+          return function() {
+            if ($window.pageYOffset + $window.innerHeight >= $document.height()) {
+              return scope.$apply(attrs.onScrollToBottom);
+            }
+          };
+        })(this));
+        return scope.$on('$destroy', function() {
+          return $document.unbind('scroll');
+        });
+      }
+    };
+  }];
+})(this));
+
+angular.module('gruenderviertel').directive('summernote', (function(_this) {
+  return ["$document", "$window", function($document, $window) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        return $document.ready(function() {
+          return $('#summernote').summernote({
+            height: 300,
+            minHeight: 300
+          });
+        });
+      }
+    };
+  }];
+})(this));
+
+angular.module('gruenderviertel').directive('tooltips', (function(_this) {
+  return ["$document", "$window", function($document, $window) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        return $document.ready(function() {
+          $('[data-toggle="tooltip"]').tooltip();
+          return $('[data-toggle="popover"]').popover();
+        });
+      }
+    };
+  }];
+})(this));
+
 angular.module('gruenderviertel').factory('baseREST', ["Rails", "Restangular", function(Rails, Restangular) {
   return Restangular.withConfig(function(RestangularConfigurer) {
     var host;
@@ -516,7 +566,7 @@ angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload"
     packet = baseREST.one('projects').one('comment');
     packet.id = project.id;
     packet.content = content;
-    packet.post().then(function(reponse) {
+    packet.post().then(function(response) {
       console.log('comment posted');
       return defer.resolve(response.data);
     }, function(error) {
@@ -1041,7 +1091,7 @@ angular.module('gruenderviertel').controller('CommunityOverviewCtrl', ["Communit
   return this;
 }]);
 
-angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "Community", function(Project, Community) {
+angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "Community", "$state", function(Project, Community, $state) {
   this.tag_list;
   Community.get_all().then((function(_this) {
     return function(response) {
@@ -1062,6 +1112,7 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
   })(this);
   this.createProject = function() {
     var c, j, len, ref;
+    this.form.project.solution = $('#summernote').summernote('code');
     this.form.project.tags = [];
     ref = this.tag_list;
     for (j = 0, len = ref.length; j < len; j++) {
@@ -1081,7 +1132,11 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
     } else {
       this.form.project.coop = false;
     }
-    return Project.createProject(this.form.project);
+    return Project.createProject(this.form.project).then(function(response) {
+      return $state.go('root.project', {
+        id: response.id
+      });
+    });
   };
   this.form = {};
   this.form.project = {};
@@ -1091,13 +1146,14 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
 angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Project", function(instance, Project) {
   this.project = instance;
   this.comment = "";
-  this.addComment = function() {
-    return Project.postComment(this.project, this.comment).then((function(_this) {
-      return function(response) {
+  this.addComment = (function(_this) {
+    return function() {
+      return Project.postComment(_this.project, _this.comment).then(function(response) {
+        console.log(response);
         return _this.project.comments.push(response);
-      };
-    })(this));
-  };
+      });
+    };
+  })(this);
   return this;
 }]);
 
@@ -1134,6 +1190,54 @@ angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "Token
     });
   };
   return this;
+}]);
+
+angular.module('gruenderviertel').factory('responseInterceptor', ["$q", "$injector", function($q, $injector) {
+  return {
+    responseError: (function(_this) {
+      return function(response) {
+        var deferred, handle;
+        deferred = $q.defer();
+        switch (response.status) {
+          case 400:
+            handle = $injector.get('badrequestHandler');
+            return handle(response, deferred);
+          case 401:
+            handle = $injector.get('unauthorizedHandler');
+            return handle(response, deferred);
+          case 403:
+            handle = $injector.get('forbiddenHandler');
+            return handle(response, deferred);
+          case 404:
+            handle = $injector.get('notfoundHandler');
+            return handle(response, deferred);
+          case 409:
+            handle = $injector.get('conflictHandler');
+            return handle(response, deferred);
+          default:
+            console.log('Other Error');
+            deferred.reject(response);
+            return deferred.promise;
+        }
+        return response;
+      };
+    })(this)
+  };
+}]);
+
+angular.module('gruenderviertel').factory('tokenInterceptor', ["TokenContainer", "Rails", function(TokenContainer, Rails) {
+  return {
+    request: function(config) {
+      var token;
+      if (config.url.indexOf("/api/v1/") === 0) {
+        token = TokenContainer.get();
+        if (token) {
+          config.headers['Authorization'] = "Bearer " + token;
+        }
+      }
+      return config;
+    }
+  };
 }]);
 
 angular.module('gruenderviertel').factory('badrequestHandler', ["$injector", function($injector) {
@@ -1199,53 +1303,5 @@ angular.module('gruenderviertel').factory('unauthorizedHandler', ["$injector", f
     }
     deferred.reject(response);
     return deferred.promise;
-  };
-}]);
-
-angular.module('gruenderviertel').factory('responseInterceptor', ["$q", "$injector", function($q, $injector) {
-  return {
-    responseError: (function(_this) {
-      return function(response) {
-        var deferred, handle;
-        deferred = $q.defer();
-        switch (response.status) {
-          case 400:
-            handle = $injector.get('badrequestHandler');
-            return handle(response, deferred);
-          case 401:
-            handle = $injector.get('unauthorizedHandler');
-            return handle(response, deferred);
-          case 403:
-            handle = $injector.get('forbiddenHandler');
-            return handle(response, deferred);
-          case 404:
-            handle = $injector.get('notfoundHandler');
-            return handle(response, deferred);
-          case 409:
-            handle = $injector.get('conflictHandler');
-            return handle(response, deferred);
-          default:
-            console.log('Other Error');
-            deferred.reject(response);
-            return deferred.promise;
-        }
-        return response;
-      };
-    })(this)
-  };
-}]);
-
-angular.module('gruenderviertel').factory('tokenInterceptor', ["TokenContainer", "Rails", function(TokenContainer, Rails) {
-  return {
-    request: function(config) {
-      var token;
-      if (config.url.indexOf("/api/v1/") === 0) {
-        token = TokenContainer.get();
-        if (token) {
-          config.headers['Authorization'] = "Bearer " + token;
-        }
-      }
-      return config;
-    }
   };
 }]);
