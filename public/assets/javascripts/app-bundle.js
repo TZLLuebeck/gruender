@@ -153,6 +153,9 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
         controller: 'RegistrationCtrl',
         controllerAs: 'reg'
       }
+    },
+    params: {
+      user: null
     }
   }).state('root.profile.editprofile', {
     url: '/edit',
@@ -329,6 +332,24 @@ angular.module('gruenderviertel').directive('onScrollToBottom', (function(_this)
         })(this));
         return scope.$on('$destroy', function() {
           return $document.unbind('scroll');
+        });
+      }
+    };
+  }];
+})(this));
+
+angular.module('gruenderviertel').directive('scrolltop', (function(_this) {
+  return ["$document", "$window", function($document, $window) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        element.bind('click', (function(_this) {
+          return function() {
+            return $window.scrollTo(0, 0);
+          };
+        })(this));
+        return scope.$on('$destroy', function() {
+          return element.unbind('click');
         });
       }
     };
@@ -929,15 +950,23 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
   };
 }]);
 
-angular.module('gruenderviertel').controller('HomeCtrl', ["User", "Project", "Community", "most_used", "featured", function(User, Project, Community, most_used, featured) {
+angular.module('gruenderviertel').controller('HomeCtrl', ["User", "Project", "Community", "most_used", "featured", "$state", function(User, Project, Community, most_used, featured, $state) {
   this.featured = null;
   this.most_used = null;
+  this.form = {};
   this.init = (function(_this) {
     return function() {
       Community.preloadTags();
       _this.featured = angular.copy(featured);
       _this.most_used = angular.copy(most_used);
       return null;
+    };
+  })(this);
+  this.register = (function(_this) {
+    return function() {
+      return $state.go('root.register', {
+        user: _this.form
+      });
     };
   })(this);
   return this.init();
@@ -1091,6 +1120,101 @@ angular.module('gruenderviertel').controller('CommunityOverviewCtrl', ["Communit
   return this;
 }]);
 
+angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state", function(instance, $state) {
+  this.user = instance;
+  this.my_projects = angular.copy(this.user.projects);
+  this.my_comments = angular.copy(this.user.comments);
+  this.my_discussions = angular.copy(this.user.posts);
+  console.log(instance);
+  this.goToComment = function(comment) {
+    if (comment.parent_type === 'Project') {
+      return $state.go('root.project', comment.parent_id);
+    } else {
+      return $state.go('root.community', comment.parent_id);
+    }
+  };
+  return this;
+}]);
+
+angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "TokenContainer", "$state", "$rootScope", "$stateParams", "Community", function(User, TokenContainer, $state, $rootScope, $stateParams, Community) {
+  var user;
+  this.state = 1;
+  user = $stateParams.user;
+  this.community_list = [];
+  this.form = {
+    user: user
+  };
+  this.reg_in_progress = false;
+  this.selected = 0;
+  this.filter = 'Branche';
+  this.init = (function(_this) {
+    return function() {
+      if (user === null) {
+        return $state.go('root.home');
+      } else {
+        return Community.get_all().then(function(response) {
+          return _this.community_list = angular.copy(response);
+        });
+      }
+    };
+  })(this);
+  this.goBack = (function(_this) {
+    return function() {
+      if (_this.state <= 1) {
+        return $state.go('root.home');
+      } else {
+        return _this.state--;
+      }
+    };
+  })(this);
+  this.proceed = (function(_this) {
+    return function() {
+      console.log(_this.form.user);
+      if (_this.state < 4) {
+        return _this.state++;
+      }
+    };
+  })(this);
+  this.selectTag = (function(_this) {
+    return function(community) {
+      var e, i;
+      i = _this.community_list.indexOf(community);
+      e = _this.community_list[i];
+      if (e.selected) {
+        _this.selected--;
+        return e.selected = false;
+      } else {
+        _this.selected++;
+        return e.selected = true;
+      }
+    };
+  })(this);
+  this.select = (function(_this) {
+    return function(input) {
+      console.log('filtering by ' + input);
+      return _this.filter = input;
+    };
+  })(this);
+  this.filterBy = (function(_this) {
+    return function(item) {
+      return item.typus === _this.filter;
+    };
+  })(this);
+  this.register = function() {
+    console.log(this.form);
+    this.reg_in_progress = true;
+    return User.createUser(this.form.user).then(function(response) {
+      $rootScope.$broadcast('user:stateChanged');
+      return $state.go('root.home');
+    }, function(error) {
+      this.reg_in_progress = false;
+      return console.log('RegistrationCtrl.register Error');
+    });
+  };
+  this.init();
+  return this;
+}]);
+
 angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "Community", "$state", function(Project, Community, $state) {
   this.tag_list;
   Community.get_all().then((function(_this) {
@@ -1157,89 +1281,6 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Projec
   return this;
 }]);
 
-angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state", function(instance, $state) {
-  this.user = instance;
-  this.my_projects = angular.copy(this.user.projects);
-  this.my_comments = angular.copy(this.user.comments);
-  this.my_discussions = angular.copy(this.user.posts);
-  console.log(instance);
-  this.goToComment = function(comment) {
-    if (comment.parent_type === 'Project') {
-      return $state.go('root.project', comment.parent_id);
-    } else {
-      return $state.go('root.community', comment.parent_id);
-    }
-  };
-  return this;
-}]);
-
-angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "TokenContainer", "$state", "$rootScope", function(User, TokenContainer, $state, $rootScope) {
-  this.form = {
-    user: {}
-  };
-  this.reg_in_progress = false;
-  this.register = function() {
-    console.log(this.form);
-    this.reg_in_progress = true;
-    return User.createUser(this.form.user).then(function(response) {
-      $rootScope.$broadcast('user:stateChanged');
-      return $state.go('root.home');
-    }, function(error) {
-      this.reg_in_progress = false;
-      return console.log('RegistrationCtrl.register Error');
-    });
-  };
-  return this;
-}]);
-
-angular.module('gruenderviertel').factory('responseInterceptor', ["$q", "$injector", function($q, $injector) {
-  return {
-    responseError: (function(_this) {
-      return function(response) {
-        var deferred, handle;
-        deferred = $q.defer();
-        switch (response.status) {
-          case 400:
-            handle = $injector.get('badrequestHandler');
-            return handle(response, deferred);
-          case 401:
-            handle = $injector.get('unauthorizedHandler');
-            return handle(response, deferred);
-          case 403:
-            handle = $injector.get('forbiddenHandler');
-            return handle(response, deferred);
-          case 404:
-            handle = $injector.get('notfoundHandler');
-            return handle(response, deferred);
-          case 409:
-            handle = $injector.get('conflictHandler');
-            return handle(response, deferred);
-          default:
-            console.log('Other Error');
-            deferred.reject(response);
-            return deferred.promise;
-        }
-        return response;
-      };
-    })(this)
-  };
-}]);
-
-angular.module('gruenderviertel').factory('tokenInterceptor', ["TokenContainer", "Rails", function(TokenContainer, Rails) {
-  return {
-    request: function(config) {
-      var token;
-      if (config.url.indexOf("/api/v1/") === 0) {
-        token = TokenContainer.get();
-        if (token) {
-          config.headers['Authorization'] = "Bearer " + token;
-        }
-      }
-      return config;
-    }
-  };
-}]);
-
 angular.module('gruenderviertel').factory('badrequestHandler', ["$injector", function($injector) {
   var handle;
   return handle = function(response, deferred) {
@@ -1303,5 +1344,53 @@ angular.module('gruenderviertel').factory('unauthorizedHandler', ["$injector", f
     }
     deferred.reject(response);
     return deferred.promise;
+  };
+}]);
+
+angular.module('gruenderviertel').factory('responseInterceptor', ["$q", "$injector", function($q, $injector) {
+  return {
+    responseError: (function(_this) {
+      return function(response) {
+        var deferred, handle;
+        deferred = $q.defer();
+        switch (response.status) {
+          case 400:
+            handle = $injector.get('badrequestHandler');
+            return handle(response, deferred);
+          case 401:
+            handle = $injector.get('unauthorizedHandler');
+            return handle(response, deferred);
+          case 403:
+            handle = $injector.get('forbiddenHandler');
+            return handle(response, deferred);
+          case 404:
+            handle = $injector.get('notfoundHandler');
+            return handle(response, deferred);
+          case 409:
+            handle = $injector.get('conflictHandler');
+            return handle(response, deferred);
+          default:
+            console.log('Other Error');
+            deferred.reject(response);
+            return deferred.promise;
+        }
+        return response;
+      };
+    })(this)
+  };
+}]);
+
+angular.module('gruenderviertel').factory('tokenInterceptor', ["TokenContainer", "Rails", function(TokenContainer, Rails) {
+  return {
+    request: function(config) {
+      var token;
+      if (config.url.indexOf("/api/v1/") === 0) {
+        token = TokenContainer.get();
+        if (token) {
+          config.headers['Authorization'] = "Bearer " + token;
+        }
+      }
+      return config;
+    }
   };
 }]);
