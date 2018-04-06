@@ -1120,101 +1120,6 @@ angular.module('gruenderviertel').controller('CommunityOverviewCtrl', ["Communit
   return this;
 }]);
 
-angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state", function(instance, $state) {
-  this.user = instance;
-  this.my_projects = angular.copy(this.user.projects);
-  this.my_comments = angular.copy(this.user.comments);
-  this.my_discussions = angular.copy(this.user.posts);
-  console.log(instance);
-  this.goToComment = function(comment) {
-    if (comment.parent_type === 'Project') {
-      return $state.go('root.project', comment.parent_id);
-    } else {
-      return $state.go('root.community', comment.parent_id);
-    }
-  };
-  return this;
-}]);
-
-angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "TokenContainer", "$state", "$rootScope", "$stateParams", "Community", function(User, TokenContainer, $state, $rootScope, $stateParams, Community) {
-  var user;
-  this.state = 1;
-  user = $stateParams.user;
-  this.community_list = [];
-  this.form = {
-    user: user
-  };
-  this.reg_in_progress = false;
-  this.selected = 0;
-  this.filter = 'Branche';
-  this.init = (function(_this) {
-    return function() {
-      if (user === null) {
-        return $state.go('root.home');
-      } else {
-        return Community.get_all().then(function(response) {
-          return _this.community_list = angular.copy(response);
-        });
-      }
-    };
-  })(this);
-  this.goBack = (function(_this) {
-    return function() {
-      if (_this.state <= 1) {
-        return $state.go('root.home');
-      } else {
-        return _this.state--;
-      }
-    };
-  })(this);
-  this.proceed = (function(_this) {
-    return function() {
-      console.log(_this.form.user);
-      if (_this.state < 4) {
-        return _this.state++;
-      }
-    };
-  })(this);
-  this.selectTag = (function(_this) {
-    return function(community) {
-      var e, i;
-      i = _this.community_list.indexOf(community);
-      e = _this.community_list[i];
-      if (e.selected) {
-        _this.selected--;
-        return e.selected = false;
-      } else {
-        _this.selected++;
-        return e.selected = true;
-      }
-    };
-  })(this);
-  this.select = (function(_this) {
-    return function(input) {
-      console.log('filtering by ' + input);
-      return _this.filter = input;
-    };
-  })(this);
-  this.filterBy = (function(_this) {
-    return function(item) {
-      return item.typus === _this.filter;
-    };
-  })(this);
-  this.register = function() {
-    console.log(this.form);
-    this.reg_in_progress = true;
-    return User.createUser(this.form.user).then(function(response) {
-      $rootScope.$broadcast('user:stateChanged');
-      return $state.go('root.home');
-    }, function(error) {
-      this.reg_in_progress = false;
-      return console.log('RegistrationCtrl.register Error');
-    });
-  };
-  this.init();
-  return this;
-}]);
-
 angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "Community", "$state", function(Project, Community, $state) {
   this.tag_list;
   Community.get_all().then((function(_this) {
@@ -1278,6 +1183,108 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Projec
       });
     };
   })(this);
+  return this;
+}]);
+
+angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state", function(instance, $state) {
+  this.user = instance;
+  this.my_projects = angular.copy(this.user.projects);
+  this.my_comments = angular.copy(this.user.comments);
+  this.my_discussions = angular.copy(this.user.posts);
+  console.log(instance);
+  this.goToComment = function(comment) {
+    if (comment.parent_type === 'Project') {
+      return $state.go('root.project', comment.parent_id);
+    } else {
+      return $state.go('root.community', comment.parent_id);
+    }
+  };
+  return this;
+}]);
+
+angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "TokenContainer", "$state", "$rootScope", "$stateParams", "Community", function(User, TokenContainer, $state, $rootScope, $stateParams, Community) {
+  this.state = 1;
+  this.user = $stateParams.user;
+  this.community_list = [];
+  this.form = {};
+  this.reg_in_progress = false;
+  this.selected = 0;
+  this.filter = 'Branche';
+  this.init = (function(_this) {
+    return function() {
+      if (_this.user !== null) {
+        _this.state++;
+        _this.form.user = _this.user;
+      }
+      return Community.get_all().then(function(response) {
+        return _this.community_list = angular.copy(response);
+      });
+    };
+  })(this);
+  this.goBack = (function(_this) {
+    return function() {
+      if (_this.state <= 0) {
+        return $state.go('root.home');
+      } else {
+        return _this.state--;
+      }
+    };
+  })(this);
+  this.proceed = (function(_this) {
+    return function() {
+      console.log(_this.form.user);
+      if (_this.state < 5) {
+        return _this.state++;
+      }
+    };
+  })(this);
+  this.selectTag = (function(_this) {
+    return function(community) {
+      var e, i;
+      i = _this.community_list.indexOf(community);
+      e = _this.community_list[i];
+      if (e.selected) {
+        _this.selected--;
+        return e.selected = false;
+      } else {
+        _this.selected++;
+        return e.selected = true;
+      }
+    };
+  })(this);
+  this.select = (function(_this) {
+    return function(input) {
+      console.log('filtering by ' + input);
+      return _this.filter = input;
+    };
+  })(this);
+  this.filterBy = (function(_this) {
+    return function(item) {
+      return item.typus === _this.filter;
+    };
+  })(this);
+  this.register = function() {
+    var c, community, j, len, ref;
+    console.log(this.form);
+    this.reg_in_progress = true;
+    c = [];
+    ref = this.community_list;
+    for (j = 0, len = ref.length; j < len; j++) {
+      community = ref[j];
+      if (community.selected) {
+        c.push(community.id);
+      }
+    }
+    this.form.user.subs = c;
+    return User.createUser(this.form.user).then(function(response) {
+      $rootScope.$broadcast('user:stateChanged');
+      return $state.go('root.home');
+    }, function(error) {
+      this.reg_in_progress = false;
+      return console.log('RegistrationCtrl.register Error');
+    });
+  };
+  this.init();
   return this;
 }]);
 

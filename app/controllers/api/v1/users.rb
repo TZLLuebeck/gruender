@@ -39,6 +39,13 @@ module API
             requires :email, type: String
             requires :password, type: String
             requires :password_confirmation, type: String
+            requires :name, type: String
+            requires :location, type: String
+            requires :web, type: String
+            requires :description, type: String
+            requires :subs, type: {value: Array, message: "Not an Array."}
+            optional :logo, type: Rack::Multipart::UploadedFile            
+            optional :fon, type: String
           end
         end
         post '/' do

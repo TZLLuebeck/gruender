@@ -44,9 +44,18 @@ module API
           error!(response, 409)
           else 
             par = params[:data]
+            subs = par[:subs]
+            par.delete :subs
 
             # create the User in the database
             u = User.new(par)
+
+            subs.each do |community_id|
+              u.communities << community_id
+            end
+
+
+
             if u.save
               # Create an initial AccessToken to remember the user by and return the token and the user object, so the User is directly logged in.
               token = Doorkeeper::AccessToken.create!(

@@ -1,0 +1,128 @@
+[ N 2018-04-03 14:40:23.7410 5124/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-03 14:40:23.7657 5127/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-03 14:40:23.7659 5127/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-03 14:40:23.7749 5127/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 5127
+App 5159 stdout: 
+[ N 2018-04-03 14:40:26.8609 5127/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 5181 stdout: 
+App 5203 stdout: 
+
+[ N 2018-04-03 14:42:51.0951 5127/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-03 14:42:51.0952 5127/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-03 14:42:51.0952 5127/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5181, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-03 14:42:51.0960 5127/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5203, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-03 14:42:51.0960 5127/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-03 14:42:51.0961 5127/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-03 14:42:51.0961 5127/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-03 14:42:51.0961 5127/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-03 14:42:51.0961 5127/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5181, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-03 14:42:51.0962 5127/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5203, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-03 14:42:51.8444 5127/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-03 15:24:35.6159 3449/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-03 15:24:35.6528 3452/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-03 15:24:35.6541 3452/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-03 15:24:35.6967 3452/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3452
+App 3490 stdout: 
+[ N 2018-04-03 15:24:38.2119 3452/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3514 stdout: 
+App 3595 stdout: 
+[ N 2018-04-03 15:30:16.2542 3452/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3595, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-03 16:04:21.8941 3452/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-03 16:04:21.8942 3452/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-03 16:04:21.8943 3452/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3514, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-03 16:04:21.8951 3452/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-03 16:04:21.8951 3452/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-03 16:04:21.8952 3452/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-03 16:04:21.8952 3452/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-03 16:04:21.8953 3452/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3514, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-03 16:04:22.6342 3452/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-05 13:06:09.9896 3339/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-05 13:06:10.1911 3342/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-05 13:06:10.2087 3342/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-05 13:06:10.5177 3342/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3342
+App 3380 stdout: 
+[ N 2018-04-05 13:06:13.2819 3342/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3411 stdout: 
+App 6677 stdout: 
+App 6703 stdout: 
+App 3411 stdout: Rescue Team to the Rescue!
+[ N 2018-04-05 14:59:21.9733 3342/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6703, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-05 15:11:38.4346 3342/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-05 15:11:38.4347 3342/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-05 15:11:38.4348 3342/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3411, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-05 15:11:38.4349 3342/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-05 15:11:38.4349 3342/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-05 15:11:38.4350 3342/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-05 15:11:38.4350 3342/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-05 15:11:38.4351 3342/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3411, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-05 15:11:39.1815 3342/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-05 15:12:00.9546 7696/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-05 15:12:00.9801 7699/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-05 15:12:00.9808 7699/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-05 15:12:00.9894 7699/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 7699
+App 7737 stdout: 
+[ N 2018-04-05 15:12:03.4390 7699/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 7761 stdout: 
+
+[ N 2018-04-05 15:14:01.2378 7699/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-05 15:14:01.2379 7699/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-05 15:14:01.2379 7699/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7761, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-05 15:14:01.2380 7699/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-05 15:14:01.2380 7699/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-05 15:14:01.2381 7699/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-05 15:14:01.2382 7699/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-05 15:14:01.2382 7699/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7761, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-05 15:14:01.9738 7699/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-05 15:14:17.4215 7927/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-05 15:14:17.4474 7930/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-05 15:14:17.4476 7930/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-05 15:14:17.4557 7930/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 7930
+App 7968 stdout: 
+[ N 2018-04-05 15:14:19.9146 7930/T5 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 7992 stdout: 
+
+[ N 2018-04-05 15:34:07.6125 7930/T8 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-05 15:34:07.6126 7930/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-05 15:34:07.6127 7930/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7992, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-05 15:34:07.6127 7930/T8 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-05 15:34:07.6128 7930/T8 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-05 15:34:07.6129 7930/Ta Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-05 15:34:07.6130 7930/Ta Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-05 15:34:07.6131 7930/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7992, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-05 15:34:08.3538 7930/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-06 13:11:56.5108 11892/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-06 13:11:56.5595 11895/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-06 13:11:56.5609 11895/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-06 13:11:56.5916 11895/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 11895
+App 11933 stdout: 
+[ N 2018-04-06 13:11:59.2622 11895/T6 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 11957 stdout: 
+
+[ N 2018-04-06 13:26:30.0832 11895/T8 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-06 13:26:30.0833 11895/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-06 13:26:30.0833 11895/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 11957, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-06 13:26:30.0834 11895/T8 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-06 13:26:30.0834 11895/T8 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-06 13:26:30.0835 11895/Ta Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-06 13:26:30.0835 11895/Ta Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-06 13:26:30.0836 11895/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 11957, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-06 13:26:30.8360 11895/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-06 13:26:31.4560 12527/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-06 13:26:31.5107 12530/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-06 13:26:31.5109 12530/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-06 13:26:31.5249 12530/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 12530
+App 12568 stdout: 
+[ N 2018-04-06 13:26:33.9374 12530/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 12592 stdout: 
+
+[ N 2018-04-06 15:33:33.8447 12530/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-06 15:33:33.8449 12530/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-06 15:33:33.8449 12530/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 12592, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-06 15:33:33.8452 12530/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-06 15:33:33.8452 12530/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-06 15:33:33.8455 12530/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-06 15:33:33.8455 12530/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-06 15:33:33.8456 12530/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 12592, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-06 15:33:34.5846 12530/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
