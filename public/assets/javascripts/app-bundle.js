@@ -750,8 +750,7 @@ angular.module('gruenderviertel').service('TokenContainer', ["$localStorage", "R
   deleteToken = function() {
     delete $localStorage.token;
     return $timeout(function() {
-      $rootScope.$broadcast('user:token_invalid');
-      return $rootScope.$broadcast('user:stateChanged');
+      return $rootScope.$broadcast('user:token_invalid');
     });
   };
   return {
@@ -767,51 +766,48 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
   this.user = null;
   this.deferreds = {};
   this.unauthorized = true;
-  createUser = function(user) {
-    var defer;
-    console.log("Registering.");
-    console.log(user);
-    defer = $q.defer();
-    Upload.upload({
-      url: '/api/v1/users/',
-      data: {
-        data: user
-      }
-    }).then((function(_this) {
-      return function(response) {
+  createUser = (function(_this) {
+    return function(user) {
+      var defer;
+      console.log("Registering.");
+      console.log(user);
+      defer = $q.defer();
+      Upload.upload({
+        url: '/api/v1/users/',
+        data: {
+          data: user
+        }
+      }).then(function(response) {
         console.log(response.data.data);
         _this.user = response.data.data.user;
         TokenContainer.set(response.data.data.token);
         _this.unauthorized = false;
         return defer.resolve(_this.user);
-      };
-    })(this), (function(_this) {
-      return function(error) {
+      }, function(error) {
         return defer.reject(error);
-      };
-    })(this));
-    return defer.promise;
-  };
-  login = function(form) {
-    var defer, packet;
-    defer = $q.defer();
-    packet = baseREST.one('users').one('login');
-    packet.data = {};
-    packet.data.username = form.username;
-    packet.data.password = form.password;
-    return packet.post().then((function(_this) {
-      return function(response) {
+      });
+      return defer.promise;
+    };
+  })(this);
+  login = (function(_this) {
+    return function(form) {
+      var defer, packet;
+      defer = $q.defer();
+      packet = baseREST.one('users').one('login');
+      packet.data = {};
+      packet.data.username = form.username;
+      packet.data.password = form.password;
+      packet.post().then(function(response) {
         _this.user = response.data.user;
         TokenContainer.set(response.data.token);
         _this.unauthorized = false;
         return defer.resolve(_this.user);
-      };
-    })(this), (function(_this) {
-      return function(error) {
+      }, function(error) {
         return defer.reject(error);
-      };
-    })(this));
-  };
+      });
+      return defer.promise;
+    };
+  })(this);
   getAll = function() {
     var defer;
     defer = $q.defer();
@@ -907,6 +903,7 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
         _this.user = null;
         console.log(_this.user);
         _this.unauthorized = true;
+        $rootScope.$broadcast('user:stateChanged');
         return defer.resolve(response);
       }, function(error) {
         return defer.reject(error);
@@ -950,15 +947,30 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
   };
 }]);
 
-angular.module('gruenderviertel').controller('HomeCtrl', ["User", "Project", "Community", "most_used", "featured", "$state", function(User, Project, Community, most_used, featured, $state) {
+angular.module('gruenderviertel').controller('HomeCtrl', ["$rootScope", "TokenContainer", "User", "Project", "Community", "most_used", "featured", "$state", function($rootScope, TokenContainer, User, Project, Community, most_used, featured, $state) {
   this.featured = null;
   this.most_used = null;
   this.form = {};
+  this.isAuthenticated = User.isAuthenticated();
+  $rootScope.$on('user:stateChanged', (function(_this) {
+    return function(e, state, params) {
+      console.log("Hometrl user:StateChanged");
+      _this.isAuthenticated = User.isAuthenticated();
+      return console.log(_this.isAuthenticated);
+    };
+  })(this));
+  this.setLoggedIn = (function(_this) {
+    return function(isLoggedIn) {
+      _this.isAuthenticated = !!isLoggedIn;
+      return console.log('Logged In Status: ' + _this.isAuthenticated);
+    };
+  })(this);
   this.init = (function(_this) {
     return function() {
       Community.preloadTags();
       _this.featured = angular.copy(featured);
       _this.most_used = angular.copy(most_used);
+      console.log("HomeCtrl Initialized");
       return null;
     };
   })(this);
@@ -988,11 +1000,10 @@ angular.module('gruenderviertel').controller('NavCtrl', ["User", "$rootScope", "
     };
   })(this));
   this.init = function() {
-    console.log("Initializing NavCtrl");
     this.setLoggedIn(TokenContainer.get());
     this.setUsername();
     this.isAdmin();
-    return console.log("Nav Controller Initialized");
+    return console.log("NavCtrl Initialized");
   };
   this.login = function() {
     return User.login(this.form).then(function(response) {
@@ -1121,6 +1132,7 @@ angular.module('gruenderviertel').controller('CommunityOverviewCtrl', ["Communit
 }]);
 
 angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "Community", "$state", function(Project, Community, $state) {
+  this.step = 1;
   this.tag_list;
   Community.get_all().then((function(_this) {
     return function(response) {
@@ -1136,6 +1148,23 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
         return e.selected = false;
       } else {
         return e.selected = true;
+      }
+    };
+  })(this);
+  this.goBack = (function(_this) {
+    return function() {
+      if (_this.step <= 0) {
+        return $state.go('root.home');
+      } else {
+        return _this.step--;
+      }
+    };
+  })(this);
+  this.proceed = (function(_this) {
+    return function() {
+      console.log(_this.form.user);
+      if (_this.step < 3) {
+        return _this.step++;
       }
     };
   })(this);
@@ -1275,10 +1304,11 @@ angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "Token
         c.push(community.id);
       }
     }
-    this.form.user.subs = c;
+    this.form.user.subscriptions = c;
     return User.createUser(this.form.user).then(function(response) {
       $rootScope.$broadcast('user:stateChanged');
-      return $state.go('root.home');
+      $state.go('root.home');
+      return this.reg_in_progress = false;
     }, function(error) {
       this.reg_in_progress = false;
       return console.log('RegistrationCtrl.register Error');

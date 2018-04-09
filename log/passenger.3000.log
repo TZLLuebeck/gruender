@@ -126,3 +126,81 @@ App 12592 stdout:
 [ N 2018-04-06 15:33:33.8455 12530/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
 [ N 2018-04-06 15:33:33.8456 12530/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 12592, application /home/tobias/projekte/webdev/gruender (development)
 [ N 2018-04-06 15:33:34.5846 12530/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-09 13:20:36.5411 3312/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-09 13:20:36.5892 3315/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-09 13:20:36.5901 3315/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-09 13:20:36.6242 3315/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3315
+App 3354 stdout: 
+[ N 2018-04-09 13:20:39.3141 3315/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3382 stdout: 
+App 3389 stdout: 
+App 3410 stdout: 
+[ N 2018-04-09 13:25:49.8142 3315/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3389, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-09 13:25:50.5910 3315/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3410, application /home/tobias/projekte/webdev/gruender (development)
+App 3382 stdout: Rescue Team to the Rescue!
+App 3382 stdout: Rescue Team to the Rescue!
+App 3382 stdout: Rescue Team to the Rescue!
+App 3382 stdout: Rescue Team to the Rescue!
+App 3382 stdout: {"0"=>"1", "1"=>"2", "2"=>"3", "3"=>"14", "4"=>"15", "5"=>"16"}
+App 3382 stdout: ["0", "1"]
+App 3382 stdout: Rescue Team to the Rescue!
+App 3382 stdout: {"0"=>"1", "1"=>"2", "2"=>"3", "3"=>"14", "4"=>"15", "5"=>"16"}
+App 3382 stdout: "1"
+App 3382 stdout: "2"
+App 3382 stdout: "3"
+App 3382 stdout: "14"
+App 3382 stdout: "15"
+App 3382 stdout: "16"
+App 3382 stdout: Rescue Team to the Rescue!
+App 5362 stdout: 
+App 5392 stdout: 
+
+[ N 2018-04-09 14:18:03.1893 3315/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-09 14:18:03.1894 3315/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-09 14:18:03.1895 3315/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3382, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-09 14:18:03.1896 3315/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5392, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-09 14:18:03.1896 3315/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-09 14:18:03.1897 3315/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-09 14:18:03.1897 3315/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-09 14:18:03.1898 3315/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-09 14:18:03.1898 3315/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3382, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-09 14:18:03.1899 3315/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5392, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-09 14:18:03.9346 3315/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-09 14:18:05.2514 5536/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-09 14:18:05.2991 5539/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-09 14:18:05.2993 5539/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-09 14:18:05.3076 5539/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 5539
+App 5578 stdout: 
+[ N 2018-04-09 14:18:07.8244 5539/T5 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 5602 stdout: 
+App 5615 stdout: 
+App 5602 stdout: {"0"=>"1", "1"=>"2", "2"=>"3", "3"=>"14", "4"=>"15", "5"=>"16"}
+App 5602 stdout: "1"
+App 5602 stdout: "2"
+App 5602 stdout: "3"
+App 5602 stdout: "14"
+App 5602 stdout: "15"
+App 5602 stdout: "16"
+App 5602 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "updated_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>true, :members=>#<ActiveRecord::Associations::CollectionProxy [#<User id: 2, username: "Olafson LLC", created_at: "2018-04-09 12:13:25", updated_at: "2018-04-09 12:13:25", email: "elvira@olafson.dk", description: "Hammerfest-Veranstalter", logo: nil, name: "Elvira Olafson", web: "www.olafson.dk", fon: nil, location: "Hammerfest", role: nil>, #<User id: 3, username: "Olafson GmbH", created_at: "2018-04-09 12:21:29", updated_at: "2018-04-09 12:21:29", email: "olaf@olafson.dk", description: "Hammerfest-Veranstalter", logo: nil, name: "Olaf Olafson", web: "www.olafson.dk", fon: nil, location: "Hammerfest", role: nil>]>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-05 13:14:08", updated_at: "2018-04-05 13:14:08", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: 3, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>2, :project_count=>1, :discussions=>#<ActiveRecord::Associations::CollectionProxy []>}
+App 5602 stdout: {"id"=>2, "name"=>"Handel\n ", "created_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "updated_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Handel.svg", "typus"=>"Branche", :subscribed=>true, :members=>#<ActiveRecord::Associations::CollectionProxy [#<User id: 2, username: "Olafson LLC", created_at: "2018-04-09 12:13:25", updated_at: "2018-04-09 12:13:25", email: "elvira@olafson.dk", description: "Hammerfest-Veranstalter", logo: nil, name: "Elvira Olafson", web: "www.olafson.dk", fon: nil, location: "Hammerfest", role: nil>, #<User id: 3, username: "Olafson GmbH", created_at: "2018-04-09 12:21:29", updated_at: "2018-04-09 12:21:29", email: "olaf@olafson.dk", description: "Hammerfest-Veranstalter", logo: nil, name: "Olaf Olafson", web: "www.olafson.dk", fon: nil, location: "Hammerfest", role: nil>]>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>2, :project_count=>0, :discussions=>#<ActiveRecord::Associations::CollectionProxy []>}
+App 5602 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "updated_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>true, :members=>#<ActiveRecord::Associations::CollectionProxy [#<User id: 2, username: "Olafson LLC", created_at: "2018-04-09 12:13:25", updated_at: "2018-04-09 12:13:25", email: "elvira@olafson.dk", description: "Hammerfest-Veranstalter", logo: nil, name: "Elvira Olafson", web: "www.olafson.dk", fon: nil, location: "Hammerfest", role: nil>, #<User id: 3, username: "Olafson GmbH", created_at: "2018-04-09 12:21:29", updated_at: "2018-04-09 12:21:29", email: "olaf@olafson.dk", description: "Hammerfest-Veranstalter", logo: nil, name: "Olaf Olafson", web: "www.olafson.dk", fon: nil, location: "Hammerfest", role: nil>]>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>2, :project_count=>0, :discussions=>#<ActiveRecord::Associations::CollectionProxy []>}
+[ N 2018-04-09 14:26:30.6871 5539/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5615, application /home/tobias/projekte/webdev/gruender (development)
+App 6248 stdout: 
+App 6275 stdout: 
+[ N 2018-04-09 14:43:36.7305 5539/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6275, application /home/tobias/projekte/webdev/gruender (development)
+App 6641 stdout: 
+App 6670 stdout: 
+[ N 2018-04-09 14:51:16.4631 5539/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6670, application /home/tobias/projekte/webdev/gruender (development)
+App 7111 stdout: 
+App 7140 stdout: 
+[ N 2018-04-09 15:02:38.4759 5539/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7140, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-09 15:56:22.9940 5539/T8 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-09 15:56:22.9941 5539/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-09 15:56:22.9941 5539/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5602, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-09 15:56:22.9942 5539/T8 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-09 15:56:22.9942 5539/T8 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-09 15:56:22.9943 5539/Ta Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-09 15:56:22.9943 5539/Ta Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-09 15:56:22.9944 5539/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5602, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-09 15:56:23.8750 5539/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished

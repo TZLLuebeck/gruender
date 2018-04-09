@@ -1039,3 +1039,1620 @@ Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
 Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-06 13:26:52 +0200
   [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
 Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-06 13:28:22 +0200
+Started HEAD "/" for 127.0.0.1 at 2018-04-09 13:20:49 +0200
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 13:20:49 +0200
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 13:20:50 +0200
+  [1m[35m (7.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (25.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  [1m[35m (6.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  Rendering home/index.html.erb within layouts/index
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (8.6ms)
+  Rendered home/index.html.erb within layouts/index (8.7ms)
+Completed 200 OK in 63ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 67ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 13:21:05 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 13:21:07 +0200
+  [1m[36mCommunity Load (2.0ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 13:22:22 +0200
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 13:30:19 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (6.4ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 13:30:22 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 13:31:01 +0200
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 13:33:54 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 13:33:58 +0200
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 13:34:34 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 13:34:37 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 13:35:15 +0200
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 13:41:21 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (2.2ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 13:41:24 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 13:42:02 +0200
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 13:46:13 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 13:46:17 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 13:48:25 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 13:48:28 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 13:49:16 +0200
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 14:01:16 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:01:19 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 14:02:02 +0200
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'Olafson LLC' LIMIT 1[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'elvira@olafson.dk' LIMIT 1[0m
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'subscriptions' for User.):
+  
+app/controllers/api/v1/update_users.rb:51:in `create_user'
+app/controllers/api/v1/users.rb:52:in `block (2 levels) in <class:Users>'
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 14:04:16 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (2.2ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:04:19 +0200
+  [1m[36mCommunity Load (2.0ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 14:05:00 +0200
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'Olafson LLC' LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'elvira@olafson.dk' LIMIT 1[0m
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/api/v1/update_users.rb:54:in `block in create_user'
+app/controllers/api/v1/update_users.rb:53:in `each'
+app/controllers/api/v1/update_users.rb:53:in `create_user'
+app/controllers/api/v1/users.rb:52:in `block (2 levels) in <class:Users>'
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 14:08:34 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:08:38 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 14:09:11 +0200
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 't.braun1990@gmx.de' LIMIT 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'elvira@olafson.dk' LIMIT 1[0m
+  
+ActiveRecord::AssociationTypeMismatch (Community(#69847853663140) expected, got "0" which is an instance of String(#47403667430940)):
+  
+app/controllers/api/v1/update_users.rb:54:in `block in create_user'
+app/controllers/api/v1/update_users.rb:53:in `each'
+app/controllers/api/v1/update_users.rb:53:in `create_user'
+app/controllers/api/v1/users.rb:52:in `block (2 levels) in <class:Users>'
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 14:09:49 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (2.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:09:53 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 14:10:31 +0200
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'Olafson LLC' LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'elvira@olafson.dk' LIMIT 1[0m
+  [1m[36mCommunity Load (71.9ms)[0m  [1m[34mSELECT `communities`.* FROM `communities` WHERE `communities`.`id` IN (0, 1)[0m
+  
+ActiveRecord::RecordNotFound (Couldn't find all Communities with 'id': (0, 1) (found 1 results, but was looking for 2)):
+  
+app/controllers/api/v1/update_users.rb:54:in `block in create_user'
+app/controllers/api/v1/update_users.rb:53:in `each'
+app/controllers/api/v1/update_users.rb:53:in `create_user'
+app/controllers/api/v1/users.rb:52:in `block (2 levels) in <class:Users>'
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 14:11:27 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:11:30 +0200
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 14:12:10 +0200
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'Olafson LLC' LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'elvira@olafson.dk' LIMIT 1[0m
+  [1m[36mCommunity Load (0.6ms)[0m  [1m[34mSELECT `communities`.* FROM `communities` WHERE `communities`.`id` IN (0, 1)[0m
+  
+ActiveRecord::RecordNotFound (Couldn't find all Communities with 'id': (0, 1) (found 1 results, but was looking for 2)):
+  
+app/controllers/api/v1/update_users.rb:56:in `block in create_user'
+app/controllers/api/v1/update_users.rb:54:in `each'
+app/controllers/api/v1/update_users.rb:54:in `create_user'
+app/controllers/api/v1/users.rb:52:in `block (2 levels) in <class:Users>'
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 14:12:41 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (4.3ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:12:45 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 14:13:25 +0200
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'Olafson LLC' LIMIT 1[0m
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'elvira@olafson.dk' LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 1 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 2 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 3 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 14 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 15 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 16 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'elvira@olafson.dk' LIMIT 1[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO `users` (`username`, `created_at`, `updated_at`, `email`, `encrypted_password`, `description`, `name`, `web`, `location`) VALUES ('Olafson LLC', '2018-04-09 12:13:25', '2018-04-09 12:13:25', 'elvira@olafson.dk', '$2a$11$6tfNnaPH75wAOS8NvXHmh.nwNv4yTW9Te7etahbGbeVL22wtSGjE.', 'Hammerfest-Veranstalter', 'Elvira Olafson', 'www.olafson.dk', 'Hammerfest')[0m
+  [1m[35mSQL (38.2ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (2, 1)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (2, 2)[0m
+  [1m[35mSQL (30.0ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (2, 3)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (2, 14)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (2, 15)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (2, 16)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (0.3ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY '0ad88e9a4ffe06478a40e990a6430c3d8291e90a1428938af74d2d63589b6c50' LIMIT 1[0m
+  [1m[35mSQL (62.1ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (2, 1, '0ad88e9a4ffe06478a40e990a6430c3d8291e90a1428938af74d2d63589b6c50', 86400, '2018-04-09 12:13:25', 'all')[0m
+  [1m[35m (13.2ms)[0m  [1m[31mROLLBACK[0m
+  
+ActiveRecord::InvalidForeignKey (Mysql2::Error: Cannot add or update a child row: a foreign key constraint fails (`db_83492517n1`.`oauth_access_tokens`, CONSTRAINT `fk_rails_732cb83ab7` FOREIGN KEY (`application_id`) REFERENCES `oauth_applications` (`id`)): INSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (2, 1, '0ad88e9a4ffe06478a40e990a6430c3d8291e90a1428938af74d2d63589b6c50', 86400, '2018-04-09 12:13:25', 'all')):
+  
+app/controllers/api/v1/update_users.rb:63:in `create_user'
+app/controllers/api/v1/users.rb:52:in `block (2 levels) in <class:Users>'
+Started GET "/oauth2" for 127.0.0.1 at 2018-04-09 14:16:05 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"oauth2"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.8ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:16:08 +0200
+  [1m[36mCommunity Load (13.7ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:16:08 +0200
+  [1m[36mProject Load (12.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:16:09 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:16:10 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/" for 127.0.0.1 at 2018-04-09 14:16:16 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"oauth"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.8ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:16:18 +0200
+  [1m[36mCommunity Load (2.2ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:16:18 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:16:19 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:16:19 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/applications" for 127.0.0.1 at 2018-04-09 14:16:49 +0200
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  Rendering /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin
+  [1m[36mDoorkeeper::Application Load (2.1ms)[0m  [1m[34mSELECT `oauth_applications`.* FROM `oauth_applications`[0m
+  Rendered /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin (5.0ms)
+Completed 200 OK in 702ms (Views: 693.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/oauth/applications/new" for 127.0.0.1 at 2018-04-09 14:16:52 +0200
+Processing by Doorkeeper::ApplicationsController#new as HTML
+  Rendering /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/new.html.erb within layouts/doorkeeper/admin
+  Rendered /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_form.html.erb (58.6ms)
+  Rendered /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/new.html.erb within layouts/doorkeeper/admin (65.9ms)
+Completed 200 OK in 124ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/oauth/applications" for 127.0.0.1 at 2018-04-09 14:17:02 +0200
+Processing by Doorkeeper::ApplicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"45/3Wte4ymnJ6uPJ3a5/jj2sAL4BIS26ElvrTjhtzxsLFvdE2lnRx74Bp/DTzm3uRJjZEUv7S/OGA9GxpDSi+A==", "doorkeeper_application"=>{"name"=>"Gründerviertel", "redirect_uri"=>"urn:ietf:wg:oauth:2.0:oob", "scopes"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Exists (2.1ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_applications` WHERE `oauth_applications`.`uid` = BINARY 'aab6f825257f80bdc0eaf6b23051f4da6bb407075fd45416c04ffc9d59d5aee4' LIMIT 1[0m
+  [1m[35mSQL (5.4ms)[0m  [1m[32mINSERT INTO `oauth_applications` (`name`, `uid`, `secret`, `redirect_uri`, `created_at`, `updated_at`) VALUES ('Gründerviertel', 'aab6f825257f80bdc0eaf6b23051f4da6bb407075fd45416c04ffc9d59d5aee4', '298aed67f0aefed1e68199d475bd3742a5cabf64134283f7364cc25c66a4ab21', 'urn:ietf:wg:oauth:2.0:oob', '2018-04-09 12:17:02', '2018-04-09 12:17:02')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/oauth/applications/1
+Completed 302 Found in 18ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/oauth/applications/1" for 127.0.0.1 at 2018-04-09 14:17:02 +0200
+Processing by Doorkeeper::ApplicationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  Rendering /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/show.html.erb within layouts/doorkeeper/admin
+  Rendered /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (2.1ms)
+  Rendered /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/show.html.erb within layouts/doorkeeper/admin (18.7ms)
+Completed 200 OK in 84ms (Views: 70.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oauth/authorize?client_id=aab6f825257f80bdc0eaf6b23051f4da6bb407075fd45416c04ffc9d59d5aee4&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&scope=" for 127.0.0.1 at 2018-04-09 14:17:07 +0200
+Processing by Doorkeeper::AuthorizationsController#new as HTML
+  Parameters: {"client_id"=>"aab6f825257f80bdc0eaf6b23051f4da6bb407075fd45416c04ffc9d59d5aee4", "redirect_uri"=>"urn:ietf:wg:oauth:2.0:oob", "response_type"=>"code", "scope"=>""}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Please configure doorkeeper resource_owner_authenticator block located in /home/tobias/projekte/webdev/gruender/config/initializers/doorkeeper.rb):
+  
+config/initializers/doorkeeper.rb:7:in `block (2 levels) in <top (required)>'
+Started HEAD "/" for 127.0.0.1 at 2018-04-09 14:18:13 +0200
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:18:13 +0200
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (1.4ms)
+Completed 200 OK in 38ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (1.4ms)
+Completed 200 OK in 32ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:18:16 +0200
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:18:16 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+  [1m[36mCommunity Load (2.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:18:17 +0200
+  [1m[36mCommunity Load (1.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:18:17 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:18:30 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 14:19:06 +0200
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'Olafson LLC' LIMIT 1[0m
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 14:20:48 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:20:51 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started POST "/api/v1/users/" for 127.0.0.1 at 2018-04-09 14:21:29 +0200
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'Olafson GmbH' LIMIT 1[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'olaf@olafson.dk' LIMIT 1[0m
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 1 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 2 LIMIT 1[0m
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 3 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 14 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 15 LIMIT 1[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 16 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'olaf@olafson.dk' LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO `users` (`username`, `created_at`, `updated_at`, `email`, `encrypted_password`, `description`, `name`, `web`, `location`) VALUES ('Olafson GmbH', '2018-04-09 12:21:29', '2018-04-09 12:21:29', 'olaf@olafson.dk', '$2a$11$HhusgqCH9DJHlPGGQStpOe5of1AGDU.QG.6VCbgzlA4/H1j2IGCc2', 'Hammerfest-Veranstalter', 'Olaf Olafson', 'www.olafson.dk', 'Hammerfest')[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (3, 1)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (3, 2)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (3, 3)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (3, 14)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (3, 15)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `communities_users` (`user_id`, `community_id`) VALUES (3, 16)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (3, 1, 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387', 86400, '2018-04-09 12:21:29', 'all')[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:21:29 +0200
+  [1m[36mDoorkeeper::AccessToken Load (2.1ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (2.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.1ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 3[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 3[0m
+  [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 3[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:21:30 +0200
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:21:30 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+  [1m[36mCommunity Load (9.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:21:30 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:21:40 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 3[0m
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 3[0m
+  [1m[36mComment Load (4.7ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 3[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:22:07 +0200
+  [1m[36mCommunity Load (1.6ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:22:09 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/api/v1/communities/1.json" for 127.0.0.1 at 2018-04-09 14:22:12 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 1 LIMIT 1[0m
+  [1m[35m (17.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT communities_users.* FROM communities_users WHERE community_id = 1 AND user_id = 3[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 1 LIMIT 11[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 1 LIMIT 11[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`community_id` = 1 LIMIT 11[0m
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 1[0m
+  [1m[36mProject Load (4.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`community_id` = 1[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:22:12 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:22:17 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/api/v1/communities/2.json" for 127.0.0.1 at 2018-04-09 14:22:18 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCommunity Load (4.2ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 2 LIMIT 1[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 2[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 2[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT communities_users.* FROM communities_users WHERE community_id = 2 AND user_id = 3[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 2 LIMIT 11[0m
+  [1m[36mProject Load (5.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 2 LIMIT 11[0m
+  [1m[36mPost Load (3.4ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`community_id` = 2 LIMIT 11[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 2[0m
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 2[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`community_id` = 2[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:22:20 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/api/v1/communities/3.json" for 127.0.0.1 at 2018-04-09 14:22:22 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCommunity Load (0.8ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` WHERE `communities`.`id` = 3 LIMIT 1[0m
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 3[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 3[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT communities_users.* FROM communities_users WHERE community_id = 3 AND user_id = 3[0m
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 3 LIMIT 11[0m
+  [1m[36mProject Load (3.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 3 LIMIT 11[0m
+  [1m[36mPost Load (5.6ms)[0m  [1m[34mSELECT  `posts`.* FROM `posts` WHERE `posts`.`community_id` = 3 LIMIT 11[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `communities_users` ON `users`.`id` = `communities_users`.`user_id` WHERE `communities_users`.`community_id` = 3[0m
+  [1m[36mProject Load (5.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` INNER JOIN `communities_projects` ON `projects`.`id` = `communities_projects`.`project_id` WHERE `communities_projects`.`community_id` = 3[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`community_id` = 3[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:22:24 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:27:54 +0200
+  [1m[36mCommunity Load (2.3ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:27:54 +0200
+  [1m[36mProject Load (2.1ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:27:54 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (1.1ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:36:20 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (1.6ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:36:22 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.1ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mProject Load (3.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 3[0m
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 3[0m
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 3[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:36:23 +0200
+  [1m[36mCommunity Load (1.0ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:36:23 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:36:24 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:36:25 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:36:33 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387' LIMIT 1[0m  [["token", "a9a625933576a26c2769f26b9a03a71e85b9b78ec9e02c684959a9170e8c6387"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (8.3ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:36:33' WHERE `oauth_access_tokens`.`id` = 2[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:37:18 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (2.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:37:20 +0200
+  [1m[36mCommunity Load (1.7ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:37:20 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:37:21 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:37:21 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:37:27 +0200
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:37:39 +0200
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m
+  [1m[35mSQL (5.1ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159', 86400, '2018-04-09 12:37:40', 'all')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:37:40 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.7ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.1ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (2.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:38:01 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:38:04 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.6ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (4.9ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:38:04 +0200
+  [1m[36mCommunity Load (12.4ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:38:04 +0200
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:38:05 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:38:05 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:38:13 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.5ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:38:15 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (1.7ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (4.1ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (3.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:38:16 +0200
+  [1m[36mCommunity Load (0.9ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:38:16 +0200
+  [1m[36mProject Load (3.0ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:38:16 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:38:17 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:38:33 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:38:35 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (1.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (9.7ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:38:36 +0200
+  [1m[36mCommunity Load (3.9ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:38:36 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:38:36 +0200
+  [1m[36mCommunity Load (1.8ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:38:36 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:38:39 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159' LIMIT 1[0m  [["token", "6bbb18d786e9cd397029fe8b91b1ca0e672d6a64ff4bd79828876adaca589159"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:38:39' WHERE `oauth_access_tokens`.`id` = 3[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:38:48 +0200
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (0.3ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b', 86400, '2018-04-09 12:38:48', 'all')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:38:48 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (4.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/oauth/applications" for 127.0.0.1 at 2018-04-09 14:39:02 +0200
+Processing by Doorkeeper::ApplicationsController#index as HTML
+  Rendering /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT `oauth_applications`.* FROM `oauth_applications`[0m
+  Rendered /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/_delete_form.html.erb (1.2ms)
+  Rendered /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/doorkeeper-4.2.6/app/views/doorkeeper/applications/index.html.erb within layouts/doorkeeper/admin (29.8ms)
+Completed 200 OK in 530ms (Views: 527.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:40:40 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:40:42 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (4.2ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:40:43 +0200
+  [1m[36mCommunity Load (1.5ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:40:43 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:40:43 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:40:44 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.8ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:40:47 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b' LIMIT 1[0m  [["token", "2c99f4f4c315bf6b49383855cc27721f79057fc18b8d5ebd8c05964715db064b"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:40:47' WHERE `oauth_access_tokens`.`id` = 4[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:40:52 +0200
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (0.4ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa', 86400, '2018-04-09 12:40:52', 'all')[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:40:52 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (1.7ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (4.6ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:41:46 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:41:49 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (4.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (3.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:41:49 +0200
+  [1m[36mCommunity Load (0.9ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:41:49 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:41:50 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:41:50 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:41:53 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.2ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa' LIMIT 1[0m  [["token", "816fc04b90f754edd2c90a5c323fe10d459c8d2f960674e0ec3e7dc89c1c2aaa"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:41:53' WHERE `oauth_access_tokens`.`id` = 5[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:42:01 +0200
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (5.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (0.3ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f', 86400, '2018-04-09 12:42:01', 'all')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:42:01 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.1ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (2.9ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:44:09 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (6.2ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:44:11 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (2.8ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:44:11 +0200
+  [1m[36mCommunity Load (1.7ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:44:11 +0200
+  [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:44:13 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:44:13 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:44:15 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.2ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (5.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f' LIMIT 1[0m  [["token", "bc9921b61b963e5b4026a2510f6c1fddb28fc05430c534fee5f305beded5387f"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:44:15' WHERE `oauth_access_tokens`.`id` = 6[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:44:21 +0200
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (1.1ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35', 86400, '2018-04-09 12:44:21', 'all')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:44:21 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (4.5ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (4.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:44:48 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.8ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:44:51 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (5.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:44:51 +0200
+  [1m[36mCommunity Load (2.5ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:44:51 +0200
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:44:52 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:44:52 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:44:54 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.2ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35' LIMIT 1[0m  [["token", "c0c23fe0fe01e7daeeb316ff575d8601b2df6815dacbdc6c9417ac16f40baf35"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:44:54' WHERE `oauth_access_tokens`.`id` = 7[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:45:01 +0200
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (1.7ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82', 86400, '2018-04-09 12:45:02', 'all')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:45:02 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.5ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (2.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:46:12 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:46:15 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (2.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (3.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:46:15 +0200
+  [1m[36mCommunity Load (0.9ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:46:15 +0200
+  [1m[35m (3.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mProject Load (3.3ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:46:16 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:46:17 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:46:29 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82' LIMIT 1[0m  [["token", "60db77cb6c1232d40630030ad4f1cb8e6c2d457d53d4764bfe69b07b54ceea82"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:46:29' WHERE `oauth_access_tokens`.`id` = 8[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:46:34 +0200
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (5.1ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b', 86400, '2018-04-09 12:46:34', 'all')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:46:34 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:56:21 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.5ms)
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:56:23 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (2.8ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (3.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:56:24 +0200
+  [1m[36mCommunity Load (1.0ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:56:24 +0200
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:56:25 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:56:25 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:56:31 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b' LIMIT 1[0m  [["token", "3290bec15a8c081304c7200131a67df450b82edd78ccb1705ecfae76966cb39b"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:56:31' WHERE `oauth_access_tokens`.`id` = 9[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:56:40 +0200
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (2.8ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573', 86400, '2018-04-09 12:56:40', 'all')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:56:40 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.2ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.1ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:57:34 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:57:37 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (4.2ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:57:37 +0200
+  [1m[36mCommunity Load (5.8ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:57:37 +0200
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:57:39 +0200
+  [1m[36mCommunity Load (0.9ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:57:39 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:57:40 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573' LIMIT 1[0m  [["token", "26027c969b40b3f574f233fff30f1403784de8251bf7778647a78d3dcdb2c573"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.3ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:57:40' WHERE `oauth_access_tokens`.`id` = 10[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:57:45 +0200
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (3.9ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a', 86400, '2018-04-09 12:57:46', 'all')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:57:46 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.2ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (2.6ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/" for 127.0.0.1 at 2018-04-09 14:59:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.8ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/users/me.json" for 127.0.0.1 at 2018-04-09 14:59:50 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.4ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT `projects`.* FROM `projects` WHERE `projects`.`user_id` = 1[0m
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 1[0m
+Started GET "/api/v1/communities/popular.json" for 127.0.0.1 at 2018-04-09 14:59:50 +0200
+  [1m[36mCommunity Load (2.5ms)[0m  [1m[34mSELECT  `communities`.* FROM `communities` LEFT OUTER JOIN `communities_projects` ON `communities_projects`.`community_id` = `communities`.`id` GROUP BY `communities`.`id` ORDER BY COUNT(communities_projects.community_id) DESC LIMIT 6[0m
+Started GET "/api/v1/projects/featured.json" for 127.0.0.1 at 2018-04-09 14:59:50 +0200
+  [1m[36mProject Load (2.7ms)[0m  [1m[34mSELECT  `projects`.* FROM `projects` ORDER BY `projects`.`likes` ASC LIMIT 12[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 14:59:51 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/%7B%22url%22:%22/assets/images/gv_default.jpg%22%7D" for 127.0.0.1 at 2018-04-09 14:59:51 +0200
+Processing by HomeController#index as 
+  Parameters: {"path"=>"{\"url\":\"/assets/images/gv_default"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 14:59:55 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = '505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a' LIMIT 1[0m  [["token", "505c26a892515b8354b6781f0176e8e52bdb07e972bcbc003bb235e4e3ae965a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 12:59:55' WHERE `oauth_access_tokens`.`id` = 11[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/users/login.json" for 127.0.0.1 at 2018-04-09 14:59:59 +0200
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`username` = 'admin2' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (4.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDoorkeeper::Application Load (1.1ms)[0m  [1m[34mSELECT  `oauth_applications`.* FROM `oauth_applications` WHERE `oauth_applications`.`id` = 1 LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = BINARY 'a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0' LIMIT 1[0m
+  [1m[35mSQL (5.1ms)[0m  [1m[32mINSERT INTO `oauth_access_tokens` (`resource_owner_id`, `application_id`, `token`, `expires_in`, `created_at`, `scopes`) VALUES (1, 1, 'a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0', 86400, '2018-04-09 13:00:00', 'all')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started DELETE "/api/v1/users/logout.json" for 127.0.0.1 at 2018-04-09 15:17:57 +0200
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0' LIMIT 1[0m
+  [1m[36mDoorkeeper::AccessToken Load (0.3ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`refresh_token` = '' LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0' LIMIT 1[0m  [["token", "a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0' LIMIT 1[0m  [["token", "a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0"], ["LIMIT", 1]]
+  [1m[36mCACHE Doorkeeper::AccessToken Load (0.0ms)[0m  [1m[34mSELECT  `oauth_access_tokens`.* FROM `oauth_access_tokens` WHERE `oauth_access_tokens`.`token` = 'a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0' LIMIT 1[0m  [["token", "a9c1fdb799ce7d702fa7eb3d237d09056a190c21d5a0660b55d2d8ebd91fc9c0"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[33mUPDATE `oauth_access_tokens` SET `revoked_at` = '2018-04-09 13:17:57' WHERE `oauth_access_tokens`.`id` = 12[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 15:18:00 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:18:04 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/registration" for 127.0.0.1 at 2018-04-09 15:24:50 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"registration"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.5ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:24:53 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:24:56 +0200
+  [1m[36mCommunity Load (1.5ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:26:11 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:26:15 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:27:38 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:27:41 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:29:04 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.9ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:29:07 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:29:43 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (2.4ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:29:46 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:30:02 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (3.4ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:30:05 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:30:34 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (2.1ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:30:37 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:31:22 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:31:25 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:31:43 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:31:47 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:32:25 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:32:28 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:33:22 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:33:25 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:34:06 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.5ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:34:10 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:36:52 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.5ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:36:55 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:37:12 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:37:15 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:38:11 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:38:14 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:42:49 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.5ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:42:53 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:43:18 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:43:22 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:43:33 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (5.0ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:43:37 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:44:16 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.5ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:44:19 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:48:14 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:48:17 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:48:30 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:48:32 +0200
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:49:04 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (2.6ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:49:07 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:49:22 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:49:25 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:49:37 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:49:40 +0200
+  [1m[36mCommunity Load (1.6ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:50:11 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:50:14 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:50:42 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:50:45 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:52:19 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:52:22 +0200
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:53:04 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:53:07 +0200
+  [1m[36mCommunity Load (0.6ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:53:17 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (1.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:53:20 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:54:35 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.7ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:54:39 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:54:58 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.9ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:55:01 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m
+Started GET "/project/new" for 127.0.0.1 at 2018-04-09 15:55:24 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"project/new"}
+  Rendering home/index.html.erb within layouts/index
+  Rendered home/index.html.erb within layouts/index (0.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/communities.json" for 127.0.0.1 at 2018-04-09 15:55:28 +0200
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT `communities`.`id`, `communities`.`name`, `communities`.`icon`, `communities`.`typus` FROM `communities`[0m

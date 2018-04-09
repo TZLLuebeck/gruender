@@ -43,7 +43,7 @@ module API
             requires :location, type: String
             requires :web, type: String
             requires :description, type: String
-            requires :subs, type: {value: Array, message: "Not an Array."}
+            requires :subscriptions#, type: Array[Integer]
             optional :logo, type: Rack::Multipart::UploadedFile            
             optional :fon, type: String
           end

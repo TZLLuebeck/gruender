@@ -44,14 +44,16 @@ module API
           error!(response, 409)
           else 
             par = params[:data]
-            subs = par[:subs]
-            par.delete :subs
+            subs = par[:subscriptions]
+            par.delete :subscriptions
 
             # create the User in the database
             u = User.new(par)
 
-            subs.each do |community_id|
-              u.communities << community_id
+            p subs
+            subs.each do |index, community_id|
+              p community_id
+              u.communities << Community.find(community_id)
             end
 
 
