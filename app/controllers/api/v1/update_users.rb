@@ -51,7 +51,7 @@ module API
             u = User.new(par)
 
             p subs
-            subs.each do |index, community_id|
+            subs.each do |community_id|
               p community_id
               u.communities << Community.find(community_id)
             end

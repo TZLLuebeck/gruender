@@ -122,7 +122,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }]
     }
   }).state('root.profile', {
-    url: '/profile',
+    url: '/profile/:id',
     views: {
       'body@': {
         templateUrl: 'assets/views/users/profile.html',
@@ -176,7 +176,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }
     }
   }).state('root.project', {
-    url: '/project',
+    url: '/project/:id',
     views: {
       'body@': {
         templateUrl: 'assets/views/projects/project.html',
@@ -242,7 +242,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }]
     }
   }).state('root.community', {
-    url: '/community',
+    url: '/community/:id',
     views: {
       'body@': {
         templateUrl: 'assets/views/communities/community.html',
@@ -776,7 +776,8 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
         url: '/api/v1/users/',
         data: {
           data: user
-        }
+        },
+        arrayKey: '[]'
       }).then(function(response) {
         console.log(response.data.data);
         _this.user = response.data.data.user;
@@ -1201,9 +1202,30 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
   return this;
 }]);
 
-angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Project", function(instance, Project) {
+angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Project", "$state", "$window", function(instance, Project, $state, $window) {
   this.project = instance;
   this.comment = "";
+  this.init = (function(_this) {
+    return function() {
+      var c, i, len, ref, results;
+      ref = _this.project.comments;
+      results = [];
+      for (i = 0, len = ref.length; i < len; i++) {
+        c = ref[i];
+        c.created = new Date(Date.parse(c.created_at)).toLocaleString('de-DE');
+        results.push(c.updated = new Date(Date.parse(c.updated_at)).toLocaleString('de-DE'));
+      }
+      return results;
+    };
+  })(this);
+  this.viewCommunity = function(cid) {
+    var url;
+    url = $state.href('root.community', {
+      id: cid
+    });
+    console.log(url);
+    return $window.open(url, '_blank');
+  };
   this.addComment = (function(_this) {
     return function() {
       return Project.postComment(_this.project, _this.comment).then(function(response) {
@@ -1212,6 +1234,7 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Projec
       });
     };
   })(this);
+  this.init();
   return this;
 }]);
 

@@ -125,8 +125,9 @@ module API
 
       def return_project(params)
         pr = Project.find(params[:id])
+        c = pr.comments
         if pr
-          res = pr.serializable_hash.merge(comments: pr.comments, tags: pr.communities)
+          res = pr.serializable_hash.merge(comments: c, tags: pr.communities)
           status 200
           {status: 200, data: res}
         else

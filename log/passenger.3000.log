@@ -204,3 +204,105 @@ App 7140 stdout:
 [ N 2018-04-09 15:56:22.9943 5539/Ta Ser/Server.h:559 ]: [ApiServer] Shutdown finished
 [ N 2018-04-09 15:56:22.9944 5539/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5602, application /home/tobias/projekte/webdev/gruender (development)
 [ N 2018-04-09 15:56:23.8750 5539/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-10 11:54:36.8651 2758/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-10 11:54:36.9261 2761/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-10 11:54:36.9270 2761/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-10 11:54:36.9611 2761/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 2761
+App 2794 stdout: 
+[ N 2018-04-10 11:54:39.4813 2761/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 2874 stdout: 
+App 3248 stdout: 
+App 3276 stdout: 
+[ N 2018-04-10 12:05:24.5470 2761/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3276, application /home/tobias/projekte/webdev/gruender (development)
+App 2874 stdout: [1, 7, 13, 14, 20, 26]
+App 2874 stdout: nil
+App 2874 stdout: Rescue Team to the Rescue!
+App 2874 stdout: [1, 7, 13, 14, 20, 26]
+App 2874 stdout: 1
+App 2874 stdout: 7
+App 2874 stdout: 13
+App 2874 stdout: 14
+App 2874 stdout: 20
+App 2874 stdout: 26
+App 3641 stdout: 
+App 3670 stdout: 
+[ N 2018-04-10 12:20:18.3745 2761/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3670, application /home/tobias/projekte/webdev/gruender (development)
+App 4220 stdout: 
+App 4253 stdout: 
+[ N 2018-04-10 12:40:13.3329 2761/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4253, application /home/tobias/projekte/webdev/gruender (development)
+App 5085 stdout: 
+App 5117 stdout: 
+App 2874 stdout: {"id"=>5, "name"=>"Internet\n ", "created_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "updated_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Internet.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 2, name: "Testprojekt", user_id: 1, created_at: "2018-04-10 09:57:45", updated_at: "2018-04-10 09:57:45", goal: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", problem: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", solution: "<p>Lorem ipsum dolor sit amet, consetetur sadipsci...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>#<ActiveRecord::Associations::CollectionProxy []>}
+App 2874 stdout: {"id"=>10, "name"=>"Mobilität, Verkehr & Logistik", "created_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "updated_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Mobilität, Logistik, Verkehr.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 2, name: "Testprojekt", user_id: 1, created_at: "2018-04-10 09:57:45", updated_at: "2018-04-10 09:57:45", goal: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", problem: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", solution: "<p>Lorem ipsum dolor sit amet, consetetur sadipsci...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>#<ActiveRecord::Associations::CollectionProxy []>}
+App 2874 stdout: {"id"=>10, "name"=>"Mobilität, Verkehr & Logistik", "created_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "updated_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Mobilität, Logistik, Verkehr.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 2, name: "Testprojekt", user_id: 1, created_at: "2018-04-10 09:57:45", updated_at: "2018-04-10 09:57:45", goal: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", problem: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", solution: "<p>Lorem ipsum dolor sit amet, consetetur sadipsci...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>#<ActiveRecord::Associations::CollectionProxy []>}
+[ N 2018-04-10 12:52:43.9670 2761/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5117, application /home/tobias/projekte/webdev/gruender (development)
+App 2874 stdout: {"id"=>11, "name"=>"Design & Kreativwirtschaft", "created_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "updated_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Design und Kreativwirtschaft.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 2, name: "Testprojekt", user_id: 1, created_at: "2018-04-10 09:57:45", updated_at: "2018-04-10 09:57:45", goal: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", problem: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", solution: "<p>Lorem ipsum dolor sit amet, consetetur sadipsci...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>#<ActiveRecord::Associations::CollectionProxy []>}
+App 2874 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+App 2874 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+App 2874 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+App 2874 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+App 6647 stdout: 
+App 6677 stdout: 
+[ N 2018-04-10 13:30:03.3911 2761/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2874, application /home/tobias/projekte/webdev/gruender (development)
+App 6677 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+App 6980 stdout: 
+App 7006 stdout: 
+[ N 2018-04-10 13:38:33.7942 2761/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6677, application /home/tobias/projekte/webdev/gruender (development)
+App 7272 stdout: 
+App 7006 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+App 7298 stdout: 
+App 7006 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+App 7006 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+App 7006 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+[ N 2018-04-10 13:47:11.5081 2761/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7298, application /home/tobias/projekte/webdev/gruender (development)
+App 7006 stdout: #<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "Langweilig!", user_id: 4, parent_id: 2, parent_type: "Project", created_at: "2018-04-10 10:53:42", updated_at: "2018-04-10 10:53:42", author: "Ulfrich">]>
+
+[ N 2018-04-10 15:48:27.6676 2761/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-10 15:48:27.6676 2761/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-10 15:48:27.6676 2761/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7006, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-10 15:48:27.6676 2761/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-10 15:48:27.6677 2761/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-10 15:48:27.6677 2761/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-10 15:48:27.6677 2761/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-10 15:48:27.6678 2761/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7006, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-10 15:48:28.4072 2761/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-11 12:34:48.3625 3179/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-11 12:34:48.7119 3183/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-11 12:34:48.7147 3183/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-11 12:34:48.9426 3183/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3183
+[ N 2018-04-11 12:34:51.6700 3183/T6 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3221 stdout: 
+App 3279 stdout: 
+App 3558 stdout: 
+App 3586 stdout: 
+[ N 2018-04-11 12:46:40.3175 3183/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3586, application /home/tobias/projekte/webdev/gruender (development)
+App 4069 stdout: 
+App 4097 stdout: 
+App 3279 stdout: {"id"=>11, "name"=>"Design & Kreativwirtschaft", "created_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "updated_at"=>Thu, 05 Apr 2018 13:14:08 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Design und Kreativwirtschaft.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 2, name: "Testprojekt", user_id: 1, created_at: "2018-04-10 09:57:45", updated_at: "2018-04-10 09:57:45", goal: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", problem: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", solution: "<p>Lorem ipsum dolor sit amet, consetetur sadipsci...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>#<ActiveRecord::Associations::CollectionProxy []>}
+[ N 2018-04-11 12:59:49.4483 3183/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4097, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-11 15:49:43.3752 3183/T8 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-11 15:49:43.3753 3183/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-11 15:49:43.3753 3183/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3279, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-11 15:49:43.3793 3183/T8 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-11 15:49:43.3794 3183/T8 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-11 15:49:43.3794 3183/Ta Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-11 15:49:43.3794 3183/Ta Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-11 15:49:43.3795 3183/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3279, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-11 15:49:44.2247 3183/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-12 12:30:07.1218 2610/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-12 12:30:07.2529 2613/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-12 12:30:07.2679 2613/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-12 12:30:07.3131 2613/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 2613
+App 2645 stdout: 
+[ N 2018-04-12 12:30:09.8283 2613/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2018-04-12 12:30:19.6447 2613/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-12 12:30:19.6448 2613/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-12 12:30:19.6448 2613/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-12 12:30:19.6448 2613/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+App 2671 stdout: 
+[ N 2018-04-12 12:30:20.4178 2613/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-12 12:30:20.4179 2613/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-12 12:30:20.4179 2613/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2671, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-12 12:30:21.1549 2613/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished

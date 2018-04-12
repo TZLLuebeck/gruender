@@ -17,7 +17,7 @@ module API
             requires :typus, type: String
             requires :goal, type: String
             requires :coop, type: Boolean
-            requires :tags, type: Array
+            requires :tags, type: Array[Integer]
             requires :problem, type: String
             optional :solution
             optional :cooptext, type: String
