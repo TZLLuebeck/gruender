@@ -31,6 +31,14 @@ module API
             requires :content, type: String
           end
         end
+
+        oauth2
+        params do
+          requires :id, type: Integer
+          requires :data, type: Hash do
+            requires :content, type: String
+          end
+        end
         post '/post/:id' do
           post_discussion(params)
         end

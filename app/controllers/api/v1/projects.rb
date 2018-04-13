@@ -19,7 +19,7 @@ module API
             requires :coop, type: Boolean
             requires :tags, type: Array[Integer]
             requires :problem, type: String
-            optional :solution
+            optional :solution, type: String
             optional :cooptext, type: String
             optional :attachment, type: Rack::Multipart::UploadedFile
             optional :image, type: Rack::Multipart::UploadedFile
@@ -27,6 +27,14 @@ module API
         end
         post '' do
           create_new_draft(params)
+        end
+
+        oauth2
+        params do
+          requires :id, type: Integer
+        end
+        post 'like/:id' do
+          like_post(params)
         end
 
         oauth2

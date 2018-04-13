@@ -364,7 +364,8 @@ angular.module('gruenderviertel').directive('summernote', (function(_this) {
         return $document.ready(function() {
           return $('#summernote').summernote({
             height: 300,
-            minHeight: 300
+            minHeight: 300,
+            toolbar: [['style', ['bold', 'italic', 'underline', 'clear']], ['font', ['strikethrough', 'superscript', 'subscript']], ['fontsize', ['fontsize']], ['color', ['color']], ['para', ['ul', 'ol', 'paragraph', 'hr']], ['height', ['height']], ['insert', ['link', 'picture']], ['control', ['undo', 'redo', 'fullscreen', 'help']]]
           });
         });
       }
@@ -595,11 +596,11 @@ angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload"
     });
     return defer.promise;
   };
-  like = function(project) {
+  like = function(project_id) {
     var defer, packet;
     defer = $q.defer();
     packet = baseREST.one('projects').one('like');
-    packet.id = project.id;
+    packet.id = project_id;
     packet.post().then(function(response) {
       console.log('like/unlike sent');
       return defer.resolve(response.data);
@@ -1068,9 +1069,35 @@ angular.module('gruenderviertel').controller('CommunityCtrl', ["instance", "Comm
   this.subscribed = instance.subscribed;
   this.discussion_form = {};
   this.comment_form = {};
+  this.comment_form.content = [];
+  this.init = (function(_this) {
+    return function() {
+      var c, d, i, len, ref, results;
+      ref = _this.discussions;
+      results = [];
+      for (i = 0, len = ref.length; i < len; i++) {
+        d = ref[i];
+        d.created = new Date(Date.parse(d.created_at)).toLocaleString('de-DE');
+        d.updated = new Date(Date.parse(d.updated_at)).toLocaleString('de-DE');
+        results.push((function() {
+          var j, len1, ref1, results1;
+          ref1 = d.comments;
+          results1 = [];
+          for (j = 0, len1 = ref1.length; j < len1; j++) {
+            c = ref1[j];
+            c.created = new Date(Date.parse(c.created_at)).toLocaleString('de-DE');
+            results1.push(c.updated = new Date(Date.parse(c.updated_at)).toLocaleString('de-DE'));
+          }
+          return results1;
+        })());
+      }
+      return results;
+    };
+  })(this);
   this.subscribe = (function(_this) {
     return function() {
       return Community.join_community(_this.community.id).then(function(response) {
+        _this.member_count++;
         return _this.subscribed = response;
       }, function(error) {
         return console.log('CommunityCtrl.subscribe Error');
@@ -1080,6 +1107,7 @@ angular.module('gruenderviertel').controller('CommunityCtrl', ["instance", "Comm
   this.unsubscribe = (function(_this) {
     return function() {
       return Community.leave_community(_this.community.id).then(function(response) {
+        _this.member_count--;
         return _this.subscribed = response;
       }, function(error) {
         return console.log('CommunityCtrl.subscribe Error');
@@ -1101,18 +1129,22 @@ angular.module('gruenderviertel').controller('CommunityCtrl', ["instance", "Comm
     };
   })(this);
   this.comment = (function(_this) {
-    return function(discussion_id) {
+    return function(discussion_id, index) {
       var message;
       message = {
-        content: _this.comment_form.content
+        content: _this.comment_form.content[index]
       };
+      console.log("sending comment");
       return Community.post_comment(discussion_id, message).then(function(response) {
         var discussion, i, len, ref, results;
+        console.log("added comment");
         ref = _this.discussions;
         results = [];
         for (i = 0, len = ref.length; i < len; i++) {
           discussion = ref[i];
           if (discussion.id === discussion_id) {
+            response.created = new Date(Date.parse(response.created_at)).toLocaleString('de-DE');
+            response.updated = new Date(Date.parse(response.updated_at)).toLocaleString('de-DE');
             results.push(discussion.comments.push(response));
           } else {
             results.push(void 0);
@@ -1124,6 +1156,7 @@ angular.module('gruenderviertel').controller('CommunityCtrl', ["instance", "Comm
       });
     };
   })(this);
+  this.init();
   return this;
 }]);
 
@@ -1234,6 +1267,24 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Projec
       });
     };
   })(this);
+  this.like = (function(_this) {
+    return function() {
+      return Project.like(_this.project.id).then(function(response) {
+        return _this.project.likes++;
+      }, function(error) {
+        return console.log("project.like error");
+      });
+    };
+  })(this);
+  this.unlike = (function(_this) {
+    return function() {
+      return Project.unlike(_this.project.id).then(function(response) {
+        return _this.project.likes--;
+      }, function(error) {
+        return console.log("project.dislike error");
+      });
+    };
+  })(this);
   this.init();
   return this;
 }]);
@@ -1246,9 +1297,15 @@ angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state
   console.log(instance);
   this.goToComment = function(comment) {
     if (comment.parent_type === 'Project') {
-      return $state.go('root.project', comment.parent_id);
+      return $state.go('root.project', {
+        'id': comment.parent_id,
+        '#': "c-" + comment.author + "-" + comment.id
+      });
     } else {
-      return $state.go('root.community', comment.parent_id);
+      return $state.go('root.community', {
+        'id': comment.parent_id,
+        '#': "c-" + comment.author + "-" + comment.id
+      });
     }
   };
   return this;

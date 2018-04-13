@@ -46,29 +46,50 @@ module API
       end
 
       def post_discussion(params)
-        u = current_resource_owner_id
+        u = current_resource_owner
         c = Community.find(params[:id])
-        p c
-        d = Post.new(user_id: u, title: params[:data][:title], content: params[:data][:content])
+        d = Post.new(user_id: u.id, author: u.username, title: params[:data][:title], content: params[:data][:content])
         c.discussions << d
-        if d.save!
-          status 200
-          {status: 200, data: d}
-        else
-
-        end
-      end
-
-      def post_comment(params)
-        u = current_resource_owner_id
-        d = Post.find(params[:id])
-        c = Comment.new(user_id: u, content: params[:data][:content])
-        d.comments << c
         if c.save!
           status 200
           {status: 200, data: d}
         else
-          
+          response = {
+            description: 'Ein Fehler ist aufgetreten; Status konnte nicht geändert werden.',
+            error: {
+              name: 'could_not_save',
+              state: 'internal_server_error'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 500
+          }
+          error!(response, 500)
+        end
+      end
+
+      def post_comment(params)
+        u = current_resource_owner
+        d = Post.find(params[:id])
+        c = Comment.new(user_id: u.id, author: u.username, content: params[:data][:content])
+        d.comments << c
+        if d.save!
+          status 200
+          {status: 200, data: c}
+        else
+          response = {
+            description: 'Ein Fehler ist aufgetreten; Kommentar konnte nicht gespeichert werden.',
+            error: {
+              name: 'could_not_save',
+              state: 'internal_server_error'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 500
+          }
+          error!(response, 500)        
         end
       end
 
@@ -138,6 +159,10 @@ module API
             subscribed = u.is_member?(c.id)
           end
           discussions = c.discussions
+          if discussions
+            discussions = discussions.map { |e| e.serializable_hash.merge(comments: e.comments) }
+          end
+          p discussions
           c = c.serializable_hash.merge(subscribed: subscribed).merge(members: members).merge(projects: projects).merge(member_count: member_count).merge(project_count: project_count).merge(discussions: discussions)
           p c
           status 200
