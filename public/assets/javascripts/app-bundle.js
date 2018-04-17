@@ -12,9 +12,16 @@ app.config(["$httpProvider", function($httpProvider) {
 app.run(["User", "TokenContainer", "$rootScope", "$state", "$stateParams", "Rails", "$transitions", function(User, TokenContainer, $rootScope, $state, $stateParams, Rails, $transitions) {
   $rootScope.$state = $state;
   $rootScope.$stateParams = $stateParams;
-  return $transitions.onBefore({}, function(transition) {
+  $transitions.onBefore({}, function(transition) {
     $rootScope.lastState = transition.from();
     return $rootScope.lastStateParams = transition.params('from');
+  });
+  return $rootScope.$on('$stateChangeSuccess', function($location, $anchorScroll) {
+    if ($location.hash()) {
+      return $anchorScroll();
+    } else {
+      return document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
   });
 }]);
 
@@ -161,10 +168,20 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
     url: '/edit',
     views: {
       'body@': {
-        templateUrl: 'assets/views/users/editprofile.html',
+        templateUrl: 'assets/views/users/edit.html',
         controller: 'ProfileEditCtrl',
         controllerAs: 'edit'
       }
+    },
+    resolve: {
+      instance: ["User", function(User) {
+        return User.currentUser().then(function(response) {
+          return response;
+        }, function(error) {
+          Helper.goBack();
+          return null;
+        });
+      }]
     }
   }).state('root.passwordrecovery', {
     url: '/recover',
@@ -317,6 +334,21 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
     }
   });
 }]);
+
+angular.module('gruenderviertel').directive('anchormove', (function(_this) {
+  return ["$document", "$window", "$anchorScroll", "$location", function($document, $window, $anchorScroll, $location) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        if ($location.hash()) {
+          return $anchorScroll();
+        } else {
+          return document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+      }
+    };
+  }];
+})(this));
 
 angular.module('gruenderviertel').directive('onScrollToBottom', (function(_this) {
   return ["$document", "$window", function($document, $window) {
@@ -864,17 +896,17 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
   })(this);
   updateUser = (function(_this) {
     return function(user) {
-      var defer, packet;
-      packet = baseREST.one('users');
+      var defer;
       defer = $q.defer();
-      Object.assign(packet, user.data[0]);
-      user.put().then(function(response) {
-        if (response.status === 422) {
-          return defer.reject(response.data);
-        } else {
-          console.log('golden!');
-          return defer.resolve(response.data.data);
-        }
+      Upload.upload({
+        url: '/api/v1/users/',
+        data: {
+          data: user
+        },
+        arrayKey: '[]',
+        method: 'PUT'
+      }).then(function(response) {
+        return defer.resolve(response.data.data);
       }, function(error) {
         return defer.reject(error);
       });
@@ -1058,7 +1090,7 @@ angular.module('gruenderviertel').controller('NavCtrl', ["User", "$rootScope", "
   return this;
 }]);
 
-angular.module('gruenderviertel').controller('CommunityCtrl', ["instance", "Community", function(instance, Community) {
+angular.module('gruenderviertel').controller('CommunityCtrl', ["instance", "Community", "$anchorScroll", function(instance, Community, $anchorScroll) {
   this.community = instance;
   this.icon = instance.icon;
   this.projects = instance.projects;
@@ -1122,6 +1154,8 @@ angular.module('gruenderviertel').controller('CommunityCtrl', ["instance", "Comm
         content: _this.discussion_form.content
       };
       return Community.post_discussion(_this.community.id, message).then(function(response) {
+        _this.discussion_form = {};
+        response.comments = [];
         return _this.discussions.push(response);
       }, function(error) {
         return console.log('CommunityCtrl.startDiscussion Error');
@@ -1214,16 +1248,6 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
       }
     }
     this.form.project.status = "Published";
-    if (!this.form.project.solution) {
-      this.form.project.typus = "Problemstellung";
-    } else {
-      this.form.project.typus = "Showcase";
-    }
-    if (this.form.project.cooptext) {
-      this.form.project.coop = true;
-    } else {
-      this.form.project.coop = false;
-    }
     return Project.createProject(this.form.project).then(function(response) {
       return $state.go('root.project', {
         id: response.id
@@ -1235,7 +1259,7 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
   return this;
 }]);
 
-angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Project", "$state", "$window", function(instance, Project, $state, $window) {
+angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Project", "$state", "$window", "$anchorScroll", "$location", function(instance, Project, $state, $window, $anchorScroll, $location) {
   this.project = instance;
   this.comment = "";
   this.init = (function(_this) {
@@ -1262,6 +1286,9 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Projec
   this.addComment = (function(_this) {
     return function() {
       return Project.postComment(_this.project, _this.comment).then(function(response) {
+        _this.comment = "";
+        response.created = new Date(Date.parse(response.created_at)).toLocaleString('de-DE');
+        response.updated = new Date(Date.parse(response.updated_at)).toLocaleString('de-DE');
         console.log(response);
         return _this.project.comments.push(response);
       });
@@ -1294,7 +1321,6 @@ angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state
   this.my_projects = angular.copy(this.user.projects);
   this.my_comments = angular.copy(this.user.comments);
   this.my_discussions = angular.copy(this.user.posts);
-  console.log(instance);
   this.goToComment = function(comment) {
     if (comment.parent_type === 'Project') {
       return $state.go('root.project', {
@@ -1302,12 +1328,57 @@ angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state
         '#': "c-" + comment.author + "-" + comment.id
       });
     } else {
+      console.log("Comment:");
+      console.log(comment);
       return $state.go('root.community', {
-        'id': comment.parent_id,
+        'id': comment.grandparent_id,
         '#': "c-" + comment.author + "-" + comment.id
       });
     }
   };
+  return this;
+}]);
+
+angular.module('gruenderviertel').controller('ProfileEditCtrl', ["User", "$state", "$stateParams", "instance", function(User, $state, $stateParams, instance) {
+  this.state = 1;
+  this.form = {};
+  this.form.user = instance;
+  this.predit_in_progress = false;
+  this.init = (function(_this) {
+    return function() {};
+  })(this);
+  this.goBack = (function(_this) {
+    return function() {
+      if (_this.state <= 0) {
+        return $state.go('root.profile');
+      } else {
+        return _this.state--;
+      }
+    };
+  })(this);
+  this.proceed = (function(_this) {
+    return function() {
+      if (_this.state < 2) {
+        return _this.state++;
+      }
+    };
+  })(this);
+  this.saveEdit = function() {
+    this.predit_in_progress = true;
+    return User.updateUser(this.form.user).then((function(_this) {
+      return function(response) {
+        User.user = response;
+        $state.go('root.profile');
+        return _this.predit_in_progress = false;
+      };
+    })(this), (function(_this) {
+      return function(error) {
+        _this.predit_in_progress = false;
+        return console.log('preditistrationCtrl.preditister Error');
+      };
+    })(this));
+  };
+  this.init();
   return this;
 }]);
 
@@ -1341,7 +1412,6 @@ angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "Token
   })(this);
   this.proceed = (function(_this) {
     return function() {
-      console.log(_this.form.user);
       if (_this.state < 5) {
         return _this.state++;
       }
@@ -1372,28 +1442,30 @@ angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "Token
       return item.typus === _this.filter;
     };
   })(this);
-  this.register = function() {
-    var c, community, j, len, ref;
-    console.log(this.form);
-    this.reg_in_progress = true;
-    c = [];
-    ref = this.community_list;
-    for (j = 0, len = ref.length; j < len; j++) {
-      community = ref[j];
-      if (community.selected) {
-        c.push(community.id);
+  this.register = (function(_this) {
+    return function() {
+      var c, community, j, len, ref;
+      console.log(_this.form);
+      _this.reg_in_progress = true;
+      c = [];
+      ref = _this.community_list;
+      for (j = 0, len = ref.length; j < len; j++) {
+        community = ref[j];
+        if (community.selected) {
+          c.push(community.id);
+        }
       }
-    }
-    this.form.user.subscriptions = c;
-    return User.createUser(this.form.user).then(function(response) {
-      $rootScope.$broadcast('user:stateChanged');
-      $state.go('root.home');
-      return this.reg_in_progress = false;
-    }, function(error) {
-      this.reg_in_progress = false;
-      return console.log('RegistrationCtrl.register Error');
-    });
-  };
+      _this.form.user.subscriptions = c;
+      return User.createUser(_this.form.user).then(function(response) {
+        $rootScope.$broadcast('user:stateChanged');
+        $state.go('root.home');
+        return _this.reg_in_progress = false;
+      }, function(error) {
+        _this.reg_in_progress = false;
+        return console.log('RegistrationCtrl.register Error');
+      });
+    };
+  })(this);
   this.init();
   return this;
 }]);

@@ -99,6 +99,14 @@ module API
         params do
           requires :data, type: Hash do
             requires :id, type: Integer
+            requires :current_password
+            optional :location, type: String
+            optional :description, type: String
+            optional :password, type: String
+            optional :logo, type: Rack::Multipart::UploadedFile 
+            given :password do
+              requires :password_confirmation, type: String
+            end
             optional :fon, type: String
             optional :web, type: String
           end

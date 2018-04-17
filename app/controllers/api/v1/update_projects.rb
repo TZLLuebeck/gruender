@@ -10,9 +10,10 @@ module API
 
       def create_new_draft(params)
         # link the new post with the user posting it.
+        u = current_resource_owner
         params[:data].merge!(
-            user_id: current_resource_owner_id,
-          )
+            user_id: u.id,
+          ).merge(author: u.username)
         # Extract keywords from the dataset.
         tags = params[:data][:tags]
         params[:data].delete :tags
@@ -28,6 +29,7 @@ module API
         end
         # Initiate the number of established contacts.
         ref.likes = 0
+        p ref
         if ref.save 
           status 200
           {status: 200, data: ref}
@@ -73,8 +75,25 @@ module API
       def post_comment(params)
         pr = Project.find(params[:id])
         u = current_resource_owner
-        pr.comments << Comment.new({user_id: u.id, author:u.username, content: params[:content]})
-        pr.save!
+        c = Comment.new({user_id: u.id, author:u.username, content: params[:content]})
+        pr.comments << c
+        if pr.save!
+          status 200
+          {status: 200, data: c}
+        else
+          response = {
+              description: 'Der Eintrag konnte nicht gespeichert werden.',
+              error: {
+                name: 'could_not_update',
+                state: 'internal_server_error'
+                },
+              reason: 'unknown',
+              redirect_uri: nil,
+              response_on_fragment: nil,
+              status: 500
+            }
+          error!(response, 500)
+        end 
       end
 
       def publish_draft(params)

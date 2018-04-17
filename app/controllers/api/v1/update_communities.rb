@@ -72,7 +72,7 @@ module API
       def post_comment(params)
         u = current_resource_owner
         d = Post.find(params[:id])
-        c = Comment.new(user_id: u.id, author: u.username, content: params[:data][:content])
+        c = Comment.new(user_id: u.id, author: u.username, content: params[:data][:content], grandparent_id: d.community_id)
         d.comments << c
         if d.save!
           status 200

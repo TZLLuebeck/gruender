@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20180323145933) do
     t.text "content"
     t.integer "user_id"
     t.integer "parent_id"
+    t.integer "grandparent_id"
     t.string "parent_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

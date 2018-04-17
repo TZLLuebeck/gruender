@@ -297,7 +297,12 @@ module API
        # UPDATE
 
       def update_user(params)
-        params[:data].delete :roles
+        params[:data].delete :comments
+        params[:data].delete :projects
+        params[:data].delete :posts
+        params[:data].delete :created_at
+        params[:data].delete :updated_at
+        params[:data].delete :role
         # Find user with the given ID.
         u = User.find(params[:data][:id])
         # Gheck if the password is correct.

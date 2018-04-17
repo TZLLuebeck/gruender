@@ -15,12 +15,16 @@ module API
           requires :data, type: Hash do
             requires :name, type: String
             requires :typus, type: String
+            given typus: ->(val) { val != 'Problemstellung' } do
+              requires :solution, type: String
+            end
             requires :goal, type: String
-            requires :coop, type: Boolean
             requires :tags, type: Array[Integer]
             requires :problem, type: String
-            optional :solution, type: String
-            optional :cooptext, type: String
+            requires :coop, type: Boolean
+            given coop: ->(val) {val == true} do
+              requires :cooptext, type: String
+            end
             optional :attachment, type: Rack::Multipart::UploadedFile
             optional :image, type: Rack::Multipart::UploadedFile
           end
