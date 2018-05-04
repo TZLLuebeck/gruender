@@ -7,6 +7,5 @@ class AddContentToProjects < ActiveRecord::Migration[5.1]
     add_column :projects, :likes, :integer
     add_column :projects, :attachment, :string
     add_column :projects, :status, :string
-    add_column :projects, :author, :string
   end
 end

@@ -770,3 +770,556 @@ App 11303 stdout:
 [ N 2018-04-17 16:00:06.1912 11228/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 11290, application /home/tobias/projekte/webdev/gruender (development)
 [ N 2018-04-17 16:00:06.1912 11228/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 11303, application /home/tobias/projekte/webdev/gruender (development)
 [ N 2018-04-17 16:00:06.9166 11228/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-18 12:28:50.5983 3038/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-18 12:28:50.7019 3041/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-18 12:28:50.7036 3041/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-18 12:28:50.7801 3041/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3041
+App 3081 stdout: 
+[ N 2018-04-18 12:28:53.4454 3041/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3110 stdout: 
+App 3118 stdout: 
+[ N 2018-04-18 12:34:26.5796 3041/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3118, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-18 12:43:01.0786 3041/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-18 12:43:01.0786 3041/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-18 12:43:01.0787 3041/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3110, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 12:43:01.0793 3041/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-18 12:43:01.0793 3041/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-18 12:43:01.0794 3041/T9 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-18 12:43:01.0794 3041/T9 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-18 12:43:01.0795 3041/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3110, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 12:43:01.8187 3041/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-18 12:43:02.4194 3938/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-18 12:43:02.4464 3941/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-18 12:43:02.4467 3941/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-18 12:43:02.4549 3941/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3941
+App 3979 stdout: 
+[ N 2018-04-18 12:43:04.9011 3941/T7 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3997 stdout: 
+
+[ N 2018-04-18 12:56:41.4193 3941/T8 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-18 12:56:41.4194 3941/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-18 12:56:41.4195 3941/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3997, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 12:56:41.4200 3941/T8 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-18 12:56:41.4201 3941/T8 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-18 12:56:41.4202 3941/Ta Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-18 12:56:41.4202 3941/Ta Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-18 12:56:41.4203 3941/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3997, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 12:56:42.1825 3941/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-18 12:56:42.3757 4508/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-18 12:56:42.4014 4511/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-18 12:56:42.4017 4511/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-18 12:56:42.4103 4511/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 4511
+App 4552 stdout: 
+[ N 2018-04-18 12:56:44.9512 4511/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 4570 stdout: 
+
+[ N 2018-04-18 12:58:20.9495 4511/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-18 12:58:20.9495 4511/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-18 12:58:20.9496 4511/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4570, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 12:58:20.9502 4511/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-18 12:58:20.9502 4511/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-18 12:58:20.9503 4511/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-18 12:58:20.9503 4511/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-18 12:58:20.9504 4511/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4570, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 12:58:21.6957 4511/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-18 12:58:26.8396 4877/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-18 12:58:26.8646 4880/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-18 12:58:26.8653 4880/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-18 12:58:26.8736 4880/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 4880
+App 4918 stdout: 
+[ N 2018-04-18 12:58:29.2432 4880/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 4936 stdout: 
+
+[ N 2018-04-18 12:58:53.3106 4880/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-18 12:58:53.3106 4880/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-18 12:58:53.3107 4880/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4936, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 12:58:53.3107 4880/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-18 12:58:53.3107 4880/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-18 12:58:53.3107 4880/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-18 12:58:53.3107 4880/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-18 12:58:53.3108 4880/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4936, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 12:58:54.0552 4880/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-18 12:58:54.4667 5012/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-18 12:58:54.5182 5015/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-18 12:58:54.5210 5015/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-18 12:58:54.5438 5015/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 5015
+[ N 2018-04-18 12:58:57.0138 5015/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 5053 stdout: 
+App 5073 stdout: 
+App 5360 stdout: 
+App 5381 stdout: 
+[ N 2018-04-18 13:13:27.9876 5015/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5381, application /home/tobias/projekte/webdev/gruender (development)
+App 8633 stdout: 
+App 8656 stdout: 
+[ N 2018-04-18 14:49:20.8035 5015/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 8656, application /home/tobias/projekte/webdev/gruender (development)
+App 5073 stdout: []
+App 5073 stdout: {"id"=>5, "name"=>"Internet\n ", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Internet.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 5073 stdout: #<Project id: nil, name: "Reversing Effects of Continuous Educational Stress...", user_id: 2, created_at: nil, updated_at: nil, goal: "Mit dem RECESS-Projekt sollen Studenten und Schüle...", problem: "Dauerhaftes sitzen in muffigen Hörsälen schwächt d...", solution: "<p>Dauerhaftes Sitzen in muffigen Hörsälen schwäch...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">
+App 9324 stdout: 
+App 9345 stdout: 
+App 5073 stdout: []
+App 5073 stdout: {"id"=>31, "name"=>"Hobby", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Hobby.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 4, name: "Reversing Effects of Continuous Educational Stress...", user_id: 2, created_at: "2018-04-18 13:02:30", updated_at: "2018-04-18 13:02:30", goal: "Mit dem RECESS-Projekt sollen Studenten und Schüle...", problem: "Dauerhaftes sitzen in muffigen Hörsälen schwächt d...", solution: "<p>Dauerhaftes Sitzen in muffigen Hörsälen schwäch...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: "Ap_Creative_Stock_Header.jpg", typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 5073 stdout: []
+App 5073 stdout: {"id"=>31, "name"=>"Hobby", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Hobby.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 4, name: "Reversing Effects of Continuous Educational Stress...", user_id: 2, created_at: "2018-04-18 13:02:30", updated_at: "2018-04-18 13:02:30", goal: "Mit dem RECESS-Projekt sollen Studenten und Schüle...", problem: "Dauerhaftes sitzen in muffigen Hörsälen schwächt d...", solution: "<p>Dauerhaftes Sitzen in muffigen Hörsälen schwäch...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: "Ap_Creative_Stock_Header.jpg", typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 5073 stdout: []
+App 5073 stdout: {"id"=>4, "name"=>"Freizeit\n ", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Freizeit.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 4, name: "Reversing Effects of Continuous Educational Stress...", user_id: 2, created_at: "2018-04-18 13:02:30", updated_at: "2018-04-18 13:02:30", goal: "Mit dem RECESS-Projekt sollen Studenten und Schüle...", problem: "Dauerhaftes sitzen in muffigen Hörsälen schwächt d...", solution: "<p>Dauerhaftes Sitzen in muffigen Hörsälen schwäch...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: "Ap_Creative_Stock_Header.jpg", typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 5073 stdout: [{"id"=>4, "title"=>"Test4", "content"=>"asfdfsfsdfsadfsad", "user_id"=>1, "community_id"=>8, "created_at"=>Tue, 17 Apr 2018 12:12:59 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:12:59 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 5, title: nil, content: "asfdsdfadsfasdf", user_id: 1, parent_id: 4, grandparent_id: 8, parent_type: "Post", created_at: "2018-04-17 12:13:02", updated_at: "2018-04-17 12:13:02", author: "admin2">]>}, {"id"=>5, "title"=>"Test5", "content"=>"asfdfsfsdfsadfsad", "user_id"=>1, "community_id"=>8, "created_at"=>Tue, 17 Apr 2018 12:13:12 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:13:12 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 6, title: nil, content: "sadfsafsaf", user_id: 1, parent_id: 5, grandparent_id: 8, parent_type: "Post", created_at: "2018-04-17 12:13:27", updated_at: "2018-04-17 12:13:27", author: "admin2">]>}, {"id"=>6, "title"=>"safsafd", "content"=>"sadfsdgddgsdgdsg", "user_id"=>1, "community_id"=>8, "created_at"=>Tue, 17 Apr 2018 12:14:07 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:14:07 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}]
+App 5073 stdout: {"id"=>8, "name"=>"Tourismus & Gastronomie", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Tourismus und Gastronomie.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[{"id"=>4, "title"=>"Test4", "content"=>"asfdfsfsdfsadfsad", "user_id"=>1, "community_id"=>8, "created_at"=>Tue, 17 Apr 2018 12:12:59 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:12:59 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 5, title: nil, content: "asfdsdfadsfasdf", user_id: 1, parent_id: 4, grandparent_id: 8, parent_type: "Post", created_at: "2018-04-17 12:13:02", updated_at: "2018-04-17 12:13:02", author: "admin2">]>}, {"id"=>5, "title"=>"Test5", "content"=>"asfdfsfsdfsadfsad", "user_id"=>1, "community_id"=>8, "created_at"=>Tue, 17 Apr 2018 12:13:12 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:13:12 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 6, title: nil, content: "sadfsafsaf", user_id: 1, parent_id: 5, grandparent_id: 8, parent_type: "Post", created_at: "2018-04-17 12:13:27", updated_at: "2018-04-17 12:13:27", author: "admin2">]>}, {"id"=>6, "title"=>"safsafd", "content"=>"sadfsdgddgsdgdsg", "user_id"=>1, "community_id"=>8, "created_at"=>Tue, 17 Apr 2018 12:14:07 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:14:07 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}]}
+App 5073 stdout: []
+App 5073 stdout: {"id"=>4, "name"=>"Freizeit\n ", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Freizeit.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 4, name: "Reversing Effects of Continuous Educational Stress...", user_id: 2, created_at: "2018-04-18 13:02:30", updated_at: "2018-04-18 13:02:30", goal: "Mit dem RECESS-Projekt sollen Studenten und Schüle...", problem: "Dauerhaftes sitzen in muffigen Hörsälen schwächt d...", solution: "<p>Dauerhaftes Sitzen in muffigen Hörsälen schwäch...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: "Ap_Creative_Stock_Header.jpg", typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 5073 stdout: [{"id"=>9, "title"=>"Urlaub", "content"=>"Hättet ihr nicht auch gerne Urlaub?", "user_id"=>1, "community_id"=>4, "created_at"=>Wed, 18 Apr 2018 13:05:22 UTC +00:00, "updated_at"=>Wed, 18 Apr 2018 13:05:22 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}]
+App 5073 stdout: {"id"=>4, "name"=>"Freizeit\n ", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Freizeit.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 4, name: "Reversing Effects of Continuous Educational Stress...", user_id: 2, created_at: "2018-04-18 13:02:30", updated_at: "2018-04-18 13:02:30", goal: "Mit dem RECESS-Projekt sollen Studenten und Schüle...", problem: "Dauerhaftes sitzen in muffigen Hörsälen schwächt d...", solution: "<p>Dauerhaftes Sitzen in muffigen Hörsälen schwäch...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: "Ap_Creative_Stock_Header.jpg", typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>[{"id"=>9, "title"=>"Urlaub", "content"=>"Hättet ihr nicht auch gerne Urlaub?", "user_id"=>1, "community_id"=>4, "created_at"=>Wed, 18 Apr 2018 13:05:22 UTC +00:00, "updated_at"=>Wed, 18 Apr 2018 13:05:22 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}]}
+[ N 2018-04-18 15:16:25.8861 5015/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5073, application /home/tobias/projekte/webdev/gruender (development)
+App 10001 stdout: 
+App 10021 stdout: 
+App 9345 stdout: #<Project id: nil, name: "Testprojekt mit Stern", user_id: 1, created_at: nil, updated_at: nil, goal: "sadfsafdgdhfdhfdhfdh", problem: "fdhfdhfdhdfhdfhfdhfdhfdhfdhgd", solution: "<p> </p>", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Problemstellung">
+App 9345 stdout: #<Project id: nil, name: "dfhgfhdfhfdhfdghdfghdfh", user_id: 1, created_at: nil, updated_at: nil, goal: "fdhgfghfdhfghz4464646", problem: "4645457457575zztjdjdjdjjdjd", solution: "<p>gagdasdfddslfjkafsdlöfsdalkhfsdalkhfaiouahsfuef...", coop: false, likes: 0, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">
+[ N 2018-04-18 15:27:44.6495 5015/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 10021, application /home/tobias/projekte/webdev/gruender (development)
+App 9345 stdout: [{"id"=>1, "title"=>"Test", "content"=>"sdfsafdsafgdfsghdshdsfhg", "user_id"=>1, "community_id"=>1, "created_at"=>Tue, 17 Apr 2018 12:09:01 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:09:01 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "TestKommentar", user_id: 1, parent_id: 1, grandparent_id: 1, parent_type: "Post", created_at: "2018-04-17 12:09:09", updated_at: "2018-04-17 12:09:09", author: "admin2">]>}, {"id"=>2, "title"=>"Test2", "content"=>"jhfhhgjjfjfjhjhjhfjffjfjh", "user_id"=>1, "community_id"=>1, "created_at"=>Tue, 17 Apr 2018 12:11:02 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:11:02 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 3, title: nil, content: "Test2", user_id: 1, parent_id: 2, grandparent_id: 1, parent_type: "Post", created_at: "2018-04-17 12:11:06", updated_at: "2018-04-17 12:11:06", author: "admin2">]>}, {"id"=>3, "title"=>"Test3", "content"=>"hdfhreteg3ggreg3w5w4gsegs", "user_id"=>1, "community_id"=>1, "created_at"=>Tue, 17 Apr 2018 12:11:58 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:11:58 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 4, title: nil, content: "dfgsgdsgdsgsdg", user_id: 1, parent_id: 3, grandparent_id: 1, parent_type: "Post", created_at: "2018-04-17 12:12:01", updated_at: "2018-04-17 12:12:01", author: "admin2">]>}]
+App 9345 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-17 12:05:56", updated_at: "2018-04-17 12:05:56", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: 3, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>, #<Project id: 2, name: "dafadfasdfsafds", user_id: 2, created_at: "2018-04-17 12:42:49", updated_at: "2018-04-17 12:45:35", goal: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", problem: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", solution: "<p>Lorem ipsum dolor sit amet, consetetur sadipsci...", coop: true, likes: 30, attachment: nil, status: "Published", cooptext: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", image: nil, typus: "Showcase">]>, :member_count=>0, :project_count=>2, :discussions=>[{"id"=>1, "title"=>"Test", "content"=>"sdfsafdsafgdfsghdshdsfhg", "user_id"=>1, "community_id"=>1, "created_at"=>Tue, 17 Apr 2018 12:09:01 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:09:01 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 2, title: nil, content: "TestKommentar", user_id: 1, parent_id: 1, grandparent_id: 1, parent_type: "Post", created_at: "2018-04-17 12:09:09", updated_at: "2018-04-17 12:09:09", author: "admin2">]>}, {"id"=>2, "title"=>"Test2", "content"=>"jhfhhgjjfjfjhjhjhfjffjfjh", "user_id"=>1, "community_id"=>1, "created_at"=>Tue, 17 Apr 2018 12:11:02 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:11:02 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 3, title: nil, content: "Test2", user_id: 1, parent_id: 2, grandparent_id: 1, parent_type: "Post", created_at: "2018-04-17 12:11:06", updated_at: "2018-04-17 12:11:06", author: "admin2">]>}, {"id"=>3, "title"=>"Test3", "content"=>"hdfhreteg3ggreg3w5w4gsegs", "user_id"=>1, "community_id"=>1, "created_at"=>Tue, 17 Apr 2018 12:11:58 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:11:58 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 4, title: nil, content: "dfgsgdsgdsgsdg", user_id: 1, parent_id: 3, grandparent_id: 1, parent_type: "Post", created_at: "2018-04-17 12:12:01", updated_at: "2018-04-17 12:12:01", author: "admin2">]>}]}
+
+[ N 2018-04-18 15:49:02.9826 5015/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-18 15:49:02.9827 5015/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-18 15:49:02.9827 5015/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 9345, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 15:49:02.9828 5015/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-18 15:49:02.9828 5015/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-18 15:49:02.9828 5015/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-18 15:49:02.9828 5015/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-18 15:49:02.9829 5015/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 9345, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-18 15:49:03.8224 5015/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-19 12:34:48.0684 2952/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-19 12:34:48.1381 2955/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-19 12:34:48.1391 2955/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-19 12:34:48.1708 2955/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 2955
+App 2999 stdout: 
+[ N 2018-04-19 12:34:50.7251 2955/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3027 stdout: 
+App 3039 stdout: 
+[ N 2018-04-19 12:40:16.3443 2955/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3039, application /home/tobias/projekte/webdev/gruender (development)
+App 3027 stdout: []
+App 3027 stdout: {"id"=>6, "name"=>"Energie & Umwelt\n ", "created_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "updated_at"=>Tue, 17 Apr 2018 12:05:56 UTC +00:00, "description"=>"", "icon"=>"assets/images/icons/Energie und Umwelt.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy [#<User id: 2, username: "Olafson LLC", created_at: "2018-04-17 12:26:38", updated_at: "2018-04-17 13:06:16", email: "elvira@olafson.dk", description: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", logo: "gv_default.jpg", name: "Elvira Olafson", web: "olafson.dk", fon: "0176066666666", location: "Hammerfest", role: nil>]>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>1, :project_count=>0, :discussions=>[]}
+
+[ N 2018-04-19 15:24:46.7260 2955/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-19 15:24:46.7261 2955/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-19 15:24:46.7269 2955/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3027, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-19 15:24:46.7270 2955/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-19 15:24:46.7270 2955/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-19 15:24:46.7271 2955/T7 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-19 15:24:46.7272 2955/T7 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-19 15:24:46.7273 2955/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3027, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-19 15:24:47.5273 2955/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-23 12:58:22.6320 3486/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-23 12:58:22.6832 3489/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-23 12:58:22.6842 3489/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-23 12:58:22.7251 3489/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3489
+App 3527 stdout: 
+[ N 2018-04-23 12:58:25.2787 3489/T9 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3547 stdout: 
+
+[ N 2018-04-23 14:00:38.9076 3489/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-23 14:00:38.9077 3489/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-23 14:00:38.9077 3489/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3547, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-23 14:00:38.9078 3489/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-23 14:00:38.9079 3489/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-23 14:00:38.9079 3489/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-23 14:00:38.9080 3489/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-23 14:00:38.9086 3489/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3547, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-23 14:00:39.6595 3489/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-24 12:04:34.4761 3197/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-24 12:04:34.5221 3200/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-24 12:04:34.5230 3200/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-24 12:04:34.5736 3200/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3200
+App 3238 stdout: 
+[ N 2018-04-24 12:04:37.0583 3200/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3257 stdout: 
+
+[ N 2018-04-24 12:04:56.6452 3200/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-24 12:04:56.6477 3200/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-24 12:04:56.6477 3200/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3257, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-24 12:04:56.6478 3200/T7 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-24 12:04:56.6479 3200/T7 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-24 12:04:56.6479 3200/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-24 12:04:56.6480 3200/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-24 12:04:56.6480 3200/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3257, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-24 12:04:57.3776 3200/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-24 12:47:10.1857 4766/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-24 12:47:10.2113 4769/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-24 12:47:10.2116 4769/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-24 12:47:10.2202 4769/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 4769
+App 4807 stdout: 
+[ N 2018-04-24 12:47:12.6726 4769/T6 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 4825 stdout: 
+App 4904 stdout: 
+[ N 2018-04-24 12:53:40.6514 4769/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4904, application /home/tobias/projekte/webdev/gruender (development)
+App 12548 stdout: 
+App 12570 stdout: 
+App 4825 stdout: Rescue Team to the Rescue!
+[ N 2018-04-24 16:19:36.1807 4769/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 12570, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-24 16:21:29.3123 4769/T8 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-24 16:21:29.3123 4769/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-24 16:21:29.3123 4769/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4825, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-24 16:21:29.3123 4769/T8 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-24 16:21:29.3124 4769/T8 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-24 16:21:29.3124 4769/Ta Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-24 16:21:29.3124 4769/Ta Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-24 16:21:29.3124 4769/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4825, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-24 16:21:30.1742 4769/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-25 14:37:24.9162 2856/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-25 14:37:24.9771 2859/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-25 14:37:24.9782 2859/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-25 14:37:25.0344 2859/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 2859
+App 2897 stdout: 
+[ N 2018-04-25 14:37:27.5671 2859/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 2915 stdout: 
+App 2948 stdout: 
+[ N 2018-04-25 14:43:01.9946 2859/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2948, application /home/tobias/projekte/webdev/gruender (development)
+App 4018 stdout: 
+App 4039 stdout: 
+[ N 2018-04-25 15:20:49.6149 2859/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4039, application /home/tobias/projekte/webdev/gruender (development)
+App 2915 stdout: Rescue Team to the Rescue!
+App 6045 stdout: 
+App 6065 stdout: 
+App 6095 stdout: 
+App 6103 stdout: 
+App 6113 stdout: 
+App 6121 stdout: 
+[ N 2018-04-25 15:56:54.1166 2859/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6121, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-25 15:56:54.7189 2859/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6113, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-25 15:56:55.0715 2859/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6095, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-25 15:56:55.4927 2859/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6103, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-25 16:01:22.7452 2859/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6065, application /home/tobias/projekte/webdev/gruender (development)
+App 6455 stdout: 
+App 6476 stdout: 
+[ N 2018-04-25 16:07:01.8036 2859/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6476, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-25 16:11:05.4552 2859/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-25 16:11:05.4552 2859/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-25 16:11:05.4552 2859/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2915, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-25 16:11:05.4558 2859/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-25 16:11:05.4559 2859/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-25 16:11:05.4559 2859/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-25 16:11:05.4559 2859/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-25 16:11:05.4560 2859/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2915, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-25 16:11:06.2005 2859/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-26 11:44:46.3878 3113/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-26 11:44:46.5283 3116/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-26 11:44:46.5306 3116/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-26 11:44:46.6218 3116/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3116
+App 3154 stdout: 
+[ N 2018-04-26 11:44:49.4350 3116/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3191 stdout: 
+App 3198 stdout: 
+[ N 2018-04-26 11:53:14.2638 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3198, application /home/tobias/projekte/webdev/gruender (development)
+App 4301 stdout: 
+App 4328 stdout: 
+[ N 2018-04-26 12:21:54.3417 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3191, application /home/tobias/projekte/webdev/gruender (development)
+App 5989 stdout: 
+App 6011 stdout: 
+[ N 2018-04-26 13:18:03.1837 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6011, application /home/tobias/projekte/webdev/gruender (development)
+App 6571 stdout: 
+App 6593 stdout: 
+[ N 2018-04-26 13:32:15.2195 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6593, application /home/tobias/projekte/webdev/gruender (development)
+App 6842 stdout: 
+App 6869 stdout: 
+[ N 2018-04-26 13:38:05.9144 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6869, application /home/tobias/projekte/webdev/gruender (development)
+App 7140 stdout: 
+App 7165 stdout: 
+App 4328 stdout: Rescue Team to the Rescue!
+[ N 2018-04-26 13:46:11.7753 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7165, application /home/tobias/projekte/webdev/gruender (development)
+App 7884 stdout: 
+App 7908 stdout: 
+[ N 2018-04-26 14:18:17.4826 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7908, application /home/tobias/projekte/webdev/gruender (development)
+App 9003 stdout: 
+App 9030 stdout: 
+[ N 2018-04-26 14:29:31.3723 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 9030, application /home/tobias/projekte/webdev/gruender (development)
+App 9374 stdout: 
+App 9395 stdout: 
+[ N 2018-04-26 14:40:11.2528 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 9395, application /home/tobias/projekte/webdev/gruender (development)
+App 9686 stdout: 
+App 9719 stdout: 
+[ N 2018-04-26 14:58:07.7256 3116/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 9719, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-26 15:07:28.7070 3116/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-26 15:07:28.7071 3116/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-26 15:07:28.7072 3116/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4328, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-26 15:07:28.7073 3116/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-26 15:07:28.7073 3116/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-26 15:07:28.7229 3116/T7 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-26 15:07:28.7230 3116/T7 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-26 15:07:28.7231 3116/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4328, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-26 15:07:29.5800 3116/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-04-26 15:08:00.2231 10806/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-04-26 15:08:00.2489 10809/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-04-26 15:08:00.2492 10809/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-04-26 15:08:00.2576 10809/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 10809
+App 10847 stdout: 
+[ N 2018-04-26 15:08:03.0570 10809/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 10896 stdout: 
+App 10896 stdout: []
+App 10896 stdout: {"id"=>2, "name"=>"Handel\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Neue Produkte, neue Märkte, neue Möglichkeiten. Und Dein Projekt mittendrin!", "icon"=>"assets/images/icons/Handel.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 11104 stdout: 
+App 11125 stdout: 
+App 10896 stdout: []
+App 10896 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+[ N 2018-04-26 15:19:09.6582 10809/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 11125, application /home/tobias/projekte/webdev/gruender (development)
+App 10896 stdout: []
+App 10896 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>11, "name"=>"Design & Kreativwirtschaft", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Mit Kreativität neue Produkte, künstlerische und soziale Innovationen erschaffen!", "icon"=>"assets/images/icons/Design und Kreativwirtschaft.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>5, "name"=>"Internet\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Das Internet ist nur ein Hype… oder etwa nicht?", "icon"=>"assets/images/icons/Internet.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>17, "name"=>"Beratung Consulting", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Hast Du einen Rat für uns? An wen kann man sich wenden? Wir sind gespannt.", "icon"=>"assets/images/icons/Beratungsunternehmen.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>18, "name"=>"Bildung", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"E-Learning, Online-Courses oder doch das klassische Lehrbuch? Was kann man wie zukünftig lernen?", "icon"=>"assets/images/icons/Bildung.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>23, "name"=>"E-Government", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Online-Dokumente, digitale Behördengänge, in diesem Bereich gibt es viel zu tun. Any Ideas?", "icon"=>"assets/images/icons/E-Government.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>23, "name"=>"E-Government", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Online-Dokumente, digitale Behördengänge, in diesem Bereich gibt es viel zu tun. Any Ideas?", "icon"=>"assets/images/icons/E-Government.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>22, "name"=>"DIY", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Selbstgemacht ist immer noch am schönsten!", "icon"=>"assets/images/icons/DIY Logo.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>22, "name"=>"DIY", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Selbstgemacht ist immer noch am schönsten!", "icon"=>"assets/images/icons/DIY Logo.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>8, "name"=>"Tourismus & Gastronomie", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Neue Projekte rund ums Thema Reisen, Gastgewerbe. Bunte und sonnige Projekte, bitte hier entlang.", "icon"=>"assets/images/icons/Tourismus und Gastronomie.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>7, "name"=>"Food & Drink\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Kann man das essen oder trinken?  Leckere Projektideen und Innovationen mögen alle.", "icon"=>"assets/images/icons/Food and Drink.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>7, "name"=>"Food & Drink\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Kann man das essen oder trinken?  Leckere Projektideen und Innovationen mögen alle.", "icon"=>"assets/images/icons/Food and Drink.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>7, "name"=>"Food & Drink\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Kann man das essen oder trinken?  Leckere Projektideen und Innovationen mögen alle.", "icon"=>"assets/images/icons/Food and Drink.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>32, "name"=>"Internet", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Was es da nicht alles gibt! Really?", "icon"=>"assets/images/icons/Internet.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>5, "name"=>"Internet\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Das Internet ist nur ein Hype… oder etwa nicht?", "icon"=>"assets/images/icons/Internet.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 10896 stdout: []
+App 10896 stdout: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "DemoProjekt", user_id: 1, created_at: "2018-04-26 13:07:54", updated_at: "2018-04-26 13:07:54", goal: "Serve as Filler for the Page", problem: "It's hard to see what the page looks like without ...", solution: "Create a premade Projet to fill this", coop: true, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: nil>]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 13310 stdout: 
+App 13332 stdout: 
+[ N 2018-04-26 16:14:20.3190 10809/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 13332, application /home/tobias/projekte/webdev/gruender (development)
+App 10896 stdout: Rescue Team to the Rescue!
+App 13800 stdout: 
+App 13827 stdout: 
+App 10896 stdout: []
+App 10896 stdout: {"id"=>5, "name"=>"Internet\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Das Internet ist nur ein Hype… oder etwa nicht?", "icon"=>"assets/images/icons/Internet.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+[ N 2018-04-26 16:30:07.3860 10809/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 13827, application /home/tobias/projekte/webdev/gruender (development)
+App 10896 stdout: []
+App 10896 stdout: {"id"=>6, "name"=>"Energie & Umwelt\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Die Natur schützen, Ressourcen sparen. Hier finden sich Ideen für mehr Nachhaltigkeit. ", "icon"=>"assets/images/icons/Energie und Umwelt.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 2, name: "Stinkefinger-Roboterhand", user_id: 1, created_at: "2018-04-26 14:16:30", updated_at: "2018-04-26 14:16:30", goal: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", problem: "Lorem ipsum dolor sit amet, consetetur sadipscing ...", solution: " Lorem ipsum dolor sit amet, consetetur sadipscing...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: "geschaeftsmodelle.jpg", typus: "Showcase">]>, :member_count=>0, :project_count=>1, :discussions=>[]}
+App 14349 stdout: 
+App 14373 stdout: 
+[ N 2018-04-26 16:35:53.9401 10809/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 10896, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-04-26 16:36:42.4967 10809/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-04-26 16:36:42.5121 10809/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-04-26 16:36:42.5121 10809/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 14373, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-26 16:36:42.5122 10809/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-04-26 16:36:42.5122 10809/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-04-26 16:36:42.5269 10809/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-04-26 16:36:42.5270 10809/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-04-26 16:36:42.5288 10809/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 14373, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-04-26 16:36:43.3607 10809/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-05-02 11:57:49.3304 3112/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-05-02 11:57:49.3979 3115/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-05-02 11:57:49.3991 3115/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-05-02 11:57:49.4579 3115/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3115
+App 3153 stdout: 
+[ N 2018-05-02 11:57:52.0359 3115/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3171 stdout: 
+App 5535 stdout: 
+App 5561 stdout: 
+[ N 2018-05-02 13:20:13.6842 3115/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5561, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-05-02 13:40:04.7246 3115/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-05-02 13:40:04.7246 3115/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-05-02 13:40:04.7246 3115/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3171, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-02 13:40:04.7247 3115/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-05-02 13:40:04.7247 3115/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-05-02 13:40:04.7247 3115/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-05-02 13:40:04.7247 3115/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-05-02 13:40:04.7248 3115/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3171, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-02 13:40:05.4817 3115/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-05-03 12:07:40.1106 3101/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-05-03 12:07:40.2461 3104/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-05-03 12:07:40.2491 3104/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-05-03 12:07:40.3315 3104/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 3104
+App 3142 stdout: 
+[ N 2018-05-03 12:07:42.9102 3104/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3165 stdout: 
+App 3269 stdout: 
+[ N 2018-05-03 12:20:13.2362 3104/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3269, application /home/tobias/projekte/webdev/gruender (development)
+App 3937 stdout: 
+App 3961 stdout: 
+[ N 2018-05-03 12:33:56.7209 3104/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3961, application /home/tobias/projekte/webdev/gruender (development)
+App 5004 stdout: 
+App 5028 stdout: 
+[ N 2018-05-03 13:09:36.0267 3104/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5028, application /home/tobias/projekte/webdev/gruender (development)
+App 5487 stdout: 
+App 5510 stdout: 
+[ N 2018-05-03 13:25:16.4396 2097/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-05-03 13:25:16.5626 2101/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-05-03 13:25:16.5765 2101/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-05-03 13:25:16.6491 2101/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 2101
+App 2147 stdout: 
+[ N 2018-05-03 13:25:19.5151 2101/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 2205 stdout: 
+App 2212 stdout: 
+[ N 2018-05-03 13:30:58.8722 2101/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2212, application /home/tobias/projekte/webdev/gruender (development)
+App 2507 stdout: 
+App 2533 stdout: 
+[ N 2018-05-03 13:50:52.5525 2101/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2533, application /home/tobias/projekte/webdev/gruender (development)
+App 3951 stdout: 
+App 3975 stdout: 
+[ N 2018-05-03 14:23:53.7260 2101/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3975, application /home/tobias/projekte/webdev/gruender (development)
+App 5906 stdout: 
+App 5932 stdout: 
+[ N 2018-05-03 15:17:11.1290 2101/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5932, application /home/tobias/projekte/webdev/gruender (development)
+App 6450 stdout: 
+App 6473 stdout: 
+[ N 2018-05-03 15:27:48.6848 2101/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2205, application /home/tobias/projekte/webdev/gruender (development)
+App 6473 stdout: []
+App 6473 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 6473 stdout: []
+App 6473 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 6473 stdout: []
+App 6473 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 6473 stdout: []
+App 6473 stdout: {"id"=>3, "name"=>"E-Commerce\n ", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!", "icon"=>"assets/images/icons/E-Commerce.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+
+[ N 2018-05-03 16:26:34.0437 2101/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-05-03 16:26:34.0437 2101/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-05-03 16:26:34.0438 2101/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6473, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-03 16:26:34.0458 2101/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-05-03 16:26:34.0460 2101/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-05-03 16:26:34.0522 2101/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-05-03 16:26:34.0523 2101/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-05-03 16:26:34.0670 2101/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6473, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-03 16:26:34.9091 2101/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-05-04 12:22:36.8668 2787/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-05-04 12:22:37.0491 2790/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-05-04 12:22:37.0570 2790/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-05-04 12:22:37.0990 2790/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 2790
+App 2828 stdout: 
+[ N 2018-05-04 12:22:39.6766 2790/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 2859 stdout: 
+App 3221 stdout: 
+App 3243 stdout: 
+[ N 2018-05-04 12:36:24.1083 2790/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 2859, application /home/tobias/projekte/webdev/gruender (development)
+App 4956 stdout: 
+App 4981 stdout: 
+[ N 2018-05-04 13:20:51.6082 2790/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 4981, application /home/tobias/projekte/webdev/gruender (development)
+App 5899 stdout: 
+App 5925 stdout: 
+[ N 2018-05-04 13:42:43.7574 2790/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 3243, application /home/tobias/projekte/webdev/gruender (development)
+App 6729 stdout: 
+App 6754 stdout: 
+[ N 2018-05-04 14:04:20.7366 2790/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 6754, application /home/tobias/projekte/webdev/gruender (development)
+App 5925 stdout: []
+App 5925 stdout: {"id"=>14, "name"=>"3d-Printing", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Drucken in Drei Dimensionen – We love it!", "icon"=>"assets/images/icons/3d-printing.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[]}
+App 5925 stdout: [{"id"=>1, "title"=>"Test", "content"=>"saddsafsafsafsadfsdafsdafsadfsafsadfasdfdgggggf\n\ndsfgdsgdsfgdsg", "user_id"=>1, "community_id"=>14, "created_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "updated_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}]
+App 5925 stdout: {"id"=>14, "name"=>"3d-Printing", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Drucken in Drei Dimensionen – We love it!", "icon"=>"assets/images/icons/3d-printing.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[{"id"=>1, "title"=>"Test", "content"=>"saddsafsafsafsadfsdafsdafsadfsafsadfasdfdgggggf\n\ndsfgdsgdsfgdsg", "user_id"=>1, "community_id"=>14, "created_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "updated_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}]}
+App 5925 stdout: Rescue Team to the Rescue!
+App 5925 stdout: Rescue Team to the Rescue!
+App 5925 stdout: [{"id"=>1, "title"=>"Test", "content"=>"saddsafsafsafsadfsdafsdafsadfsafsadfasdfdgggggf\n\ndsfgdsgdsfgdsg", "user_id"=>1, "community_id"=>14, "created_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "updated_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 4, title: nil, content: "Ich bin nicht überzeugt", user_id: 1, parent_id: 1, grandparent_id: 14, parent_type: "Post", created_at: "2018-05-04 12:18:24", updated_at: "2018-05-04 12:18:24", author: "admin2">]>}]
+App 5925 stdout: {"id"=>14, "name"=>"3d-Printing", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Drucken in Drei Dimensionen – We love it!", "icon"=>"assets/images/icons/3d-printing.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[{"id"=>1, "title"=>"Test", "content"=>"saddsafsafsafsadfsdafsdafsadfsafsadfasdfdgggggf\n\ndsfgdsgdsfgdsg", "user_id"=>1, "community_id"=>14, "created_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "updated_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 4, title: nil, content: "Ich bin nicht überzeugt", user_id: 1, parent_id: 1, grandparent_id: 14, parent_type: "Post", created_at: "2018-05-04 12:18:24", updated_at: "2018-05-04 12:18:24", author: "admin2">]>}]}
+App 7461 stdout: 
+App 7481 stdout: 
+App 5925 stdout: [{"id"=>1, "title"=>"Test", "content"=>"saddsafsafsafsadfsdafsdafsadfsafsadfasdfdgggggf\n\ndsfgdsgdsfgdsg", "user_id"=>1, "community_id"=>14, "created_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "updated_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 4, title: nil, content: "Ich bin nicht überzeugt", user_id: 1, parent_id: 1, grandparent_id: 14, parent_type: "Post", created_at: "2018-05-04 12:18:24", updated_at: "2018-05-04 12:18:24", author: "admin2">]>}]
+App 5925 stdout: {"id"=>14, "name"=>"3d-Printing", "created_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "updated_at"=>Thu, 26 Apr 2018 13:07:54 UTC +00:00, "description"=>"Drucken in Drei Dimensionen – We love it!", "icon"=>"assets/images/icons/3d-printing.svg", "typus"=>"Thema", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy []>, :projects=>#<ActiveRecord::Associations::CollectionProxy []>, :member_count=>0, :project_count=>0, :discussions=>[{"id"=>1, "title"=>"Test", "content"=>"saddsafsafsafsadfsdafsdafsadfsafsadfasdfdgggggf\n\ndsfgdsgdsfgdsg", "user_id"=>1, "community_id"=>14, "created_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "updated_at"=>Fri, 04 May 2018 12:13:15 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 4, title: nil, content: "Ich bin nicht überzeugt", user_id: 1, parent_id: 1, grandparent_id: 14, parent_type: "Post", created_at: "2018-05-04 12:18:24", updated_at: "2018-05-04 12:18:24", author: "admin2">]>}]}
+App 7649 stdout: 
+[ N 2018-05-04 14:27:54.1248 2790/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7481, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-04 14:27:55.0222 2790/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 7649, application /home/tobias/projekte/webdev/gruender (development)
+App 9665 stdout: 
+App 9690 stdout: 
+[ N 2018-05-04 15:23:33.0669 2790/T3 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 9690, application /home/tobias/projekte/webdev/gruender (development)
+App 10800 stdout: 
+App 10820 stdout: 
+
+[ N 2018-05-04 15:47:51.9517 2790/T6 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-05-04 15:47:51.9517 2790/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-05-04 15:47:51.9518 2790/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5925, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-04 15:47:51.9519 2790/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 10820, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-04 15:47:51.9519 2790/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-05-04 15:47:51.9520 2790/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-05-04 15:47:51.9521 2790/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-05-04 15:47:51.9521 2790/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-05-04 15:47:51.9522 2790/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 5925, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-04 15:47:51.9522 2790/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 10820, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-05-04 15:47:52.6433 2790/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished

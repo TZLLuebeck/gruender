@@ -6,10 +6,20 @@ class User < ApplicationRecord
 
   has_many :access_grants, class_name: "Doorkeeper::AccessGrant", foreign_key: :resource_owner_id, dependent: :delete_all # or :destroy if you need callbacks
   has_many :access_tokens, class_name: "Doorkeeper::AccessToken", foreign_key: :resource_owner_id, dependent: :delete_all # or :destroy if you need callbacks
-  has_many :projects
+  
+  #Memberships to Communities
   has_and_belongs_to_many :communities
-  has_many :posts
-  has_many :comments
+  #Ownership of Project  
+  has_many :projects, dependent: :delete_all
+  has_many :posts, dependent: :nullify
+  has_many :comments, dependent: :nullify
+  has_many :sent_messages, class_name: "Message", foreign_key: "sender_id", dependent: :nullify
+  #Directed at User
+  has_many :events, dependent: :delete_all
+  has_many :received_messages, class_name: "Message", foreign_key: "recipient_id", dependent: :nullify
+
+  has_many :liked_projects, through: :likes
+
   
   mount_uploader :logo, LogoUploader
 

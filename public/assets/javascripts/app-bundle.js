@@ -16,11 +16,11 @@ app.run(["User", "TokenContainer", "$rootScope", "$state", "$stateParams", "Rail
     $rootScope.lastState = transition.from();
     return $rootScope.lastStateParams = transition.params('from');
   });
-  return $rootScope.$on('$stateChangeSuccess', function($location, $anchorScroll) {
+  return $rootScope.$on('$stateChangeSuccess', function($document, $location, $anchorScroll) {
     if ($location.hash()) {
       return $anchorScroll();
     } else {
-      return document.body.scrollTop = document.documentElement.scrollTop = 0;
+      return $document.body.scrollTop = $document.documentElement.scrollTop = 0;
     }
   });
 }]);
@@ -129,7 +129,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }]
     }
   }).state('root.profile', {
-    url: '/profile/:id',
+    url: '/profil/:id',
     views: {
       'body@': {
         templateUrl: 'assets/views/users/profile.html',
@@ -153,7 +153,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }]
     }
   }).state('root.register', {
-    url: '/registration',
+    url: '/registrierung',
     views: {
       'body@': {
         templateUrl: 'assets/views/users/registration.html',
@@ -193,7 +193,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }
     }
   }).state('root.project', {
-    url: '/project/:id',
+    url: '/projekt/:id',
     views: {
       'body@': {
         templateUrl: 'assets/views/projects/project.html',
@@ -222,7 +222,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }]
     }
   }).state('root.createproject', {
-    url: '/project/new',
+    url: '/projekt/neu',
     views: {
       'body@': {
         templateUrl: 'assets/views/projects/create.html',
@@ -230,8 +230,8 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
         controllerAs: 'create'
       }
     }
-  }).state('root.editproject', {
-    url: '/project/edit',
+  }).state('root.project.editproject', {
+    url: '/bearbeiten',
     views: {
       'body@': {
         templateUrl: 'assets/views/projects/edit.html',
@@ -297,7 +297,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }
     }
   }).state('root.admin.usermanagement', {
-    url: '/users',
+    url: '/accounts',
     views: {
       'body@': {
         templateUrl: 'assets/views/admin/users.html',
@@ -306,7 +306,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }
     }
   }).state('root.admin.projectmanagement', {
-    url: '/projects',
+    url: '/projekte',
     views: {
       'body@': {
         templateUrl: 'assets/views/admin/projects.html',
@@ -315,7 +315,7 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }
     }
   }).state('root.admin.communitymanagement', {
-    url: '/projects',
+    url: '/communities',
     views: {
       'body@': {
         templateUrl: 'assets/views/admin/communities.html',
@@ -324,12 +324,40 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
       }
     }
   }).state('root.admin.reports', {
-    url: '/projects',
+    url: '/meldungen',
     views: {
       'body@': {
         templateUrl: 'assets/views/admin/reports.html',
         controller: 'ReportCtrl',
         controllerAs: 'reports'
+      }
+    }
+  }).state('root.datenschutz', {
+    url: '/Datenschutz',
+    views: {
+      'body@': {
+        templateUrl: 'assets/views/singletons/datenschutz.html'
+      }
+    }
+  }).state('root.fablab', {
+    url: '/FabLab_Luebeck',
+    views: {
+      'body@': {
+        templateUrl: 'assets/views/singletons/fablab.html'
+      }
+    }
+  }).state('root.geschaeftsmodelle', {
+    url: '/Geschaeftsmodelle_4.0',
+    views: {
+      'body@': {
+        templateUrl: 'assets/views/singletons/geschaeftsmodelle.html'
+      }
+    }
+  }).state('root.openinnovation', {
+    url: '/Open_Innovation',
+    views: {
+      'body@': {
+        templateUrl: 'assets/views/singletons/open_innovation.html'
       }
     }
   });
@@ -795,8 +823,10 @@ angular.module('gruenderviertel').service('TokenContainer', ["$localStorage", "R
 }]);
 
 angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "Rails", "$rootScope", "Upload", "TokenContainer", function(baseREST, $q, $http, Rails, $rootScope, Upload, TokenContainer) {
-  var createUser, currentUser, deleteUser, getAll, getUser, isAuthenticated, login, logout, resetPassword, updateUser;
+  var createUser, currentUser, deleteUser, getAll, getEvents, getNewEvents, getUser, isAuthenticated, login, logout, resetPassword, updateUser;
   this.user = null;
+  this.newEvents = 0;
+  this.events = [];
   this.deferreds = {};
   this.unauthorized = true;
   createUser = (function(_this) {
@@ -861,9 +891,11 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
     } else {
       packet.id = id;
     }
-    packet.get().then(function(response) {
-      return defer.resolve(response.data);
-    }, function(error) {
+    packet.get().then((function(_this) {
+      return function(response) {
+        return defer.resolve(response.data);
+      };
+    })(this), function(error) {
       return defer.reject(error.error);
     });
     return defer.promise;
@@ -892,6 +924,37 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
         });
         return _this.deferreds.me.promise;
       }
+    };
+  })(this);
+  getNewEvents = (function(_this) {
+    return function() {
+      var defer, packet;
+      defer = $q.defer();
+      packet = baseRest.one('events').one('new');
+      packet.get().then(function(response) {
+        if (response.data > 0) {
+          $rootScope.$broadcast('event:newEvents');
+          _this.newEvents = response.data;
+        }
+        return defer.resolve(response.data);
+      }, function(error) {
+        return defer.reject(error);
+      });
+      return defer.promise;
+    };
+  })(this);
+  getEvents = (function(_this) {
+    return function() {
+      var defer, packet;
+      defer = $q.defer();
+      packet = baseREST.one('events');
+      packet.get().then(function(response) {
+        _this.events = response.data;
+        return defer.resolve(response.data);
+      }, function(error) {
+        return defer.reject(error);
+      });
+      return defer.promise;
     };
   })(this);
   updateUser = (function(_this) {
@@ -1025,12 +1088,19 @@ angular.module('gruenderviertel').controller('NavCtrl', ["User", "$rootScope", "
   this.form = {};
   this.admin = false;
   this.username = "default";
+  this.newEvents = 0;
   $rootScope.$on('user:stateChanged', (function(_this) {
     return function(e, state, params) {
       console.log("NavCtrl user:StateChanged");
       _this.setLoggedIn(TokenContainer.get());
       _this.setUsername();
       return _this.isAdmin();
+    };
+  })(this));
+  $rootScope.$on('event:newEvents', (function(_this) {
+    return function(e, state, params) {
+      console.log("NavCtrl event:newEvents");
+      return _this.newEvents = User.newEvents;
     };
   })(this));
   this.init = function() {
@@ -1201,6 +1271,10 @@ angular.module('gruenderviertel').controller('CommunityOverviewCtrl', ["Communit
 
 angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "Community", "$state", function(Project, Community, $state) {
   this.step = 1;
+  this.pitch_characters = 200;
+  this.form = {};
+  this.form.project = {};
+  this.form.project.coop = false;
   this.tag_list;
   Community.get_all().then((function(_this) {
     return function(response) {
@@ -1231,7 +1305,7 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
   this.proceed = (function(_this) {
     return function() {
       console.log(_this.form.user);
-      if (_this.step < 3) {
+      if (_this.step < 5) {
         return _this.step++;
       }
     };
@@ -1254,8 +1328,15 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
       });
     });
   };
-  this.form = {};
-  this.form.project = {};
+  this.charLimit = (function(_this) {
+    return function() {
+      if (_this.form.project.goal) {
+        return _this.pitch_characters = 200 - _this.form.project.goal.length;
+      } else {
+        return _this.pitch_characters = 200;
+      }
+    };
+  })(this);
   return this;
 }]);
 
@@ -1387,18 +1468,21 @@ angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "Token
   this.user = $stateParams.user;
   this.community_list = [];
   this.form = {};
+  this.form.user = {};
   this.reg_in_progress = false;
   this.selected = 0;
   this.filter = 'Branche';
+  this.bio_characters = 200;
   this.init = (function(_this) {
     return function() {
       if (_this.user !== null) {
         _this.state++;
         _this.form.user = _this.user;
       }
-      return Community.get_all().then(function(response) {
+      Community.get_all().then(function(response) {
         return _this.community_list = angular.copy(response);
       });
+      return console.log("RegistrationCtrl initialized.");
     };
   })(this);
   this.goBack = (function(_this) {
@@ -1464,6 +1548,15 @@ angular.module('gruenderviertel').controller('RegistrationCtrl', ["User", "Token
         _this.reg_in_progress = false;
         return console.log('RegistrationCtrl.register Error');
       });
+    };
+  })(this);
+  this.charLimit = (function(_this) {
+    return function() {
+      if (_this.form.user.description) {
+        return _this.bio_characters = 200 - _this.form.user.description.length;
+      } else {
+        return _this.bio_characters = 200;
+      }
     };
   })(this);
   this.init();

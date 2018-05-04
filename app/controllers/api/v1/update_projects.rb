@@ -13,7 +13,7 @@ module API
         u = current_resource_owner
         params[:data].merge!(
             user_id: u.id,
-          ).merge(author: u.username)
+          )
         # Extract keywords from the dataset.
         tags = params[:data][:tags]
         params[:data].delete :tags
@@ -27,9 +27,6 @@ module API
               ref.communities << Community.find(community_id)
           end
         end
-        # Initiate the number of established contacts.
-        ref.likes = 0
-        p ref
         if ref.save 
           status 200
           {status: 200, data: ref}
@@ -161,15 +158,18 @@ module API
 
       def return_all
         pr = Projects.all
+        
         status 200
         {status: 200, data: pr}
       end
 
       def return_project(params)
         pr = Project.find(params[:id])
+        a = User.find(pr.user_id)
         c = pr.comments
+        author = {name: a.username, url: a.web}
         if pr
-          res = pr.serializable_hash.merge(comments: c, tags: pr.communities)
+          res = pr.serializable_hash.merge(comments: c, tags: pr.communities, author: author, likes: pr.likes)
           status 200
           {status: 200, data: res}
         else

@@ -11,15 +11,6 @@ module API
         #################
 
         params do
-          requires :community_id, type: Integer
-          requires :title, type: String
-          requires :content, type: String
-        end
-        post '' do
-          create_post(params)          
-        end
-
-        params do
           requires :id, type: Integer
           requires :reason, type: String
         end
