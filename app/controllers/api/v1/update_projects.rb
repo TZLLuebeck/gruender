@@ -46,10 +46,10 @@ module API
         end
       end
 
-      def like_post(params)
+      def like_project(params)
         pr = Project.find(params[:id])
         if pr
-          pr.likes += 1
+          pr.likes << current_resource_owner 
           pr.save!
           status 200
           {status: 200, data: true}
@@ -191,7 +191,33 @@ module API
       def return_featured_projects()
         pr = Project.order(likes: :desc).limit(12)
         if pr
+          status 200
           {status: 200, data: pr}
+        else
+          response = {
+            description: 'Es konnte kein passendes Projekt gefunden werden.',
+            error: {
+              name: 'no_such_project',
+              state: 'not_found'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 404
+          }
+          error!(response, 404)
+        end
+      end
+
+      def return_more_projects(params)
+        cur = Project.find(params[:current])
+
+        similar = Project.where(typus: cur[:typus]).where.not(id: cur[:id]).order("RAND()").limit(3)
+        other = Project.where.not(typus: cur[:typus]).order("RAND()").limit(1)
+        if similar || other
+          status 200
+          data = {similar: similar, other: other}
+          {status: 200, data: data}
         else
           response = {
             description: 'Es konnte kein passendes Projekt gefunden werden.',

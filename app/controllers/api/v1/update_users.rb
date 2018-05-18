@@ -261,7 +261,7 @@ module API
         u = (id = params[:id]) == 'me' ? current_resource_owner : User.find(id)
         # Check if User making the request can read this resource.
         if Ability.new(current_resource_owner).can?(:read, u)
-          if res = u.serializable_hash.merge(projects: u.projects, posts: u.posts, comments: u.comments)
+          if res = u.serializable_hash.merge(projects: u.projects, posts: u.posts, comments: u.comments, events: u.events)
             status 200
             { status: 200, data: res }
           else

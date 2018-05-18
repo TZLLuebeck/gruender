@@ -4,7 +4,7 @@ module API
       mount API::V1::Users
       mount API::V1::Projects
       mount API::V1::Communities
-      mount API::V1::Posts
+      #mount API::V1::Posts
       mount API::V1::Comments
     end
   end

@@ -5,26 +5,14 @@ module API
       helpers UpdateComments
 
       resource :comments do
-        ####################
-        # => CREATE
-        ####################
         oauth2
         params do
-          requires :parent_id, type: Integer
-          requires :parent_type, type: String
-          requires :title, type: String
-          requires :content, type: String
+          requires :data, type: Hash do
+            requires :id, type: Integer
+            requires :reason, type: String
+          end
         end
-        post '' do
-          create_comment(params)
-        end
-
-        oauth2
-        params do
-          requires :id, type: Integer
-          requires :reason, type: Integer
-        end
-        post 'report' do
+        post '/report' do
           report_comment(params)
         end
 
@@ -44,7 +32,6 @@ module API
         ####################
         # => DELETE
         ####################
-
         oauth2
         params do
           requires :id, type: Integer

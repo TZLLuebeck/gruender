@@ -16,16 +16,17 @@ app.run(["User", "TokenContainer", "$rootScope", "$state", "$stateParams", "Rail
     $rootScope.lastState = transition.from();
     return $rootScope.lastStateParams = transition.params('from');
   });
-  return $rootScope.$on('$stateChangeSuccess', function($document, $location, $anchorScroll) {
+  $rootScope.$on('$stateChangeSuccess', function($document, $location, $anchorScroll) {
     if ($location.hash()) {
       return $anchorScroll();
     } else {
       return $document.body.scrollTop = $document.documentElement.scrollTop = 0;
     }
   });
+  return $rootScope.$on('$stateChangeError', function($state) {
+    return $state.go('root.home');
+  });
 }]);
-
-var indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
 angular.module('gruenderviertel').run(["$q", "PermRoleStore", "User", function($q, PermRoleStore, User) {
   PermRoleStore.defineRole('anonymous', function(stateParams) {
@@ -48,14 +49,31 @@ angular.module('gruenderviertel').run(["$q", "PermRoleStore", "User", function($
     }
     return defer.promise;
   });
+  PermRoleStore.defineRole('administrative', function(stateParams) {
+    var defer;
+    defer = $q.defer();
+    User.getRole().then(function(role) {
+      if (!role) {
+        defer.reject();
+      }
+      if (role = 'admin' || (role = 'data')) {
+        return defer.resolve();
+      } else {
+        return defer.reject();
+      }
+    }, function() {
+      return defer.reject();
+    });
+    return defer.promise;
+  });
   return PermRoleStore.defineRole('admin', function(stateParams) {
     var defer;
     defer = $q.defer();
-    User.getRoles().then(function(roles) {
-      if (!roles) {
+    User.getRole().then(function(role) {
+      if (!role) {
         defer.reject();
       }
-      if (indexOf.call(roles, 'admin') >= 0) {
+      if (role = 'admin' || (role = 'data')) {
         return defer.resolve();
       } else {
         return defer.reject();
@@ -187,9 +205,18 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
     url: '/recover',
     views: {
       'body@': {
-        templateUrl: 'assets/views/users/recovery.html',
+        templateUrl: 'assets/views/users/password_recovery.html',
         controller: 'RecoveryCtrl',
         controllerAs: 'recovery'
+      }
+    }
+  }).state('root.pmwrite', {
+    url: '/pm_verfassen',
+    views: {
+      'body@': {
+        templateUrl: 'assets/views/users/newpm.html',
+        controller: 'PMWriteCtrl',
+        controllerAs: 'message'
       }
     }
   }).state('root.project', {
@@ -339,6 +366,20 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
         templateUrl: 'assets/views/singletons/datenschutz.html'
       }
     }
+  }).state('root.impressum', {
+    url: '/Impressum',
+    views: {
+      'body@': {
+        templateUrl: 'assets/views/singletons/impressum.html'
+      }
+    }
+  }).state('root.nutzungsbedingungen', {
+    url: '/Nutzungsbedingungen',
+    views: {
+      'body@': {
+        templateUrl: 'assets/views/singletons/agb.html'
+      }
+    }
   }).state('root.fablab', {
     url: '/FabLab_Luebeck',
     views: {
@@ -385,7 +426,7 @@ angular.module('gruenderviertel').directive('onScrollToBottom', (function(_this)
       link: function(scope, element, attrs) {
         $document.bind("scroll", (function(_this) {
           return function() {
-            if ($window.pageYOffset + $window.innerHeight >= $document.height()) {
+            if ($window.pageYOffset + $window.innerHeight >= element.height()) {
               return scope.$apply(attrs.onScrollToBottom);
             }
           };
@@ -621,7 +662,7 @@ angular.module('gruenderviertel').service('Helper', ["$rootScope", "$state", fun
 }]);
 
 angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload", function(baseREST, $q, Upload) {
-  var createProject, editProject, getAll, getFeatured, getOne, like, postComment, removeProject;
+  var createProject, editProject, getAll, getFeatured, getMore, getOne, like, postComment, removeProject;
   createProject = function(project) {
     var defer;
     defer = $q.defer();
@@ -710,6 +751,22 @@ angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload"
     });
     return defer.promise;
   };
+  getMore = function(id) {
+    var defer, packet, params;
+    defer = $q.defer();
+    packet = baseREST.one('projects').one('more');
+    params = {
+      current: id
+    };
+    packet.customGET("", params).then(function(response) {
+      console.log('got more');
+      return defer.resolve(response.data);
+    }, function(error) {
+      console.log('Project.getMore Error');
+      return defer.reject(error);
+    });
+    return defer.promise;
+  };
   editProject = function(project) {
     var defer;
     defer = $q.defer();
@@ -752,7 +809,8 @@ angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload"
     getOne: getOne,
     editProject: editProject,
     removeProject: removeProject,
-    getFeatured: getFeatured
+    getFeatured: getFeatured,
+    getMore: getMore
   };
 }]);
 
@@ -823,7 +881,7 @@ angular.module('gruenderviertel').service('TokenContainer', ["$localStorage", "R
 }]);
 
 angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "Rails", "$rootScope", "Upload", "TokenContainer", function(baseREST, $q, $http, Rails, $rootScope, Upload, TokenContainer) {
-  var createUser, currentUser, deleteUser, getAll, getEvents, getNewEvents, getUser, isAuthenticated, login, logout, resetPassword, updateUser;
+  var createUser, currentUser, deleteUser, getAll, getEvents, getNewEvents, getRole, getUser, isAuthenticated, login, logout, resetPassword, updateUser;
   this.user = null;
   this.newEvents = 0;
   this.events = [];
@@ -844,6 +902,7 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
       }).then(function(response) {
         console.log(response.data.data);
         _this.user = response.data.data.user;
+        $rootScope.activeUser = _this.user;
         TokenContainer.set(response.data.data.token);
         _this.unauthorized = false;
         return defer.resolve(_this.user);
@@ -863,6 +922,7 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
       packet.data.password = form.password;
       packet.post().then(function(response) {
         _this.user = response.data.user;
+        $rootScope.activeUser = _this.user;
         TokenContainer.set(response.data.token);
         _this.unauthorized = false;
         return defer.resolve(_this.user);
@@ -916,6 +976,7 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
         packet.get().then(function(response) {
           _this.unauthorized = false;
           _this.user = response.data;
+          $rootScope.activeUser = _this.user;
           _this.deferreds.me.resolve(response.data);
           return delete _this.deferreds.me;
         }, function(error) {
@@ -954,6 +1015,18 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
       }, function(error) {
         return defer.reject(error);
       });
+      return defer.promise;
+    };
+  })(this);
+  getRole = (function(_this) {
+    return function() {
+      var defer;
+      defer = $q.defer();
+      if ($rootScope.activeUser) {
+        defer.resolve($rootScope.activeUser.role);
+      } else {
+        defer.reject();
+      }
       return defer.promise;
     };
   })(this);
@@ -998,6 +1071,7 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
       packet.remove().then(function(response) {
         TokenContainer.deleteToken();
         _this.user = null;
+        $rootScope.activeUser = null;
         console.log(_this.user);
         _this.unauthorized = true;
         $rootScope.$broadcast('user:stateChanged');
@@ -1040,7 +1114,8 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
     logout: logout,
     deleteUser: deleteUser,
     createUser: createUser,
-    isAuthenticated: isAuthenticated
+    isAuthenticated: isAuthenticated,
+    getRole: getRole
   };
 }]);
 
@@ -1226,6 +1301,8 @@ angular.module('gruenderviertel').controller('CommunityCtrl', ["instance", "Comm
       return Community.post_discussion(_this.community.id, message).then(function(response) {
         _this.discussion_form = {};
         response.comments = [];
+        response.created = new Date(Date.parse(response.created_at)).toLocaleString('de-DE');
+        response.updated = new Date(Date.parse(response.updated_at)).toLocaleString('de-DE');
         return _this.discussions.push(response);
       }, function(error) {
         return console.log('CommunityCtrl.startDiscussion Error');
@@ -1281,6 +1358,7 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
       return _this.tag_list = angular.copy(response);
     };
   })(this));
+  this.problemPlaceholder = "Beschreibe kurz: Welches Problem hast du gelöst oder möchtest du lösen?";
   this.selectTag = (function(_this) {
     return function(community) {
       var e, i;
@@ -1324,7 +1402,7 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
     this.form.project.status = "Published";
     return Project.createProject(this.form.project).then(function(response) {
       return $state.go('root.project', {
-        id: response.id
+        'id': response.id
       });
     });
   };
@@ -1337,23 +1415,36 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
       }
     };
   })(this);
+  this.changeTypus = (function(_this) {
+    return function(typus) {
+      if (typus === "Open Innovation") {
+        _this.problemPlaceholder = "Die Problematik bei Open Innovation-Projekten kann im nächsten Abschnitt mit mehr Details beschrieben werden.";
+      } else {
+        _this.problemPlaceholder = "Beschreibe kurz: Welches Problem hast du gelöst oder möchtest du lösen?";
+      }
+      return _this.form.project.typus = typus;
+    };
+  })(this);
   return this;
 }]);
 
-angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Project", "$state", "$window", "$anchorScroll", "$location", function(instance, Project, $state, $window, $anchorScroll, $location) {
+angular.module('gruenderviertel').controller('ProjectCtrl', ["User", "instance", "Project", "$state", "$window", "$anchorScroll", "$location", function(User, instance, Project, $state, $window, $anchorScroll, $location) {
   this.project = instance;
   this.comment = "";
+  this.moreProjects = [];
+  this.user = User;
   this.init = (function(_this) {
     return function() {
-      var c, i, len, ref, results;
+      var c, i, len, ref;
+      console.log(_this.project.user_id);
+      console.log(_this.user.user);
       ref = _this.project.comments;
-      results = [];
       for (i = 0, len = ref.length; i < len; i++) {
         c = ref[i];
         c.created = new Date(Date.parse(c.created_at)).toLocaleString('de-DE');
-        results.push(c.updated = new Date(Date.parse(c.updated_at)).toLocaleString('de-DE'));
+        c.updated = new Date(Date.parse(c.updated_at)).toLocaleString('de-DE');
       }
-      return results;
+      return _this.getOtherProjects();
     };
   })(this);
   this.viewCommunity = function(cid) {
@@ -1393,7 +1484,34 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["instance", "Projec
       });
     };
   })(this);
+  this.getOtherProjects = (function(_this) {
+    return function() {
+      return Project.getMore(_this.project.id).then(function(response) {
+        console.log(response);
+        _this.similarProjects = response.similar;
+        return _this.otherProject = response.other;
+      }, function(error) {
+        _this.moreProjects = [];
+        return console.log("Project.getMore: Error");
+      });
+    };
+  })(this);
   this.init();
+  return this;
+}]);
+
+angular.module('gruenderviertel').controller('PMWriteCtrl', ["$state", "User", function($state, User) {
+  this.message = null;
+  this.sent = false;
+  this.sendMessage = (function(_this) {
+    return function() {
+      return User.sendMessage(_this.message).then(function(response) {
+        return _this.sent = true;
+      }, function(error) {
+        return console.log("PMWriteCtrl.sendMessage Error");
+      });
+    };
+  })(this);
   return this;
 }]);
 
@@ -1459,7 +1577,37 @@ angular.module('gruenderviertel').controller('ProfileEditCtrl', ["User", "$state
       };
     })(this));
   };
+  this.deleteAccount = function() {
+    return User.deleteUser(this.form.user.id).then((function(_this) {
+      return function(response) {
+        return $state.go('root.home');
+      };
+    })(this), (function(_this) {
+      return function(error) {
+        return console.log('profileEdit.deleteAccount Error');
+      };
+    })(this));
+  };
   this.init();
+  return this;
+}]);
+
+angular.module('gruenderviertel').controller('RecoveryCtrl', ["User", function(User) {
+  this.finished = false;
+  this.sent = false;
+  this.name = "";
+  this.recoverPassword = (function(_this) {
+    return function() {
+      _this.sent = true;
+      return User.resetPassword(_this.name).then(function(response) {
+        _this.finished = true;
+        return _this.sent = false;
+      }, function(error) {
+        _this.sent = false;
+        return console.log;
+      });
+    };
+  })(this);
   return this;
 }]);
 

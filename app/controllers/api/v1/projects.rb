@@ -38,7 +38,7 @@ module API
           requires :id, type: Integer
         end
         post 'like/:id' do
-          like_post(params)
+          like_project(params)
         end
 
         oauth2
@@ -69,6 +69,13 @@ module API
 
         get '/featured' do
           return_featured_projects()
+        end
+
+        params do
+          requires :current, type: Integer
+        end
+        get '/more' do
+          return_more_projects(params)
         end
 
         params do

@@ -19,7 +19,6 @@ class User < ApplicationRecord
   has_many :received_messages, class_name: "Message", foreign_key: "recipient_id", dependent: :nullify
 
   has_many :liked_projects, through: :likes
-
   
   mount_uploader :logo, LogoUploader
 
