@@ -175,6 +175,62 @@ module API
         end
       end
 
+
+      def write_message(params)
+        author = current_resource_owner
+        recipient = User.find(username: params[:receiver])
+
+        if recipient
+          if recipient.id != author.id
+            m = Message.new(sender_id: author.id, recipient_id: recipient.id, content: params[:content])
+            if m.!save
+              status 200
+              {status: 200, data: 'ok'}
+            else
+              response = {
+                description: 'Die Nachricht konnte nicht gespeichert werden.',
+                error: {
+                  name: 'could_not_save',
+                  state: 'internal_server_error'
+                  },
+                reason: 'unknown',
+                redirect_uri: nil,
+                response_on_fragment: nil,
+                status: 500
+              }
+              error!(response, 500)
+            end
+          else
+            response = {
+              description: 'Du kannst nicht der Empfänger deiner Nachrichten sein.',
+              error: {
+                name: 'cannot_message_self',
+                state: 'bad_request'
+                },
+              reason: 'unknown',
+              redirect_uri: nil,
+              response_on_fragment: nil,
+              status: 400
+            }
+            error!(response, 400)
+          end
+        else
+          response = {
+            description: 'Dieser Accountname existiert nicht.',
+            error: {
+              name: 'user_not_found',
+              state: 'not_found'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 404
+          }
+          error!(response, 404)
+        end
+
+      end
+
       
       # READ
 
@@ -257,11 +313,17 @@ module API
       end
 
       def return_user(params)
-      # Return a specific User by ID, or return the user making the request if ID param is 'me'.
+        cur = current_resource_owner 
+        # Return a specific User by ID, or return the user making the request if ID param is 'me'.
         u = (id = params[:id]) == 'me' ? current_resource_owner : User.find(id)
         # Check if User making the request can read this resource.
         if Ability.new(current_resource_owner).can?(:read, u)
-          if res = u.serializable_hash.merge(projects: u.projects, posts: u.posts, comments: u.comments, events: u.events)
+          if params[:id] == 'me' || params[:id] == cur.id 
+            res = u.serializable_hash.merge(projects: u.projects, posts: u.posts, comments: u.comments, events: u.events, sent: u.sent_messages, received: u.received_messages)
+          else
+            res = u.serializable_hash.merge(projects: u.projects)
+          end
+          if res
             status 200
             { status: 200, data: res }
           else

@@ -266,6 +266,34 @@ angular.module('gruenderviertel').config(["$stateProvider", "$urlRouterProvider"
         controllerAs: 'edit'
       }
     }
+  }).state('root.browseprojects', {
+    url: '/projekte/:category',
+    views: {
+      'body@': {
+        templateUrl: 'assets/views/projects/filter.html',
+        controller: 'ProjectFilterCtrl',
+        controllerAs: 'filter'
+      }
+    },
+    params: {
+      category: null
+    },
+    resolve: {
+      projects: ["$stateParams", "Helper", "Project", function($stateParams, Helper, Project) {
+        var category;
+        category = $stateParams.category;
+        if (category !== null) {
+          return Project.getByCategory(category).then(function(response) {
+            return response;
+          }, function(error) {
+            return Helper.goBack();
+          });
+        } else {
+          Helper.goBack();
+          return null;
+        }
+      }]
+    }
   }).state('root.communityoverview', {
     url: '/communities',
     views: {
@@ -642,6 +670,94 @@ angular.module('gruenderviertel').service('Community', ["$q", "$rootScope", "$st
   };
 }]);
 
+angular.module('gruenderviertel').service('Event', ["baseREST", "$q", "$rootScope", function(baseREST, $q, $rootScope) {
+  var checkForNewEvents, decodeEvents, getLatestEvents;
+  this.newEvents = [];
+  $rootScope.$on('events:checkEvents', (function(_this) {
+    return function(e, state, params) {
+      return _this.checkForNewEvents();
+    };
+  })(this));
+  checkForNewEvents = (function(_this) {
+    return function() {
+      var defer, packet;
+      defer = $q.defer;
+      packet = baseREST.one('events').one('new');
+      packet.get().then(function(response) {
+        _this.newEvents = response.data;
+        return defer.resolve(response.data);
+      }, function(error) {
+        console.log('Event.checkForNewEvents Error');
+        return defer.reject(error);
+      });
+      return defer.promise;
+    };
+  })(this);
+  getLatestEvents = (function(_this) {
+    return function(amount) {
+      var defer, packet, params;
+      defer = $q.defer;
+      packet = baseREST.one('events');
+      params = {
+        amount: amount
+      };
+      packet.customGET("", params).then(function(response) {
+        _this.newEvents = response.data;
+        return defer.resolve(response.data);
+      }, function(error) {
+        console.log('Event.checkForNewEvents Error');
+        return defer.reject(error);
+      });
+      return defer.promise;
+    };
+  })(this);
+  decodeEvents = (function(_this) {
+    return function(events) {
+      var d, decodedEvents, e, i, j, k, len, len1, len2, p, ref, ref1, results;
+      decodedEvents = [];
+      results = [];
+      for (i = 0, len = events.length; i < len; i++) {
+        e = events[i];
+        if (e.trigger_type === "Comment") {
+          if (e.target_type === "Project") {
+            e.message = "Neuer Kommentar für Projekt";
+            ref = _this.my_projects;
+            for (j = 0, len1 = ref.length; j < len1; j++) {
+              p = ref[j];
+              if (p.id = e.target_id) {
+                e.message += ": " + p.name;
+                break;
+              }
+            }
+          } else if (e.target_type === "Post") {
+            e.message = "Neuer Kommentar für Diskussion";
+            ref1 = _this.my_discussions;
+            for (k = 0, len2 = ref1.length; k < len2; k++) {
+              d = ref1[k];
+              if (d.id === e.target_id) {
+                e.community_id = d.community_id;
+                e.message += ": " + d.title;
+                break;
+              }
+            }
+          } else {
+            e.message = "Neues Ereignis.";
+          }
+        } else {
+          e.message = "Neues Ereignis.";
+        }
+        results.push(decodedEvents.push(e));
+      }
+      return results;
+    };
+  })(this);
+  return {
+    checkForNewEvents: checkForNewEvents,
+    getLatestEvents: getLatestEvents,
+    decodeEvents: decodeEvents
+  };
+}]);
+
 angular.module('gruenderviertel').service('Helper', ["$rootScope", "$state", function($rootScope, $state) {
   var goBack;
   goBack = function(defaultRoute) {
@@ -662,7 +778,7 @@ angular.module('gruenderviertel').service('Helper', ["$rootScope", "$state", fun
 }]);
 
 angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload", function(baseREST, $q, Upload) {
-  var createProject, editProject, getAll, getFeatured, getMore, getOne, like, postComment, removeProject;
+  var createProject, editProject, getAll, getByCategory, getFeatured, getMore, getOne, like, postComment, removeProject;
   createProject = function(project) {
     var defer;
     defer = $q.defer();
@@ -734,6 +850,20 @@ angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload"
       return defer.resolve(response.data);
     }, function(error) {
       console.log('Project.getOne Error');
+      return defer.reject(error);
+    });
+    return defer.promise;
+  };
+  getByCategory = function(category) {
+    var defer, packet, params;
+    defer = $q.defer();
+    packet = baseREST.one('projects').one('category');
+    params = {
+      category: category
+    };
+    packet.customGET("", params).then(function(response) {
+      return defer.resolve(response.data);
+    }, function(error) {
       return defer.reject(error);
     });
     return defer.promise;
@@ -810,7 +940,8 @@ angular.module('gruenderviertel').service('Project', ["baseREST", "$q", "Upload"
     editProject: editProject,
     removeProject: removeProject,
     getFeatured: getFeatured,
-    getMore: getMore
+    getMore: getMore,
+    getByCategory: getByCategory
   };
 }]);
 
@@ -881,7 +1012,7 @@ angular.module('gruenderviertel').service('TokenContainer', ["$localStorage", "R
 }]);
 
 angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "Rails", "$rootScope", "Upload", "TokenContainer", function(baseREST, $q, $http, Rails, $rootScope, Upload, TokenContainer) {
-  var createUser, currentUser, deleteUser, getAll, getEvents, getNewEvents, getRole, getUser, isAuthenticated, login, logout, resetPassword, updateUser;
+  var createUser, currentUser, deleteUser, getAll, getEvents, getNewEvents, getRole, getUser, isAuthenticated, login, logout, resetPassword, updateUser, writeMessage;
   this.user = null;
   this.newEvents = 0;
   this.events = [];
@@ -925,7 +1056,25 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
         $rootScope.activeUser = _this.user;
         TokenContainer.set(response.data.token);
         _this.unauthorized = false;
+        $rootScope.$broadcast('event:newEvents');
         return defer.resolve(_this.user);
+      }, function(error) {
+        return defer.reject(error);
+      });
+      return defer.promise;
+    };
+  })(this);
+  writeMessage = (function(_this) {
+    return function(receiver, content) {
+      var defer, packet;
+      defer = $q.defer();
+      packet = baseREST.one('users').one('pm');
+      packet.data = {
+        receiver: receiver,
+        content: content
+      };
+      packet.post().then(function(response) {
+        return defer.resolve(response);
       }, function(error) {
         return defer.reject(error);
       });
@@ -991,7 +1140,7 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
     return function() {
       var defer, packet;
       defer = $q.defer();
-      packet = baseRest.one('events').one('new');
+      packet = baseREST.one('events').one('new');
       packet.get().then(function(response) {
         if (response.data > 0) {
           $rootScope.$broadcast('event:newEvents');
@@ -1089,12 +1238,10 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
       packet = baseREST.one('users');
       packet.id = id;
       packet.remove().then(function(response) {
-        if (response.status === 401) {
-          _this.unauthorized = true;
-          return defer.reject(response.data);
-        } else {
-          return defer.resolve();
-        }
+        return defer.resolve();
+      }, function(error) {
+        _this.unauthorized = true;
+        return defer.reject(response.data);
       });
       return defer.promise;
     };
@@ -1110,12 +1257,15 @@ angular.module('gruenderviertel').service('User', ["baseREST", "$q", "$http", "R
     currentUser: currentUser,
     updateUser: updateUser,
     resetPassword: resetPassword,
+    getEvents: getEvents,
+    getNewEvents: getNewEvents,
     login: login,
     logout: logout,
     deleteUser: deleteUser,
     createUser: createUser,
     isAuthenticated: isAuthenticated,
-    getRole: getRole
+    getRole: getRole,
+    writeMessage: writeMessage
   };
 }]);
 
@@ -1158,12 +1308,12 @@ angular.module('gruenderviertel').controller('HomeCtrl', ["$rootScope", "TokenCo
 
 this;
 
-angular.module('gruenderviertel').controller('NavCtrl', ["User", "$rootScope", "$state", "TokenContainer", function(User, $rootScope, $state, TokenContainer) {
+angular.module('gruenderviertel').controller('NavCtrl', ["User", "Event", "$rootScope", "$state", "TokenContainer", function(User, Event, $rootScope, $state, TokenContainer) {
   this.isAuthenticated = false;
   this.form = {};
   this.admin = false;
   this.username = "default";
-  this.newEvents = 0;
+  this.newEvents = [];
   $rootScope.$on('user:stateChanged', (function(_this) {
     return function(e, state, params) {
       console.log("NavCtrl user:StateChanged");
@@ -1172,16 +1322,23 @@ angular.module('gruenderviertel').controller('NavCtrl', ["User", "$rootScope", "
       return _this.isAdmin();
     };
   })(this));
-  $rootScope.$on('event:newEvents', (function(_this) {
-    return function(e, state, params) {
-      console.log("NavCtrl event:newEvents");
-      return _this.newEvents = User.newEvents;
+  this.getNewEvents = (function(_this) {
+    return function() {
+      return User.getNewEvents().then(function(response) {
+        console.log(response);
+        return _this.newEvents = response;
+      }, function(error) {
+        return console.log("NavCtrl.init Error");
+      });
     };
-  })(this));
+  })(this);
   this.init = function() {
     this.setLoggedIn(TokenContainer.get());
     this.setUsername();
     this.isAdmin();
+    if (this.isAuthenticated) {
+      this.getNewEvents();
+    }
     return console.log("NavCtrl Initialized");
   };
   this.login = function() {
@@ -1428,6 +1585,21 @@ angular.module('gruenderviertel').controller('CreateProjectCtrl', ["Project", "C
   return this;
 }]);
 
+angular.module('gruenderviertel').controller('EditProjectCtrl', ["Project", "$scope", "$state", "$stateParams", function(Project, $scope, $state, $stateParams) {
+  this.form = $scope.$parent.form;
+  return this.editProject = (function(_this) {
+    return function() {
+      return Project.editProject().then(function(response) {
+        return $state.go('root.project', '{"id": $stateParams.id}');
+      }, function(error) {
+        return console.log("EditProjectCtrl.editProject Error");
+      });
+    };
+  })(this);
+}]);
+
+this;
+
 angular.module('gruenderviertel').controller('ProjectCtrl', ["User", "instance", "Project", "$state", "$window", "$anchorScroll", "$location", function(User, instance, Project, $state, $window, $anchorScroll, $location) {
   this.project = instance;
   this.comment = "";
@@ -1488,8 +1660,7 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["User", "instance",
     return function() {
       return Project.getMore(_this.project.id).then(function(response) {
         console.log(response);
-        _this.similarProjects = response.similar;
-        return _this.otherProject = response.other;
+        return _this.moreProjects = response;
       }, function(error) {
         _this.moreProjects = [];
         return console.log("Project.getMore: Error");
@@ -1497,6 +1668,11 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["User", "instance",
     };
   })(this);
   this.init();
+  return this;
+}]);
+
+angular.module("gruenderviertel").controller('ProjectFilterCtrl', ["projects", function(projects) {
+  this.projects = projects;
   return this;
 }]);
 
@@ -1520,6 +1696,59 @@ angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state
   this.my_projects = angular.copy(this.user.projects);
   this.my_comments = angular.copy(this.user.comments);
   this.my_discussions = angular.copy(this.user.posts);
+  this.decodeEvents = (function(_this) {
+    return function(events) {
+      var d, decodedEvents, e, i, j, k, len, len1, len2, p, ref, ref1;
+      decodedEvents = [];
+      for (i = 0, len = events.length; i < len; i++) {
+        e = events[i];
+        if (e.trigger_type === "Comment") {
+          if (e.target_type === "Project") {
+            e.message = "Neuer Kommentar für Projekt";
+            ref = _this.my_projects;
+            for (j = 0, len1 = ref.length; j < len1; j++) {
+              p = ref[j];
+              if (p.id = e.target_id) {
+                e.message += ": " + p.name;
+                break;
+              }
+            }
+          } else if (e.target_type === "Post") {
+            e.message = "Neuer Kommentar für Diskussion";
+            ref1 = _this.my_discussions;
+            for (k = 0, len2 = ref1.length; k < len2; k++) {
+              d = ref1[k];
+              if (d.id === e.target_id) {
+                e.community_id = d.community_id;
+                e.message += ": " + d.title;
+                break;
+              }
+            }
+          } else {
+            e.message = "Neues Ereignis.";
+          }
+        } else {
+          e.message = "Neues Ereignis.";
+        }
+        decodedEvents.push(e);
+      }
+      return decodedEvents;
+    };
+  })(this);
+  this.visit_event = (function(_this) {
+    return function(e) {
+      console.log(e);
+      if (e.target_type === "Project") {
+        return $state.go('root.project', {
+          'id': e.target_id
+        });
+      } else {
+        return $state.go('root.community', {
+          'id': e.community_id
+        });
+      }
+    };
+  })(this);
   this.goToComment = function(comment) {
     if (comment.parent_type === 'Project') {
       return $state.go('root.project', {
@@ -1535,6 +1764,7 @@ angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state
       });
     }
   };
+  this.my_events = this.decodeEvents(this.user.events);
   return this;
 }]);
 
@@ -1544,7 +1774,18 @@ angular.module('gruenderviertel').controller('ProfileEditCtrl', ["User", "$state
   this.form.user = instance;
   this.predit_in_progress = false;
   this.init = (function(_this) {
-    return function() {};
+    return function() {
+      console.log(_this.form.user);
+      delete _this.form.user.comments;
+      delete _this.form.user.projects;
+      delete _this.form.user.events;
+      delete _this.form.user.posts;
+      delete _this.form.user.sent;
+      delete _this.form.user.received;
+      delete _this.form.user.logo;
+      console.log(_this.form.user);
+      return console.log("ProfileEditCtrl Init");
+    };
   })(this);
   this.goBack = (function(_this) {
     return function() {
@@ -1573,7 +1814,7 @@ angular.module('gruenderviertel').controller('ProfileEditCtrl', ["User", "$state
     })(this), (function(_this) {
       return function(error) {
         _this.predit_in_progress = false;
-        return console.log('preditistrationCtrl.preditister Error');
+        return console.log('profileEditCtrl.saveEdit Error');
       };
     })(this));
   };
@@ -1584,7 +1825,7 @@ angular.module('gruenderviertel').controller('ProfileEditCtrl', ["User", "$state
       };
     })(this), (function(_this) {
       return function(error) {
-        return console.log('profileEdit.deleteAccount Error');
+        return console.log('profileEditCtrl.deleteAccount Error');
       };
     })(this));
   };

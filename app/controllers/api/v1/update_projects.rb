@@ -234,6 +234,28 @@ module API
         end
       end
 
+      def get_by_category(params)
+        category = params[:category]
+        pr = Project.where(typus: category)
+        if pr
+          status 200
+          {status: 200, data: pr}
+        else
+          response = {
+            description: 'Es konnte kein passendes Projekt gefunden werden.',
+            error: {
+              name: 'no_such_project',
+              state: 'not_found'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 404
+          }
+          error!(response, 404)
+        end
+      end
+
       def unpublish_project(params)
         pr = Projects.find(params[:id])
         pr[:status] = "Draft"

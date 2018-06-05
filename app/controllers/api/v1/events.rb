@@ -8,7 +8,7 @@ module API
         oauth2
         get '/new' do
           id = current_resource_owner_id
-          e = Events.find(user_id: id).count(read: false)
+          e = Event.where(user_id: id).where(read: false)
           status 200
           {status: 200, data: e}
         end
@@ -19,10 +19,10 @@ module API
         end
         get '/' do
           id = current_resource_owner_id
-          if params[:amount]
-            e = Events.find(user_id: id).order(created_at: :desc).limit(:amount)
+          if params[:amount].exists?
+            e = Event.where(user_id: id).order(created_at: :desc).limit(:amount)
           else
-            e = Events.find(user_id: id).order(created_at: :desc)
+            e = Event.where(user_id: id).order(created_at: :desc)
           end
           status 200
           {status: 200, data: e}

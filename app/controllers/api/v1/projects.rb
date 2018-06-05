@@ -79,6 +79,13 @@ module API
         end
 
         params do
+          requires :category, type: String
+        end
+        get '/category' do
+          get_by_category(params)
+        end
+
+        params do
           requires :id, type: Integer
         end
         get '/:id' do

@@ -6,6 +6,7 @@ module API
       mount API::V1::Communities
       #mount API::V1::Posts
       mount API::V1::Comments
+      mount API::V1::Events
     end
   end
 end

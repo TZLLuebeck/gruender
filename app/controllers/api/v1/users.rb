@@ -63,6 +63,18 @@ module API
           login(params)
         end
 
+        params do
+          requires :data, type: Hash do
+            requires :receiver, type: String, allow_blank: false
+            requires :content, type: String, allow_blank: false
+          end
+        end
+
+        oauth2
+        post '/pm' do
+          write_message(params)
+        end
+
 
         ##################
         #
