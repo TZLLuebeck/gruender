@@ -1691,8 +1691,8 @@ angular.module('gruenderviertel').controller('PMWriteCtrl', ["$state", "User", f
   return this;
 }]);
 
-angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state", function(instance, $state) {
-  this.user = instance;
+angular.module('gruenderviertel').controller('ProfileCtrl', ["instance", "$state", "$rootScope", function(instance, $state, $rootScope) {
+  this.user = $rootScope.activeUser;
   this.my_projects = angular.copy(this.user.projects);
   this.my_comments = angular.copy(this.user.comments);
   this.my_discussions = angular.copy(this.user.posts);
