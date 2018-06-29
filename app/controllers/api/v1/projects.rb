@@ -15,12 +15,12 @@ module API
           requires :data, type: Hash do
             requires :name, type: String
             requires :typus, type: String
-            given typus: ->(val) { val != 'Problemstellung' } do
-              requires :solution, type: String
+            given typus: ->(val) { val != 'Open Innovation' } do
+              requires :problem, type: String
             end
+            requires :solution, type: String
             requires :goal, type: String
             requires :tags, type: Array[Integer]
-            requires :problem, type: String
             requires :coop, type: Boolean
             given coop: ->(val) {val == true} do
               requires :cooptext, type: String

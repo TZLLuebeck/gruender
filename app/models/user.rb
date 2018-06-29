@@ -9,7 +9,7 @@ class User < ApplicationRecord
   
   #Memberships to Communities
   has_and_belongs_to_many :communities
-  #Ownership of Project  
+  #Ownership of Project
   has_many :projects, dependent: :delete_all
   has_many :posts, dependent: :nullify
   has_many :comments, dependent: :nullify
@@ -18,7 +18,8 @@ class User < ApplicationRecord
   has_many :events, dependent: :delete_all
   has_many :received_messages, class_name: "Message", foreign_key: "recipient_id", dependent: :nullify
 
-  has_many :liked_projects, through: :likes
+  has_many :likes
+  has_many :liked_projects, through: :likes, source: :project
   
   mount_uploader :logo, LogoUploader
 

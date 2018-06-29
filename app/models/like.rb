@@ -1,6 +1,6 @@
 class Like < ApplicationRecord
 
   belongs_to :user
-  belongs_to :liked_project, class_name: "Project"
+  belongs_to :project
 
 end

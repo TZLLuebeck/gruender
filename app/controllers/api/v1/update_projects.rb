@@ -47,12 +47,20 @@ module API
       end
 
       def like_project(params)
+        like = true
         pr = Project.find(params[:id])
         if pr
-          pr.likes << current_resource_owner 
+          u = current_resource_owner
+          if Like.exists?(project_id: pr.id, user_id: u.id)
+            pr.likers.delete(u.id)
+            like = false
+          else
+            pr.likers << u
+            true 
+          end
           pr.save!
           status 200
-          {status: 200, data: true}
+          {status: 200, data: like}
         else
           response = {
             description: 'Es konnte kein passendes Projekt gefunden werden.',
@@ -169,7 +177,12 @@ module API
         c = pr.comments
         author = {name: a.username, url: a.web}
         if pr
-          res = pr.serializable_hash.merge(comments: c, tags: pr.communities, author: author, likes: pr.likes)
+          liked = false
+          u = current_resource_owner_id
+          if Like.exists?(project_id: pr.id, user_id: u)
+            liked = true
+          end
+          res = pr.serializable_hash.merge(comments: c, tags: pr.communities, author: author, likes: pr.likers.count, liked: liked)
           status 200
           {status: 200, data: res}
         else

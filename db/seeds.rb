@@ -8,7 +8,7 @@
 
 
 d = "Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!"
-c = Community.create!(name: "Dienstleistungen\n " , description: d, typus: "Branche", icon: "assets/images/icons/Dienstleistung.svg")
+Community.create!(name: "Dienstleistungen\n " , description: d, typus: "Branche", icon: "assets/images/icons/Dienstleistung.svg")
 d = "Neue Produkte, neue Märkte, neue Möglichkeiten. Und Dein Projekt mittendrin!"
 Community.create!(name: "Handel\n ", description: d, typus: "Branche", icon: "assets/images/icons/Handel.svg")
 d = "Werben, kaufen, verkaufen… alles bequem von zu Hause aus. Zeig uns Deine Ideen!"
@@ -37,7 +37,7 @@ d = "Dein Projekt lässt sich nicht in Schubladen stecken? Dann präsentiere es 
 Community.create!(name: "Sonstiges\n ", description: d, typus: "Branche", icon: "assets/images/icons/Sonstiges.svg")
 
 d = "Drucken in Drei Dimensionen – We love it!"
-Community.create!(name: "3d-Printing" , description: d, typus: "Thema", icon: "assets/images/icons/3d-printing.svg")
+Community.create!(name: "3D-Printing" , description: d, typus: "Thema", icon: "assets/images/icons/3d-printing.svg")
 d = "Vom Schachcomputer zur Super-Intelligenz! Just beat it!"
 Community.create!(name: "AI", description: d, typus: "Thema", icon: "assets/images/icons/AI.svg")
 d = "Dafür gibt’s eine App. Oder etwa doch nicht?"
@@ -109,27 +109,8 @@ Community.create!(name: "Werbung und Marketing", description: d, typus: "Thema",
 
 admin = User.new
 admin.email = 'braunt2@protonmail.com'
-admin.username = 'admin2'
+admin.username = 'admin'
 admin.password = 'password'
 admin.password_confirmation = 'password'
 admin.role = 'admin'
 admin.save!
-
-project = Project.new
-project.name = 'DemoProjekt'
-project.user = admin
-project.goal = 'Serve as Filler for the Page'
-project.problem = 'It\'s hard to see what the page looks like without filler.'
-project.solution = 'Create a premade Projet to fill this'
-project.coop = true
-project.status = 'Published'
-project.save!
-
-project.communities << c
-
-cm = Comment.new
-cm.user_id = 1
-cm.parent_id = 1
-cm.parent_type = 'Project'
-cm.content = 
-cm.save!
