@@ -134,8 +134,10 @@ module API
                 expires_in: Doorkeeper.configuration.access_token_expires_in,
                 use_refresh_token: Doorkeeper.configuration.refresh_token_enabled?
               )
+              res = u.serializable_hash.merge(projects: u.projects, posts: u.posts, comments: u.comments, events: u.events, sent: u.sent_messages, received: u.received_messages)
+          
               ret = {
-                user: u,
+                user: res,
                 token: {
                   access_token: token.token,
                   refresh_token: token.refresh_token,
