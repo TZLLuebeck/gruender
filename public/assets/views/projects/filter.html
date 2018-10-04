@@ -1,0 +1,1 @@
+<div class="container-fluid grey"><div class="container white"><h2>{{filter.category}}</h2><hr/><div class="row display-flex"><div ng-repeat="project in filter.projects" ui-sref="root.project({'id': {{project.id}}})" class="col-lg-3 well border-grey clickable highlight"><img ng-src="{{project.image.url}}"/><hr/><p>{{project.name}}</p></div></div></div></div>

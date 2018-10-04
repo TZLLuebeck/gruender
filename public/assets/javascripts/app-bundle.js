@@ -16,15 +16,15 @@ app.run(["User", "TokenContainer", "$rootScope", "$state", "$stateParams", "Rail
     $rootScope.lastState = transition.from();
     return $rootScope.lastStateParams = transition.params('from');
   });
-  $rootScope.$on('$stateChangeSuccess', function($document, $location, $anchorScroll) {
-    if ($location.hash()) {
+  $transitions.onSuccess({}, function($document, $location, $anchorScroll) {
+    if ($location && $location.hash()) {
       return $anchorScroll();
     } else {
-      return $document.body.scrollTop = $document.documentElement.scrollTop = 0;
+      return document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
   });
-  return $rootScope.$on('$stateChangeError', function($state) {
-    return $state.go('root.home');
+  return $transitions.onError({}, function($state) {
+    return $state.$go('root.home');
   });
 }]);
 
@@ -2125,7 +2125,7 @@ angular.module('gruenderviertel').factory('tokenInterceptor', ["TokenContainer",
   return {
     request: function(config) {
       var token;
-      if (config.url.indexOf("/api/v1/") === 0) {
+      if (config.url.indexOf("/api/v1/") === 0 || config.url.indexOf("/oauth/") === 0) {
         token = TokenContainer.get();
         if (token) {
           config.headers['Authorization'] = "Bearer " + token;

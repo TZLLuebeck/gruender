@@ -3,6 +3,7 @@ module API
     class Users < Grape::API
       include API::V1::Defaults  
       helpers UpdateUsers
+      helpers Devise::Controllers::SignInOut 
 
       helpers do
         # Revokes the current token in the database
@@ -145,6 +146,7 @@ module API
         desc 'Logout'
         oauth2
         delete '/logout' do
+          sign_out current_resource_owner
           revoke && warden.logout
         end
 

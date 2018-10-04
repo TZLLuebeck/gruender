@@ -174,7 +174,7 @@ module API
       end  
 
       def return_most_used()
-        mu = Community.left_joins(:communities_projects).group(:id).order('COUNT(communities_projects.community_id) DESC').limit(6)
+        mu = Community.left_joins(:communities_projects).group(:id).order('COUNT(communities_projects.community_id) DESC').limit(8)
         if mu
           status 200
           {status: 200, data: mu}

@@ -202,7 +202,7 @@ module API
       end
 
       def return_featured_projects()
-        pr = Project.order(likes: :desc).limit(12)
+        pr = Project.order(likes: :desc).limit(6)
         if pr
           status 200
           {status: 200, data: pr}

@@ -3,7 +3,6 @@ module API
     module UpdateUsers
       extend  ActiveSupport::Concern
 
-
       # This file manages the database interactions regarding the User model.
 
 
@@ -56,6 +55,8 @@ module API
               u.communities << Community.find(community_id)
             end
 
+            u.web.sub(/https?\:(\\\\|\/\/)/,'')
+
 
 
             if u.save
@@ -104,6 +105,9 @@ module API
       # A user attempts to log in with a username and password.
       def login(params)
         u = User.where(username: params[:data][:username]).first
+        if !u
+          u = User.where(email: params[:data][:username]).first
+        end
         # Check if an account with that username exists. If not, return error.
         if u
           # Check if the password is valid. If not, return error.
@@ -135,7 +139,7 @@ module API
                 use_refresh_token: Doorkeeper.configuration.refresh_token_enabled?
               )
               res = u.serializable_hash.merge(projects: u.projects, posts: u.posts, comments: u.comments, events: u.events, sent: u.sent_messages, received: u.received_messages)
-          
+              
               ret = {
                 user: res,
                 token: {

@@ -115,7 +115,7 @@ namespace :deploy do
     on roles(:app) do
       execute "ln -fs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
       execute "ln -fs #{shared_path}/config/application.yml #{release_path}/config/application.yml"
-      execute "ln -fs #{shared_path}/db/seeds.rb #{release_path}/db/seeds.db"
+      execute "ln -fs #{shared_path}/db/seeds.rb #{release_path}/db/seeds.rb"
     end
   end
 end
