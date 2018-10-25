@@ -24,7 +24,9 @@ app.run(["User", "TokenContainer", "$rootScope", "$state", "$stateParams", "Rail
     }
   });
   return $transitions.onError({}, function($state) {
-    return $state.$go('root.home');
+    return $state.transitionTo('root.home', {
+      reload: true
+    });
   });
 }]);
 
@@ -1440,8 +1442,11 @@ angular.module('gruenderviertel').controller('NavCtrl', ["User", "Event", "$root
     this.setUsername();
     this.isAdmin();
     if (this.isAuthenticated) {
-      return this.decodedEvents = this.decodeEvents(this.user);
+      this.decodedEvents = this.decodeEvents(this.user);
     }
+    return $('.nav a').on('click', function() {
+      return $('.nav-collapse').collapse('hide');
+    });
   };
   this.init();
   return this;
@@ -1740,7 +1745,8 @@ angular.module('gruenderviertel').controller('ProjectCtrl', ["User", "instance",
   return this;
 }]);
 
-angular.module("gruenderviertel").controller('ProjectFilterCtrl', ["projects", function(projects) {
+angular.module("gruenderviertel").controller('ProjectFilterCtrl', ["projects", "$stateParams", function(projects, $stateParams) {
+  this.category = $stateParams.category;
   this.projects = projects;
   return this;
 }]);
