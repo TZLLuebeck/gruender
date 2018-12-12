@@ -3252,3 +3252,133 @@ App 3222 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fil
 [ N 2018-10-25 13:24:32.1074 3189/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3263, application /home/tobias/projekte/webdev/gruender (development)
 [ N 2018-10-25 13:24:32.1074 3189/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3282, application /home/tobias/projekte/webdev/gruender (development)
 [ N 2018-10-25 13:24:32.8481 3189/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2018-12-11 10:15:09.1672 2828/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2018-12-11 10:15:09.5660 2831/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2018-12-11 10:15:09.5774 2831/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2018-12-11 10:15:09.9241 2831/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 2831
+[ N 2018-12-11 10:15:12.7094 2831/T8 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 2871 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 3399 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2018-12-11 10:29:09.2560 2831/T4 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3453, application /home/tobias/projekte/webdev/gruender (development)
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 4389 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2018-12-11 10:52:28.5713 2831/T4 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4434, application /home/tobias/projekte/webdev/gruender (development)
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 4702 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2018-12-11 10:59:46.9854 2831/T4 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4747, application /home/tobias/projekte/webdev/gruender (development)
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 5224 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2018-12-11 11:15:33.2269 2831/T4 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 5271, application /home/tobias/projekte/webdev/gruender (development)
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 5807 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+App 3078 output: [1, 4, 17]
+App 3078 output: 1
+App 3078 output: 4
+App 3078 output: 17
+App 3078 output: [1, 2, 14, 15, 25, 28]
+App 3078 output: 1
+App 3078 output: 2
+App 3078 output: 14
+App 3078 output: 15
+App 3078 output: 25
+App 3078 output: 28
+[ N 2018-12-11 11:29:36.3772 2831/T4 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 5853, application /home/tobias/projekte/webdev/gruender (development)
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 6144 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2018-12-11 11:53:53.4534 2831/T4 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 6190, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2018-12-11 15:41:33.0138 2831/T6 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-12-11 15:41:33.0139 2831/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-12-11 15:41:33.0139 2831/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3078, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-12-11 15:41:33.0139 2831/Ta Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-12-11 15:41:33.0139 2831/Ta Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-12-11 15:41:33.0140 2831/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-12-11 15:41:33.0140 2831/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-12-11 15:41:33.0141 2831/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3078, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2018-12-11 15:41:33.8681 2831/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished

@@ -1310,13 +1310,15 @@ angular.module('gruenderviertel').controller('HomeCtrl', ["$rootScope", "TokenCo
 
 this;
 
-angular.module('gruenderviertel').controller('NavCtrl', ["User", "Event", "$rootScope", "$state", "TokenContainer", function(User, Event, $rootScope, $state, TokenContainer) {
+angular.module('gruenderviertel').controller('NavCtrl', ["User", "Event", "$rootScope", "$scope", "$state", "TokenContainer", function(User, Event, $rootScope, $scope, $state, TokenContainer) {
   this.user = $rootScope.activeUser;
   this.isAuthenticated = false;
   this.form = {};
   this.admin = false;
   this.username = "default";
   this.decodedEvents = [];
+  this.wrongPassword = false;
+  this.noAccount = false;
   $rootScope.$on('user:stateChanged', (function(_this) {
     return function(e, state, params) {
       console.log("NavCtrl user:StateChanged");
@@ -1336,13 +1338,26 @@ angular.module('gruenderviertel').controller('NavCtrl', ["User", "Event", "$root
       return console.log("NavCtrl Initialized");
     };
   })(this);
-  this.login = function() {
-    return User.login(this.form).then(function(response) {
-      return $rootScope.$broadcast('user:stateChanged');
-    }, function(error) {
-      return console.log("Error during Login");
-    });
-  };
+  this.login = (function(_this) {
+    return function() {
+      _this.wrongPassword = false;
+      _this.noAccount = false;
+      return User.login(_this.form).then(function(response) {
+        $('#login_modal').modal('toggle');
+        return $rootScope.$broadcast('user:stateChanged');
+      }, function(error) {
+        console.log(error);
+        if (error.data.error.name === "wrong_password") {
+          console.log("Wrong Password");
+          _this.wrongPassword = true;
+        } else if (error.data.error.name === "username_not_found") {
+          console.log("No Account Found");
+          _this.noAccount = true;
+        }
+        return console.log("Error during Login");
+      });
+    };
+  })(this);
   this.logout = (function(_this) {
     return function() {
       return User.logout().then(function() {
