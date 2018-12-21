@@ -54,9 +54,9 @@ module API
               p community_id
               u.communities << Community.find(community_id)
             end
-
-            u.web.sub(/https?\:(\\\\|\/\/)/,'')
-
+            if u.web
+              u.web.sub(/https?\:(\\\\|\/\/)/,'')
+            end
 
 
             if u.save
@@ -428,10 +428,12 @@ module API
 
       def reset_password(params)
         # Find the user, generate a random password and send it to the account's given email.
-        if u = User.find_by(username: params[:data])
+        if u = User.find_by(email: params[:email])
           generated_password = Devise.friendly_token.first(15)
           if u.update({password: generated_password, password_confirmation: generated_password})
-            PasswordMailer.reset_password_email(u, generated_password).deliver_later
+            RecoveryMailer.reset_password_email(u, generated_password).deliver_later
+            status 200
+            { status: 200, message: 'ok' }
           end
         else
           response = {
@@ -453,38 +455,54 @@ module API
 
       def destroy_user(params)
         # Find user.
-        u = User.find(params[:id]) 
-        # Check if User making the request has the rights to update this resource.
-        if Ability.new(current_resource_owner).can?(:delete, u)
-          # Destroy the database object.
-          if u.destroy
-            status 200
-            { status: 200, message: 'ok' }
+        u = User.find(params[:id])
+        #check password
+        if u.valid_password?(params[:current_password])
+          # Check if User making the request has the rights to update this resource.
+          if Ability.new(current_resource_owner).can?(:destroy, u)
+            # Destroy the database object, if the password is correct.
+            if u.destroy_with_password(params[:current_password])
+              status 200
+              { status: 200, message: 'ok' }
+            else
+              response = {
+                description: 'Löschen ist fehlgeschlagen.',
+                error: {
+                  name: 'could_not_delete',
+                  state: 'internal_server_error'
+                  },
+                reason: 'unknown',
+                redirect_uri: nil,
+                response_on_fragment: nil,
+                status: 500
+              }
+              error!(response, 500)
+            end
           else
             response = {
-              description: 'Löschen ist fehlgeschlagen.',
-              error: {
-                name: 'could_not_delete',
-                state: 'internal_server_error'
-                },
-              reason: 'unknown',
-              redirect_uri: nil,
-              response_on_fragment: nil,
-              status: 500
+                description: 'Sie haben nicht die nötigen Rechte, um diese Aktion durchzuführen.',
+                error: {
+                  name: 'no_ability',
+                  state: 'forbidden'
+                  },
+                reason: 'unknown',
+                redirect_uri: nil,
+                response_on_fragment: nil,
+                status: 403
             }
-            error!(response, 500)
+            error!(response, 403)
           end
         else
           response = {
-              description: 'Sie haben nicht die nötigen Rechte, um diese Aktion durchzuführen.',
-              error: {
-                name: 'no_ability',
-                state: 'forbidden'
-                },
-              reason: 'unknown',
-              redirect_uri: nil,
-              response_on_fragment: nil,
-              status: 403
+            description: 'Das eingegebene Passwort war falsch.',
+            error: {
+              name: 'wrong_password',
+              state: 'forbidden'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 403
           }
           error!(response, 403)
         end

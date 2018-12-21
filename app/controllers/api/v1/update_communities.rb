@@ -19,7 +19,7 @@ module API
       end
 
 
-
+      # POST
       def create_community(params)
         if Ability.new(current_resource_owner).can(:create, Community)
           if Communities.find(name: params[:name]).exists?
@@ -119,6 +119,8 @@ module API
         end
       end
 
+      #GET
+
       def return_all_communities()
         c = Community.all().select(:id, :name, :icon, :typus)
         if c
@@ -202,6 +204,83 @@ module API
         {status: 200, data: m}
       end
 
+      #UPDATE
+
+      def update_discussion(params)
+        d = Post.find(params[:id])
+        if Ability.new(current_resource_owner).can?(:update, d)
+          d.update({content: params[:content]})
+          if d.save!
+            status 200
+            {status: 200, data: d}
+          else
+            response = {
+              description: 'Der Eintrag konnte nicht bearbeitet werden.',
+              error: {
+                name: 'could_not_update',
+                state: 'internal_server_error'
+                },
+              reason: 'unknown',
+              redirect_uri: nil,
+              response_on_fragment: nil,
+              status: 500
+            }
+            error!(response, 500)
+          end
+        else
+          response = {
+            description: 'Sie haben nicht die nötigen Rechte, um diese Aktion durchzuführen.',
+            error: {
+              name: 'no_ability',
+              state: 'forbidden'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 403
+          }
+          error!(response, 403)
+        end
+      end
+
+      def update_comment(params)
+        c = Comment.find(params[:id])
+        if Ability.new(current_resource_owner).can?(:update, c)
+          c.update({content: params[:content]})
+          if c.save!
+            status 200
+            {status: 200, data: c}
+          else
+            response = {
+              description: 'Der Eintrag konnte nicht bearbeitet werden.',
+              error: {
+                name: 'could_not_update',
+                state: 'internal_server_error'
+                },
+              reason: 'unknown',
+              redirect_uri: nil,
+              response_on_fragment: nil,
+              status: 500
+            }
+            error!(response, 500)
+          end
+        else
+          response = {
+            description: 'Sie haben nicht die nötigen Rechte, um diese Aktion durchzuführen.',
+            error: {
+              name: 'no_ability',
+              state: 'forbidden'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 403
+          }
+          error!(response, 403)
+        end
+      end
+
+      #DELETE
 
       def leave_community(params)
         id = params[:id]

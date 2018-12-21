@@ -92,6 +92,22 @@ module API
         put '/:id' do
           edit_community(params)
         end
+
+        oauth2
+        params do
+          requires :content, type: String
+        end
+        put '/post/:id' do
+          update_discussion(params)
+        end
+
+        oauth2
+        params do
+          requires :content, type: String
+        end
+        put '/comment/:id' do
+          update_comment(params)
+        end
         #################
         #
         # DELETE

@@ -313,6 +313,43 @@ module API
         end
       end
 
+      def update_comment(params)
+        c = Comment.find(params[:id])
+        if Ability.new(current_resource_owner).can?(:update, c)
+          c.update({content: params[:content]})
+          if c.save!
+            status 200
+            {status: 200, data: c}
+          else
+            response = {
+              description: 'Der Eintrag konnte nicht bearbeitet werden.',
+              error: {
+                name: 'could_not_update',
+                state: 'internal_server_error'
+                },
+              reason: 'unknown',
+              redirect_uri: nil,
+              response_on_fragment: nil,
+              status: 500
+            }
+            error!(response, 500)
+          end
+        else
+          response = {
+            description: 'Sie haben nicht die nötigen Rechte, um diese Aktion durchzuführen.',
+            error: {
+              name: 'no_ability',
+              state: 'forbidden'
+              },
+            reason: 'unknown',
+            redirect_uri: nil,
+            response_on_fragment: nil,
+            status: 403
+          }
+          error!(response, 403)
+        end
+      end
+
       def delete_project(params)
         pr = Projects.find(params[:id])
         if pr.destroy!

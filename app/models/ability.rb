@@ -36,8 +36,11 @@ class Ability
     if user
       can :join, Community
       can :leave, Community
-      can :manage, Project, user_id: user.id
-      can :manage, User, id: user.id
+      can :crud, Project, user_id: user.id
+      can :crud, Comment, user_id: user.id
+      can :crud, Post, user_id: user.id
+      can :read, User, role: "user"
+      can :crud, User, id: user.id
 
       if user[:role] == "admin"
         can :manage, :all
@@ -45,7 +48,7 @@ class Ability
 
       if user[:role] == "data"
         can :read, :all
-        can :crud, User
+        can :crud, User, role: "user"
         can :crud, Project
         can :crud, Community
       end

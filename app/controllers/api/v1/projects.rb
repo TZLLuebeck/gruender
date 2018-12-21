@@ -118,6 +118,14 @@ module API
           update_project(params)
         end
 
+        oauth2
+        params do
+          requires :content, type: String
+        end
+        put '/comment/:id' do
+          update_comment(params)
+        end
+
         #################
         # DESTROY
         #################

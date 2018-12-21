@@ -42,7 +42,7 @@ module API
             requires :password_confirmation, type: String
             requires :name, type: String
             requires :location, type: String
-            requires :web, type: String
+            optional :web, type: String
             requires :description, type: String
             requires :subscriptions, type: Array[Integer]
             optional :logo, type: Rack::Multipart::UploadedFile            
@@ -112,14 +112,14 @@ module API
         params do
           requires :data, type: Hash do
             requires :id, type: Integer
-            requires :current_password
-            optional :location, type: String
-            optional :description, type: String
+            requires :current_password, type: String
             optional :password, type: String
-            optional :logo, type: Rack::Multipart::UploadedFile 
             given :password do
               requires :password_confirmation, type: String
             end
+            optional :location, type: String
+            optional :description, type: String
+            optional :logo, type: Rack::Multipart::UploadedFile
             optional :fon, type: String
             optional :web, type: String
           end
@@ -129,7 +129,7 @@ module API
         end
 
         params do
-          requires :username, type: String
+          requires :email, type: String
         end
         post '/reset' do
           reset_password(params)
@@ -150,10 +150,11 @@ module API
           revoke && warden.logout
         end
 
-        desc 'Deletes a user'
+        desc 'Deletes a user, requiring that users password'
         oauth2
         params do
           requires :id, type: Integer, desc: 'user id'
+          requires :current_password, type: String
         end
         delete '/:id' do
           destroy_user(params)
