@@ -49,6 +49,7 @@ module API
             # create the User in the database
             u = User.new(par)
 
+            u.role = "user"
             p subs
             subs.each do |community_id|
               p community_id
@@ -237,6 +238,16 @@ module API
 
       end
 
+
+      def check_username(params)
+        if User.find_by(username: params[:username])
+          status 200
+          {status: 200, data: true}
+        else
+          status 200
+          {status: 200, data: false}  
+        end
+      end
       
       # READ
 

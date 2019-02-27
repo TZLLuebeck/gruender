@@ -76,6 +76,9 @@ module API
           write_message(params)
         end
 
+        post '/username' do
+          check_username(params)
+        end
 
         ##################
         #
