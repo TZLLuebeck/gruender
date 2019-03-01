@@ -292,24 +292,47 @@ module API
       end
 
       def update_project(params)
-        pr = Projects.find(params[:id])
-        pr.update_attributes(params)
-        if pr.save!
-          status 200
-          {status: 200, data: pr}
+        pr = Project.find(params[:data][:id])
+        if Ability.new(current_resource_owner).can?(:update, pr)
+          
+          tags = params[:data][:tags]
+          params[:data].delete :tags
+          
+          # Sanitize input
+          params[:data][:solution] = Sanitize.fragment(params[:data][:solution], elements: ['p', 'blockquote', 'b', 'i', 'u', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'img', 'ul', 'ol', 'li', 'img'], attributes: {'span' => ['style'], 'img' => ['style', 'src']}, css: {properties: ['color', 'font-family', 'background-color', 'width', 'height']})
+
+
+          pr.update_attributes(params[:data])
+          if pr.save!
+            status 200
+            {status: 200, data: pr}
+          else
+            response = {
+              description: 'Der Eintrag konnte nicht bearbeitet werden.',
+              error: {
+                name: 'could_not_update',
+                state: 'internal_server_error'
+                },
+              reason: 'unknown',
+              redirect_uri: nil,
+              response_on_fragment: nil,
+              status: 500
+            }
+            error!(response, 500)
+          end
         else
           response = {
-            description: 'Der Eintrag konnte nicht bearbeitet werden.',
+            description: 'Sie haben nicht die nötigen Rechte, um diese Aktion durchzuführen.',
             error: {
-              name: 'could_not_update',
-              state: 'internal_server_error'
+              name: 'no_ability',
+              state: 'forbidden'
               },
             reason: 'unknown',
             redirect_uri: nil,
             response_on_fragment: nil,
-            status: 500
+            status: 403
           }
-          error!(response, 500)
+          error!(response, 403)
         end
       end
 
@@ -351,7 +374,7 @@ module API
       end
 
       def delete_project(params)
-        pr = Projects.find(params[:id])
+        pr = Project.find(params[:id])
         if pr.destroy!
           status 200
           {status: 200}

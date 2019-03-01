@@ -106,13 +106,15 @@ module API
 
         oauth2
         params do
-          requires :id, type: Integer
-          optional :goal, type: String
-          optional :problem, type: String
-          optional :solution, type: String
-          optional :kooperations, type: String
-          optional :tags, type: Array
-          optional :attachment, type: Rack::Multipart::UploadedFile
+          requires :data, type: Hash do
+            requires :id, type: Integer
+            optional :goal, type: String
+            optional :problem, type: String
+            optional :solution, type: String
+            optional :kooperations, type: String
+            optional :tags, type: Array
+            optional :attachment, type: Rack::Multipart::UploadedFile
+          end
         end
         put '' do
           update_project(params)
