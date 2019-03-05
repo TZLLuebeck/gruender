@@ -78,7 +78,7 @@ module API
                 }
               }
               # Send Welcoming Mail.
-              #WelcomeMailer.welcome_email(u).deliver_later
+              RegistrationMailer.welcome_email(u).deliver_later
               #WelcomeMailWorker.perform_async(u)
               status 200
               { status: 200, data: ret}
