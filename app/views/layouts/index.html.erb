@@ -16,7 +16,9 @@
 <body>
   <div class="container-fluid root_container">
     <div ui-view="header"></div>
-    <div ui-view="body" ng-cloak></div>
+    <div id="bodycover" class="fade">
+      <div id="mainbody" ui-view="body"></div>
+    </div>
     <div ui-view="footer"></div>
   </div>
   <script type="text/javascript" src="assets/javascripts/base-min.js"></script>
