@@ -5110,3 +5110,33 @@ App 3178 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fil
 [ N 2019-05-06 13:31:25.1111 3132/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
 [ N 2019-05-06 13:31:25.1112 3132/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3450, application /home/tobias/projekte/webdev/gruender (development)
 [ N 2019-05-06 13:31:25.8497 3132/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-05-06 13:42:24.0965 5805/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-05-06 13:42:24.1328 5808/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-05-06 13:42:24.1331 5808/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-05-06 13:42:24.1452 5808/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 5808
+[ N 2019-05-06 13:42:26.5739 5808/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 5847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2019-05-06 13:47:41.7433 5808/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 5911, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2019-05-06 13:58:40.9973 5808/T6 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-05-06 13:58:40.9975 5808/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-05-06 13:58:40.9976 5808/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 5892, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-05-06 13:58:40.9977 5808/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-05-06 13:58:40.9978 5808/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-05-06 13:58:40.9979 5808/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-05-06 13:58:40.9980 5808/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-05-06 13:58:40.9981 5808/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 5892, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-05-06 13:58:41.8552 5808/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
