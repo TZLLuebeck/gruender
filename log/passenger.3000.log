@@ -4892,3 +4892,191 @@ App 4862 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fil
 [ N 2019-03-08 11:47:23.8471 3477/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
 [ N 2019-03-08 11:47:23.8472 3477/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3556, application /home/tobias/projekte/webdev/gruender (development)
 [ N 2019-03-08 11:47:24.5834 3477/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-03-11 16:13:57.7969 3092/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-03-11 16:13:57.9001 3102/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-03-11 16:13:57.9195 3102/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-03-11 16:13:57.9509 3102/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 3102
+[ N 2019-03-11 16:14:02.9475 3102/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 3141 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2019-03-11 16:21:03.9873 3102/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3359, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2019-03-11 16:33:39.6964 3102/T6 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-03-11 16:33:39.6964 3102/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-03-11 16:33:39.6965 3102/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3195, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-11 16:33:39.6966 3102/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-03-11 16:33:39.6966 3102/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-03-11 16:33:39.6967 3102/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-03-11 16:33:39.6968 3102/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-03-11 16:33:39.6969 3102/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3195, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-11 16:33:40.4421 3102/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-03-11 16:45:10.9419 4207/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-03-11 16:45:10.9788 4210/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-03-11 16:45:10.9791 4210/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-03-11 16:45:10.9948 4210/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 4210
+[ N 2019-03-11 16:45:13.2786 4210/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 4249 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2019-03-11 16:50:22.1693 4210/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4327, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-11 16:54:00.8917 4210/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4308, application /home/tobias/projekte/webdev/gruender (development)
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 5800 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+
+[ N 2019-03-11 17:20:57.3084 4210/T6 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-03-11 17:20:57.3086 4210/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-03-11 17:20:57.3087 4210/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4289, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-11 17:20:57.3087 4210/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 5854, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-11 17:20:57.3088 4210/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-03-11 17:20:57.3089 4210/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-03-11 17:20:57.3090 4210/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-03-11 17:20:57.3091 4210/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-03-11 17:20:57.3092 4210/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4289, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-11 17:20:57.3094 4210/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 5854, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-11 17:20:58.0556 4210/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-03-12 10:27:50.4037 14805/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-03-12 10:27:50.7259 14808/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-03-12 10:27:50.7441 14808/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-03-12 10:27:50.7857 14808/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 14808
+[ N 2019-03-12 10:27:53.2863 14808/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 14847 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2019-03-12 10:33:20.2847 14808/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 14955, application /home/tobias/projekte/webdev/gruender (development)
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 15273 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+App 14936 output: [{"id"=>1, "title"=>"Meine Güte", "content"=>"Das hier ist mal ein Projekt...", "user_id"=>3, "community_id"=>1, "created_at"=>Fri, 05 Oct 2018 09:22:49 UTC +00:00, "updated_at"=>Fri, 05 Oct 2018 09:22:49 UTC +00:00, "author"=>"TheBorger", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 4, title: nil, content: "Aber sowas von.", user_id: 3, parent_id: 1, grandparent_id: 1, parent_type: "Post", created_at: "2018-10-05 09:22:56", updated_at: "2018-10-05 09:22:56", author: "TheBorger">, #<Comment id: 8, title: nil, content: "Bob2", user_id: nil, parent_id: 1, grandparent_id: 1, parent_type: "Post", created_at: "2018-12-20 11:41:57", updated_at: "2018-12-21 10:02:25", author: "Mustermax">]>}, {"id"=>2, "title"=>"Test", "content"=>"TEstdiskussion", "user_id"=>nil, "community_id"=>1, "created_at"=>Fri, 21 Dec 2018 10:02:33 UTC +00:00, "updated_at"=>Fri, 21 Dec 2018 10:03:30 UTC +00:00, "author"=>"Mustermax", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}, {"id"=>3, "title"=>"Hoahoahoahoaho", "content"=>"Huehuelolololooloehue", "user_id"=>1, "community_id"=>1, "created_at"=>Thu, 10 Jan 2019 12:02:01 UTC +00:00, "updated_at"=>Thu, 10 Jan 2019 12:02:11 UTC +00:00, "author"=>"admin2", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}]
+App 14936 output: {"id"=>1, "name"=>"Dienstleistungen\n ", "created_at"=>Fri, 22 Jun 2018 13:05:41 UTC +00:00, "updated_at"=>Fri, 22 Jun 2018 13:05:41 UTC +00:00, "description"=>"Bietest du einen neuen Service oder eine innovative Dienstleistung an? Hier kannst du sie präsentieren!", "icon"=>"assets/images/icons/Dienstleistung.svg", "typus"=>"Branche", :subscribed=>false, :members=>#<ActiveRecord::Associations::CollectionProxy [#<User id: 3, username: "TheBorger", created_at: "2018-10-05 09:15:46", updated_at: "2018-10-05 09:15:46", email: "borger@borger.com", description: "Wir sind die Borger orger orger orger", logo: nil, name: "Boris Borger", web: "www.borger.de", fon: nil, location: "Borgingen", role: nil>, #<User id: 4, username: "abcdefg", created_at: "2018-12-11 10:24:03", updated_at: "2018-12-11 10:24:03", email: "sadfsadfasdf@jasldkj.de", description: "sdflkjsadöfljsdlafökjsdlöfjsdlöfjlfsdöjlsadf", logo: nil, name: "abcdefg", web: "www.afdsdfsa.de", fon: nil, location: "Mannheim", role: nil>, #<User id: 5, username: "asdfsadffsda", created_at: "2018-12-11 10:25:30", updated_at: "2018-12-11 10:25:30", email: "sadfsadfasdf@jakj.de", description: "sdafdfsadsfdfsfsdsdfa", logo: nil, name: "bcdefgh", web: "sfadsdfasdaf.de", fon: nil, location: "fsadsdfsfdsdf", role: nil>, #<User id: 6, username: "Testguy", created_at: "2018-12-14 10:20:11", updated_at: "2018-12-14 11:01:46", email: "testguy@sdflsadf.dj", description: "lkfjsdaölfjsalöfjlsöjkdflsfl", logo: nil, name: "Testguy", web: nil, fon: nil, location: "Teststadt", role: nil>, #<User id: 7, username: "Suthek", created_at: "2018-12-14 11:04:47", updated_at: "2018-12-14 11:05:13", email: "tobias.braun@unitransferklinik.de", description: "alsdkjöaldjaljösdjdla", logo: nil, name: "Tobias Braun", web: nil, fon: nil, location: "Lübeck", role: nil>, #<User id: 8, username: "aassaas", created_at: "2018-12-20 09:36:44", updated_at: "2018-12-20 09:36:44", email: "mustermax@bob.de", description: "sdfaaffsddafsafsaf", logo: "image003.png", name: "Tobias Braun", web: nil, fon: nil, location: "asasasas", role: nil>, #<User id: 9, username: "sffasdfasfd", created_at: "2018-12-20 09:41:29", updated_at: "2018-12-20 09:41:29", email: "adsad@ajksd.de", description: "asdasfsasdfasdfsf", logo: "image005.jpg", name: "Boris Borger", web: nil, fon: nil, location: "asffdsasfdsdf", role: nil>, #<User id: 10, username: "ASdsafsaf", created_at: "2018-12-20 09:44:20", updated_at: "2018-12-20 09:44:20", email: "sadfdsa@asdad.de", description: "afdsdsafdsfdsafdsafdsafsd", logo: nil, name: "fdssdfdsfsadf", web: nil, fon: nil, location: "afdasfsafds", role: nil>, #<User id: 11, username: "bazzzzap", created_at: "2019-03-04 10:37:32", updated_at: "2019-03-04 10:37:32", email: "t.braun1990@gmx.de", description: "asdffadsdsafsdafsdafsdfadsfasdafsdfdsfsdfadfsadsfa...", logo: nil, name: "Tobias", web: nil, fon: nil, location: "Teststadt", role: "user">]>, :projects=>#<ActiveRecord::Associations::CollectionProxy [#<Project id: 1, name: "Waka Waka", user_id: 1, created_at: "2018-06-29 09:00:56", updated_at: "2018-06-29 09:00:56", goal: "sdjfsalökjflsakjflösjflökashkflsafhlsafjlksajflghl...", problem: nil, solution: "<p>sfsafsadfasfjsflkjsfasoifuaoshfsdöjfasnfvaoszpa...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Open Innovation">, #<Project id: 2, name: "sadfsdfasdfasf", user_id: 1, created_at: "2018-06-29 09:04:44", updated_at: "2018-06-29 09:04:44", goal: "asfdsafasfdsafasddsaf", problem: "asfsafsafdsafasdfsadfasfgdsagasdgasgsgsagasfdsafas...", solution: "<p>adggagagaafdfljfasljöasflöjafsdljasfdljöasfdlja...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">, #<Project id: 4, name: "asfasfsafsaf", user_id: 1, created_at: "2018-06-29 09:06:51", updated_at: "2018-06-29 09:06:51", goal: "aasdfsadf53355352352352325353253", problem: "65465634635635365356", solution: "<p>3365346364634646343466543446364646456546346464 ...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">, #<Project id: 5, name: "Testszenario", user_id: 1, created_at: "2018-06-29 09:08:07", updated_at: "2018-06-29 09:08:07", goal: "llöasfjddöaslfjsölfljsölfjksaljköfjlödsjlfsjalfjlk...", problem: "asfdfsdasafdsafdsdafsdfasfadsfdafsdafsd", solution: "<p>afsadfsdaafsdafsdfasdafsdfasdfdsafdsafdsafaafds...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">, #<Project id: 6, name: "sadfasfsadfsafsafsadf", user_id: 1, created_at: "2018-06-29 09:09:56", updated_at: "2018-06-29 09:09:56", goal: "sadfsdaffdsfdaasfsfsfdaasdfsafd", problem: "sadfdsfsdasadfsdfasfdsfdaasfdsadfsdfa", solution: "<p>5432532325532253352355232345 </p>", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">, #<Project id: 7, name: "asdfdsafsdaffsdfsdfsdsfddsf", user_id: 1, created_at: "2018-06-29 09:11:08", updated_at: "2018-06-29 09:11:08", goal: "sdfsdfdfsaasfdasdfsdfsdfsdfsdfsdfasdf", problem: "sfdaasdfsdfasdfsdfsfdaasdfsfdasdfsfdaasfdsfdsdfasd...", solution: "<p>fassfdfsdaafsdafdsasfdasfdafdsfdsfdsasfdssfasfd...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">, #<Project id: 8, name: "asdfsdafsdfsfsafsd", user_id: 1, created_at: "2018-06-29 09:12:44", updated_at: "2018-06-29 09:12:44", goal: "sdfasdfasdfasdfsdaffsdsdssdafsdfdsfafsdsdfa", problem: "fsaddasfdsafdsfaafdsadfsasdfafdssdfsdfsfdasfddsfsd...", solution: "<p>fsadsadfsadfasfdasfdasdfsdfasdfasdfsdfafsdsdfaa...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">, #<Project id: 9, name: "Bildprojekt", user_id: 1, created_at: "2019-03-01 14:36:02", updated_at: "2019-03-01 14:36:02", goal: "sadfdfsasdafds", problem: "sadfasdffdssdafdsfadsf", solution: "<p>afsddfsdsfdsfadsafdsafsdfdsfdsafdsafadsfasdfsda...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: "image005.jpg", typus: "Showcase">, #<Project id: 9, name: "Bildprojekt", user_id: 1, created_at: "2019-03-01 14:36:02", updated_at: "2019-03-01 14:36:02", goal: "sadfdfsasdafds", problem: "sadfasdffdssdafdsfadsf", solution: "<p>afsddfsdsfdsfadsafdsafsdfdsfdsafdsafadsfasdfsda...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: "image005.jpg", typus: "Showcase">, #<Project id: 10, name: "Shambalaya", user_id: 1, created_at: "2019-03-05 12:20:14", updated_at: "2019-03-05 13:54:51", goal: "jsaldflösafdöjlfdsa", problem: "afssffddfdfsfdsafdsadfsfdsa", solution: "<p>asdfsdafs<strong>dfsdfasdasdf</strong>sadfsadf<...", coop: false, likes: nil, attachment: nil, status: "Published", cooptext: nil, image: nil, typus: "Showcase">, ...]>, :member_count=>9, :project_count=>11, :discussions=>[{"id"=>1, "title"=>"Meine Güte", "content"=>"Das hier ist mal ein Projekt...", "user_id"=>3, "community_id"=>1, "created_at"=>Fri, 05 Oct 2018 09:22:49 UTC +00:00, "updated_at"=>Fri, 05 Oct 2018 09:22:49 UTC +00:00, "author"=>"TheBorger", :comments=>#<ActiveRecord::Associations::CollectionProxy [#<Comment id: 4, title: nil, content: "Aber sowas von.", user_id: 3, parent_id: 1, grandparent_id: 1, parent_type: "Post", created_at: "2018-10-05 09:22:56", updated_at: "2018-10-05 09:22:56", author: "TheBorger">, #<Comment id: 8, title: nil, content: "Bob2", user_id: nil, parent_id: 1, grandparent_id: 1, parent_type: "Post", created_at: "2018-12-20 11:41:57", updated_at: "2018-12-21 10:02:25", author: "Mustermax">]>}, {"id"=>2, "title"=>"Test", "content"=>"TEstdiskussion", "user_id"=>nil, "community_id"=>1, "created_at"=>Fri, 21 Dec 2018 10:02:33 UTC +00:00, "updated_at"=>Fri, 21 Dec 2018 10:03:30 UTC +00:00, "author"=>"Mustermax", :comments=>#<ActiveRecord::Associations::CollectionProxy []>}, {"id"=>3, "title"=>"Hoahoahoahoaho", "content"=>"Huehuelolololooloehue", "user_id"=>1, "community_id"=>1, "created_at"=>Thu, 10 Jan 2019 12:02:01 UTC +00:00, "updated_at"=>Thu, 10 Jan 2019 12:02:11 UTC +00:00, "author"=>"admin2", :comments=>#
+App 14936 output: <ActiveRecord::Associations::CollectionProxy []>}]}
+
+[ N 2019-03-12 10:43:49.0854 14808/T6 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-03-12 10:43:49.0855 14808/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-03-12 10:43:49.0856 14808/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 14936, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-12 10:43:49.0856 14808/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 15323, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-12 10:43:49.0857 14808/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-03-12 10:43:49.0857 14808/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-03-12 10:43:49.0858 14808/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-03-12 10:43:49.0858 14808/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-03-12 10:43:49.0859 14808/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 14936, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-12 10:43:49.0859 14808/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 15323, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-12 10:43:49.8222 14808/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-03-15 14:21:53.1777 2632/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-03-15 14:21:53.4011 2635/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-03-15 14:21:53.4023 2635/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-03-15 14:21:53.4800 2635/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 2635
+[ N 2019-03-15 14:21:56.1527 2635/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 2674 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2019-03-15 14:28:42.4923 2635/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 2809, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2019-03-15 15:01:35.0647 2635/T6 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-03-15 15:01:35.0647 2635/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-03-15 15:01:35.0648 2635/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 2725, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-15 15:01:35.0649 2635/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-03-15 15:01:35.0649 2635/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-03-15 15:01:35.0649 2635/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-03-15 15:01:35.0649 2635/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-03-15 15:01:35.0650 2635/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 2725, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-03-15 15:01:35.8032 2635/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-04-05 15:12:35.6448 3134/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-04-05 15:12:37.8051 3143/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-04-05 15:12:37.8671 3143/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-04-05 15:12:38.9287 3143/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 3143
+[ E 2019-04-05 15:12:41.8640 3143/Ta age/Cor/SecurityUpdateChecker.h:505 ]: Security update check failed: HTTP 500 while connecting to https://securitycheck.phusionpassenger.com/v1/check.json (if this error persists check your connection security or try upgrading Passenger) (next check in 24 hours)
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:90: warning: already initialized constant FileUtils::VERSION
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:92: warning: previous definition of VERSION was here
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1188: warning: already initialized constant FileUtils::Entry_::S_IF_DOOR
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1267: warning: previous definition of S_IF_DOOR was here
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1446: warning: already initialized constant FileUtils::Entry_::DIRECTORY_TERM
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1541: warning: previous definition of DIRECTORY_TERM was here
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1448: warning: already initialized constant FileUtils::Entry_::SYSCASE
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1543: warning: previous definition of SYSCASE was here
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1501: warning: already initialized constant FileUtils::OPT_TABLE
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1596: warning: previous definition of OPT_TABLE was here
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1555: warning: already initialized constant FileUtils::LOW_METHODS
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1650: warning: previous definition of LOW_METHODS was here
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/2.5.0/fileutils.rb:1562: warning: already initialized constant FileUtils::METHODS
+App 3185 output: /home/tobias/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/fileutils-1.1.0/lib/fileutils.rb:1657: warning: previous definition of METHODS was here
+[ N 2019-04-05 15:18:09.4071 3143/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3307, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-04-05 15:18:10.5864 3143/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3327, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-04-05 15:18:57.9125 3143/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3288, application /home/tobias/projekte/webdev/gruender (development)
+
+[ N 2019-04-05 15:37:12.3524 3143/T6 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-04-05 15:37:12.3524 3143/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-04-05 15:37:12.3524 3143/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3269, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-04-05 15:37:12.3525 3143/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-04-05 15:37:12.3525 3143/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-04-05 15:37:12.3525 3143/T6 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-04-05 15:37:12.3525 3143/T6 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-04-05 15:37:12.3526 3143/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 3269, application /home/tobias/projekte/webdev/gruender (development)
+[ N 2019-04-05 15:37:13.0896 3143/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
